@@ -1,0 +1,14 @@
+name: renewenergy_der
+type: table
+title: MORPC Insights | Distributed Energy Resources Facilities by Year
+description: Count and generation capacity of Central Ohio Distributed Energy Resources
+  facilites which opened in each year according to data maintained by the Public Utilities
+  Commission of Central Ohio.
+profile: data-resource
+path: renewenergy-der-long.csv
+scheme: file
+format: csv
+mediatype: text/csv
+hash: ffe8d0befc1b00d1a173467acd493c73
+bytes: 3894957
+schema: renewenergy-der-long.schema.yaml

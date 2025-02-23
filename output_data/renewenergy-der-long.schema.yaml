@@ -1,0 +1,30 @@
+fields:
+  - name: GEOIDFQ
+    type: string
+    description: 'Unique identifier for the geography as issued by MORPC.  These are identical to fully-qualified Census-issued GEOIDs for Census geographies.'
+  - name: NAME
+    type: string
+    description: 'Name of the geography.'    
+  - name: GEOTYPE
+    type: string
+    description: 'Human readable string with describes the summary level (geography type) for which the GEOID applies.  The combination of GEOTYPE and GEOID uniquely identify the geography for the record.'
+  - name: YEAR
+    type: integer
+    description: 'Four-digit year in which the Distributed Energy Resource facility was registered.'
+  - name: FUEL_TYPE
+    type: string
+    description: 'Type of energy consumed by the facility.'
+  - name: FACILITIES
+    type: integer
+    description: 'Number of facilities that were registered in the indicated geography and year.'
+  - name: CAPACITY
+    type: number
+    description: 'Generating capacity of the combined facilituies in kilowatts (kW).'
+missingValues:
+  - ''
+primaryKey:
+  - GEOIDFQ
+  - YEAR
+  - FUEL_TYPE
+  
+  
