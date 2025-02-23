@@ -1,0 +1,77 @@
+# DO NOT CHANGE.  Identifies the file as a data kit configuration and should be set to “morpc_data_kit” for a data kit config file.
+config_type: morpc_data_kit
+
+# DO NOT CHANGE. Unique identifier that describes the version of the data_config.yaml schema.  Note that this DOES NOT refer to 
+# the version of the data kit (see "version" below). Typically, "config_version" should only be changed when a revision
+# is made to the data kit model implementation in GitHub.
+config_version: 1
+
+# MANDATORY. Human readable title that succinctly describes the data kit contents
+title: Distributed Energy Resources
+
+# MANDATORY. Current version identifier for the data kit.  The value here should match the version number that appears in the README.md 
+# file. Should be a machine-readable value in one of the following forms:
+# ISO 8601 compliant date: 2024-04-29
+# Integer: 1
+# Major/minor: 1.2
+version: 2025-02-22
+
+# MANDATORY. A brief, human-readable description of the purpose and contents of the data kit.
+description: The Public Utilities Commission of Ohio maintains a database containing the locations and attributes of Distributed Energy Resources. This data kit includes a summary of DER facility registrations and generating capacity by geography by year for the MORPC 15-county region.  The geography levels include incorporated places, non-incorporated townships, counties, and the region as a whole. The output is a long form table in CSV format which provides a count of station registrations and generating capacity indexed by geographic identifier, year, and fuel type.
+
+# MANDATORY.  Contact information for the provider of the data kit. Contact info must include at least email.
+provider:
+  organization_name: Mid-Ohio Regional Planning Commission
+  organization_url: https://morpc.org
+  contact_name: Adam Porr
+  contact_email: aporr@morpc.org
+
+# MANDATORY. "Vintage" is loosely-defined term that refers to a label used to uniquely identify the age of a data product.  It is assumed that the
+# output data contained in the data kit will be updated periodically, and therefore the vintage typically refers to the
+# date when the output data was generated.  Thus, if the data is updated annually, there will be a new "vintage" each year
+# which is typically described by the four-digit number representing the year.  If the data is updated monthly, the label should also
+# capture the month.  It may be appropriate in some cases for the vintage to refer to a different event.  For example, Census PEP
+# defines their own vintages for their annual estimates.  If the output data in a data kit is simply an extract of a particular set of
+# Census PEP estimates it might make sense to use the vintage assigned by Census PEP regardless of when the output data was generated.
+# "vintage" should be specified as a human-readable string.  This value will be displayed as-is in the following format:
+# "XXXXXX; updated YYYYYY", where XXXXXX is the value specified for "vintage" and "YYYYYY" is the value specified for "update_period"
+# (see below). Some examples follow.
+# Data updated annually: 2023
+# Data updated monthly: 2023-10
+# Data updated sporadically (in this case be precise): 2023-10-05
+# Data created for a specific purpose or event: 2024 State of the City Report 
+vintage: "2025"
+
+# MANDATORY. Update period refers to the period of time that elapses between one vintage of the data and the subsequent vintage. 
+# "update_period" should be specified as a human-readable string.  This value will be displayed as-is in the following format:
+# "XXXXXX; updated YYYYYY", where XXXXXX is the value specified for "vintage" (see above) and "YYYYYY" is the value specified 
+# for "update_period". Some examples follow.
+# Data updated annually: annually, yearly, annually in June
+# Data updated monthly: monthly, "monthly on the 15th", "monthly on the second Tuesday"
+# Data updated on a multi-year cycle: biennially, "every two years", "on a two-year cycle", 
+update_period: "annually"
+
+# MANDATORY. A listing of the outputs produced by the data kit with key metadata
+outputs:
+    ### The properties below represent a list of two outputs.  Each element in the list is comprised of several properties.  
+    ### A hyphen before a property name indicates that a new list element is starting. 
+    
+    ### The following properties are required:
+    # Path to Frictionless Resource descriptor file
+  - resource_file_path: ./output_data/renewenergy-der-long.resource.yaml
+   
+# MANDATORY. A listing of the processes required to transform the inputs to outputs with key metadata
+processes:
+    ### The properties below represent a list of several proceses.  Each element in the list is comprised of several properties.  
+    ### A hyphen before a property name indicates that a new list element is starting. 
+
+    ### The following properties are required:
+    # Path to the process description. This can be a relative file system path or it can be a URL to a remote resource. For filesystem paths, use UNIX-style paths.
+  - process_description_path: ./renewenergy-der.ipynb
+    ### The following properties are optional, but strongly recommended   
+    # Type of process: "manual", "automatic", or "hybrid"
+    process_type: automatic
+    # For automatic or hybrid processes, process_environment refer to software used to carry out the process. Not required for manual processes. 
+    # Valid options are:"python","jupyter","r","rmarkdown"
+    process_environment: jupyter
+
