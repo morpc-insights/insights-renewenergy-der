@@ -7973,16 +7973,12 @@ Resource file: output_data\renewenergy-der-long.resource.yaml
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>morpc.load_frictionless_data | INFO | Loading Frictionless Resource file at location ..\morpc-geos-collect\output_data\morpc-geos-lookup.resource.yaml
-..\morpc-geos-collect\output_data\morpc-geos-lookup.resource.yaml
-..\morpc-geos-collect\output_data\morpc-geos-lookup.schema.yaml
 morpc.load_frictionless_data | INFO | Copying data, resource file, and schema to directory input_data
 morpc.load_frictionless_data | INFO | --&gt; Data file: input_data\morpc-geos-lookup.csv
 morpc.load_frictionless_data | INFO | --&gt; Resource file: input_data\morpc-geos-lookup.resource.yaml
 morpc.load_frictionless_data | INFO | --&gt; Schema file: input_data\morpc-geos-lookup.schema.yaml
 morpc.load_frictionless_data | INFO | Validating resource including data and schema.
 morpc.frictionless_validate_resource | INFO | Validating resource on disk (including data and schema). This may take some time.
-morpc-geos-lookup.resource.yaml
-morpc-geos-lookup.schema.yaml
 morpc.frictionless_validate_resource | INFO | Resource is valid
 morpc.load_frictionless_data | INFO | Loading data.
 frictionless_cast_field_types | INFO | Casting field GEOIDFQ as type string.
@@ -8199,23 +8195,18 @@ frictionless_cast_field_types | INFO | Casting field PLACECOMBO as type string.
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>morpc.load_frictionless_data | INFO | Loading Frictionless Resource file at location ..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.resource.yaml
-..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.resource.yaml
-..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.schema.yaml
 morpc.load_frictionless_data | INFO | Copying data, resource file, and schema to directory input_data
 morpc.load_frictionless_data | INFO | --&gt; Data file: input_data\morpc-renewenergyfacilities-der-long.csv
 morpc.load_frictionless_data | INFO | --&gt; Resource file: input_data\morpc-renewenergyfacilities-der-long.resource.yaml
 morpc.load_frictionless_data | INFO | --&gt; Schema file: input_data\morpc-renewenergyfacilities-der-long.schema.yaml
 morpc.load_frictionless_data | INFO | Validating resource including data and schema.
 morpc.frictionless_validate_resource | INFO | Validating resource on disk (including data and schema). This may take some time.
-morpc-renewenergyfacilities-der-long.resource.yaml
-morpc-renewenergyfacilities-der-long.schema.yaml
 morpc.frictionless_validate_resource | INFO | Resource is valid
 morpc.load_frictionless_data | INFO | Loading data.
 frictionless_cast_field_types | INFO | Casting field NAME as type string.
 frictionless_cast_field_types | INFO | Casting field GEOIDFQ as type string.
 frictionless_cast_field_types | INFO | Casting field SUMLEVEL as type string.
 frictionless_cast_field_types | INFO | Casting field YEAR as type integer.
-frictionless_cast_field_types | WARNING | Failed conversion of fieldname YEAR to type 'int'.  Trying type 'Int64' instead.
 frictionless_cast_field_types | INFO | Casting field METRIC as type string.
 frictionless_cast_field_types | INFO | Casting field FUEL_TYPE as type string.
 frictionless_cast_field_types | INFO | Casting field VALUE as type number.
@@ -8810,7 +8801,7 @@ Casting field GEOID as type string.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=927d95ae-b8e4-4c69-944b-6317a32a3f99">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=927d95ae-b8e4-4c69-944b-6317a32a3f99">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8820,20 +8811,6 @@ Casting field GEOID as type string.
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"METRIC"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"VALUE"</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\aporr\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\algorithms.py:798: FutureWarning: In a future version, the Index constructor will not infer numeric dtypes when passed object-dtype sequences (matching Series behavior)
-  uniques = Index(uniques)
-</pre>
 </div>
 </div>
 </div>
@@ -9060,11 +9037,8 @@ Casting field GEOID as type string.
 <pre>morpc.frictionless_create_resource | INFO | Format not specified. Using format derived from data file extension: csv
 morpc.frictionless_create_resource | INFO | Schema path not specified. Using path derived from data file path: renewenergy-der-long.schema.yaml
 morpc.frictionless_create_resource | INFO | Writing Frictionless Resource file to output_data\renewenergy-der-long.resource.yaml
-renewenergy-der-long.schema.yaml
 morpc.frictionless_create_resource | INFO | Validating resource on disk.
 morpc.frictionless_validate_resource | INFO | Validating resource on disk (including data and schema). This may take some time.
-renewenergy-der-long.resource.yaml
-renewenergy-der-long.schema.yaml
 morpc.frictionless_validate_resource | INFO | Resource is valid
 </pre>
 </div>
@@ -9174,8 +9148,6 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
         <span class="s2">"FUEL_TYPE"</span><span class="p">:</span><span class="s2">"Fuel type"</span><span class="p">,</span>
         <span class="s2">"FACILITIES"</span><span class="p">:</span><span class="s2">"Facilities"</span>
     <span class="p">})</span>
-    <span class="n">labels</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"Fuel type"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
 
     <span class="c1"># Pivot to wide format</span>
     <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"Year"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"Fuel type"</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -9191,7 +9163,9 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ylabel</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="nb">round</span><span class="p">(</span><span class="n">tick</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">tick</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()])</span>
-    <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'center left'</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">labelspacing</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
+    <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">labels</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'center left'</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">labelspacing</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"lightgrey"</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_axisbelow</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
     
@@ -9310,8 +9284,6 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
         <span class="s2">"FUEL_TYPE"</span><span class="p">:</span><span class="s2">"Fuel type"</span><span class="p">,</span>
         <span class="s2">"CAPACITY"</span><span class="p">:</span><span class="s2">"Capacity"</span>
     <span class="p">})</span>
-    <span class="n">labels</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"Fuel type"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span>
-    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
 
     <span class="c1"># Pivot to wide format</span>
     <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="s2">"Year"</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"Fuel type"</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -9327,7 +9299,10 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
     <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="n">xlabel</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="n">ylabel</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">([</span><span class="nb">round</span><span class="p">(</span><span class="n">tick</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="k">for</span> <span class="n">tick</span> <span class="ow">in</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_yticks</span><span class="p">()])</span>
-    <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">labels</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'center left'</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">labelspacing</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    
+    <span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+    <span class="n">labels</span> <span class="o">=</span> <span class="p">[</span><span class="n">textwrap</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> <span class="k">for</span> <span class="n">label</span> <span class="ow">in</span> <span class="n">labels</span><span class="p">]</span>
+    <span class="n">legend</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">handles</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">labels</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">loc</span><span class="o">=</span><span class="s1">'center left'</span><span class="p">,</span> <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">),</span> <span class="n">labelspacing</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"lightgrey"</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_axisbelow</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
     
@@ -9649,7 +9624,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"MoreInformationURL"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://raw.githubusercontent.com/morpc-insights/renewenergy-der/refs/heads/main/fact_sheets/renewenergy-der.pdf"</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="p">[</span><span class="s2">"MoreInformationURL"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://morpc1-my.sharepoint.com/:w:/g/personal/aporr_morpc_org/EYb3oBwdBFJNnHr_wHq-rUoBpiSYkdrVfFQ19rW7vJeh8Q?e=NTX9dX"</span>
 </pre></div>
 </div>
 </div>
@@ -9762,7 +9737,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
-<td>https://raw.githubusercontent.com/morpc-insigh...</td>
+<td>https://morpc1-my.sharepoint.com/:w:/g/persona...</td>
 </tr>
 <tr>
 <th>1</th>
@@ -9779,7 +9754,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
-<td>https://raw.githubusercontent.com/morpc-insigh...</td>
+<td>https://morpc1-my.sharepoint.com/:w:/g/persona...</td>
 </tr>
 <tr>
 <th>2</th>
@@ -9796,7 +9771,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
-<td>https://raw.githubusercontent.com/morpc-insigh...</td>
+<td>https://morpc1-my.sharepoint.com/:w:/g/persona...</td>
 </tr>
 <tr>
 <th>3</th>
@@ -9813,7 +9788,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
-<td>https://raw.githubusercontent.com/morpc-insigh...</td>
+<td>https://morpc1-my.sharepoint.com/:w:/g/persona...</td>
 </tr>
 <tr>
 <th>4</th>
@@ -9830,7 +9805,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
-<td>https://raw.githubusercontent.com/morpc-insigh...</td>
+<td>https://morpc1-my.sharepoint.com/:w:/g/persona...</td>
 </tr>
 </tbody>
 </table>
