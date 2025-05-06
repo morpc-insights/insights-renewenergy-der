@@ -19,7 +19,7 @@ fields:
     description: 'Number of facilities that were registered in the indicated geography and year.'
   - name: CAPACITY
     type: number
-    description: 'Generating capacity of the combined facilituies in kilowatts (kW).'
+    description: 'Generating capacity of the combined facilities in kilowatts (kW).'
 missingValues:
   - ''
 primaryKey:
