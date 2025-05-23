@@ -18,8 +18,8 @@ fields:
     type: integer
     description: 'Number of facilities that were registered in the indicated geography and year.'
   - name: CAPACITY
-    type: number
-    description: 'Generating capacity of the combined facilities in kilowatts (kW).'
+    type: integer
+    description: 'Generating capacity of the combined facilities in watts (W).'
 missingValues:
   - ''
 primaryKey:
