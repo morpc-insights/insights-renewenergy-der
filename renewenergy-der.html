@@ -9225,42 +9225,6 @@ Casting field GEOID as type string.
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e3559912-3615-4812-845c-70fcc0e01e7a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Change-the-units-of-generating-capacity-from-kilowatts-to-watts">Change the units of generating capacity from kilowatts to watts<a class="anchor-link" href="#Change-the-units-of-generating-capacity-from-kilowatts-to-watts">¶</a></h3>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=967bb5cc-f630-4e62-9bf0-7503dcf5da43">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>The generating capacity is currently expressed in kilowatts.  This save some storage space and makes the data easier to parse by eye, but it leads to confusing scaling of charts in the Insights platform. To make the charts clearer, we'll convert the capacity values to watts and then represent them in the charts using common suffixes, i.e. 10k watts or 1M watts.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cecd342b-69af-4cc0-87f5-c8a7c86de0a8">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"Capacity"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"Capacity"</span><span class="p">]</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">"int"</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aebbdbd7-770d-4c73-a876-c2dc2d004110">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -9287,7 +9251,7 @@ Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless_load_schema</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">)</span>
@@ -9302,7 +9266,7 @@ Casting field GEOID as type string.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[35]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'fields': [{'name': 'GEOIDFQ',
              'type': 'string',
@@ -9330,9 +9294,9 @@ Casting field GEOID as type string.
              'description': 'Number of facilities that were registered in the '
                             'indicated geography and year.'},
             {'name': 'CAPACITY',
-             'type': 'integer',
+             'type': 'number',
              'description': 'Generating capacity of the combined facilities in '
-                            'watts (W).'}],
+                            'kilowatts (kW).'}],
  'missingValues': [''],
  'primaryKey': ['GEOIDFQ', 'YEAR', 'FUEL_TYPE']}</pre>
 </div>
@@ -9355,7 +9319,7 @@ Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span>
@@ -9383,7 +9347,7 @@ Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">facilities</span><span class="p">,</span> <span class="n">facilitiesSchema</span><span class="p">)</span>
@@ -9405,7 +9369,7 @@ frictionless_cast_field_types | INFO | Casting field GEOTYPE as type string.
 frictionless_cast_field_types | INFO | Casting field YEAR as type integer.
 frictionless_cast_field_types | INFO | Casting field FUEL_TYPE as type string.
 frictionless_cast_field_types | INFO | Casting field FACILITIES as type integer.
-frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
+frictionless_cast_field_types | INFO | Casting field CAPACITY as type number.
 </pre>
 </div>
 </div>
@@ -9427,7 +9391,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="n">facilitiesSchema</span><span class="o">.</span><span class="n">field_names</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -9452,7 +9416,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">])</span>
@@ -9477,7 +9441,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -9491,7 +9455,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9529,7 +9493,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <td>2000</td>
 <td>Biofuel</td>
 <td>0</td>
-<td>0</td>
+<td>0.0</td>
 </tr>
 <tr>
 <th>1</th>
@@ -9539,7 +9503,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <td>2000</td>
 <td>Energy Storage</td>
 <td>0</td>
-<td>0</td>
+<td>0.0</td>
 </tr>
 <tr>
 <th>2</th>
@@ -9549,7 +9513,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <td>2000</td>
 <td>Natural Gas/Propane</td>
 <td>0</td>
-<td>0</td>
+<td>0.0</td>
 </tr>
 <tr>
 <th>3</th>
@@ -9559,7 +9523,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <td>2000</td>
 <td>Solar</td>
 <td>0</td>
-<td>0</td>
+<td>0.0</td>
 </tr>
 <tr>
 <th>4</th>
@@ -9569,7 +9533,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <td>2000</td>
 <td>Waste Gas</td>
 <td>0</td>
-<td>0</td>
+<td>0.0</td>
 </tr>
 </tbody>
 </table>
@@ -9605,7 +9569,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -9641,7 +9605,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type integer.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesResource</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless_create_resource</span><span class="p">(</span><span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">,</span> 
@@ -9675,7 +9639,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'name': 'renewenergy_der',
  'type': 'table',
@@ -9689,8 +9653,8 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
  'scheme': 'file',
  'format': 'csv',
  'mediatype': 'text/csv',
- 'hash': 'fe2b3c9b46d7a71d91622ca8a6d317dc',
- 'bytes': 3761536,
+ 'hash': 'b80ad2ccf8fb45d1e42e69c30f3a7aa9',
+ 'bytes': 3849056,
  'schema': 'renewenergy-der-long.schema.yaml'}</pre>
 </div>
 </div>
@@ -9745,7 +9709,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">scandir</span><span class="p">(</span><span class="n">chartDir</span><span class="p">):</span>
@@ -9771,7 +9735,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">colorset</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COLOR_CYCLES</span><span class="p">[</span><span class="s2">"matplotlib"</span><span class="p">]))</span>
@@ -9796,7 +9760,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> agg  
@@ -9959,7 +9923,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> agg  
@@ -9991,7 +9955,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
     <span class="c1"># Define the x-axis and y-axis labels. The x-axis is intuitive thanks to the chart title so</span>
     <span class="c1"># no label is needed</span>
     <span class="n">xlabel</span> <span class="o">=</span> <span class="kc">None</span>
-    <span class="n">ylabel</span> <span class="o">=</span> <span class="s2">"Watts"</span>
+    <span class="n">ylabel</span> <span class="o">=</span> <span class="s2">"Kilowatts (kW)"</span>
     
     <span class="c1"># Drop the geography name and type, which are not needed in the chart</span>
     <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="p">[</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">,</span><span class="s2">"CAPACITY"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -10030,9 +9994,9 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
     <span class="c1"># Add gridlines to the chart and ensure that they are drawn beneath the bars</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">"lightgrey"</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">set_axisbelow</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-    
-    <span class="c1"># Format the y-axis labels using engineering notation (k, M)</span>
-    <span class="n">ax</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">ticker</span><span class="o">.</span><span class="n">EngFormatter</span><span class="p">())</span>
+
+    <span class="c1"># Format the y-axis labels as integers with comma separators</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">get_yaxis</span><span class="p">()</span><span class="o">.</span><span class="n">set_major_formatter</span><span class="p">(</span><span class="n">matplotlib</span><span class="o">.</span><span class="n">ticker</span><span class="o">.</span><span class="n">FuncFormatter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">p</span><span class="p">:</span> <span class="nb">format</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="s1">','</span><span class="p">)))</span>
     
     <span class="c1"># Save the figure to disk as an SVG file</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chartDir</span><span class="p">,</span> <span class="s2">"capacity-</span><span class="si">{0}</span><span class="s2">-</span><span class="si">{1}</span><span class="s2">.svg"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">geoName</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">" "</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"("</span><span class="p">,</span><span class="s2">""</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">")"</span><span class="p">,</span><span class="s2">""</span><span class="p">),</span> <span class="n">geoid</span><span class="p">)),</span> <span class="n">bbox_extra_artists</span><span class="o">=</span><span class="p">(</span><span class="n">legend</span><span class="p">,),</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">'tight'</span><span class="p">)</span>
@@ -10047,12 +10011,12 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
     <span class="n">dataOptions</span> <span class="o">=</span> <span class="p">{</span>
         <span class="s2">"numberFormat"</span><span class="p">:</span> <span class="p">{</span>
             <span class="s1">'Open year'</span><span class="p">:</span> <span class="s2">"0"</span><span class="p">,</span>
-            <span class="s1">'Biofuel'</span><span class="p">:</span> <span class="s2">"#,##0"</span><span class="p">,</span>
-            <span class="s1">'Energy Storage'</span><span class="p">:</span> <span class="s2">"#,##0"</span><span class="p">,</span>
-            <span class="s1">'Natural Gas/Propane'</span><span class="p">:</span> <span class="s2">"#,##0"</span><span class="p">,</span>
-            <span class="s1">'Solar'</span><span class="p">:</span> <span class="s2">"#,##0"</span><span class="p">,</span>
-            <span class="s1">'Waste Gas'</span><span class="p">:</span> <span class="s2">"#,##0"</span><span class="p">,</span>
-            <span class="s1">'Wind'</span><span class="p">:</span> <span class="s2">"#,##0"</span>
+            <span class="s1">'Biofuel'</span><span class="p">:</span> <span class="s2">"#,##0.0"</span><span class="p">,</span>
+            <span class="s1">'Energy Storage'</span><span class="p">:</span> <span class="s2">"#,##0.0"</span><span class="p">,</span>
+            <span class="s1">'Natural Gas/Propane'</span><span class="p">:</span> <span class="s2">"#,##0.0"</span><span class="p">,</span>
+            <span class="s1">'Solar'</span><span class="p">:</span> <span class="s2">"#,##0.0"</span><span class="p">,</span>
+            <span class="s1">'Waste Gas'</span><span class="p">:</span> <span class="s2">"#,##0.0"</span><span class="p">,</span>
+            <span class="s1">'Wind'</span><span class="p">:</span> <span class="s2">"#,##0.0"</span>
         <span class="p">},</span>
         <span class="s2">"columnWidth"</span><span class="p">:</span> <span class="mi">20</span>
     <span class="p">}</span>
@@ -10072,7 +10036,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
         <span class="p">},</span>
         <span class="s2">"yAxisOptions"</span><span class="p">:</span> <span class="p">{</span>
             <span class="s2">"num_font"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"size"</span><span class="p">:</span><span class="mi">14</span><span class="p">},</span>
-            <span class="s2">"num_format"</span><span class="p">:</span> <span class="s1">'[&gt;=1000]#,##0,"K"'</span><span class="p">,</span>
+            <span class="s2">"num_format"</span><span class="p">:</span> <span class="s1">'#,##0'</span><span class="p">,</span>
         <span class="p">},</span>
         <span class="s2">"legendOptions"</span><span class="p">:{</span>
             <span class="s2">"position"</span><span class="p">:</span><span class="s2">"bottom"</span><span class="p">,</span>
@@ -10135,7 +10099,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">columnNames</span><span class="o">=</span><span class="p">[</span><span class="s2">"TileID"</span><span class="p">,</span><span class="s2">"TilesetID"</span><span class="p">,</span><span class="s2">"GeoType"</span><span class="p">,</span><span class="s2">"GeoName"</span><span class="p">,</span><span class="s2">"Category"</span><span class="p">,</span><span class="s2">"Headline"</span><span class="p">,</span><span class="s2">"Commentary"</span><span class="p">,</span><span class="s2">"ThumbnailURL"</span><span class="p">,</span><span class="s2">"Contributor"</span><span class="p">,</span><span class="s2">"Vintage"</span><span class="p">,</span><span class="s2">"UpdateInterval"</span><span class="p">,</span><span class="s2">"ShareURL"</span><span class="p">,</span><span class="s2">"DataProductURL"</span><span class="p">,</span><span class="s2">"MoreContextURL"</span><span class="p">,</span><span class="s2">"TechDetailsURL"</span><span class="p">]</span>
@@ -10160,7 +10124,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">firstTime</span> <span class="o">=</span> <span class="kc">True</span>
@@ -10252,7 +10216,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -10266,7 +10230,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10417,7 +10381,7 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"catalog.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
