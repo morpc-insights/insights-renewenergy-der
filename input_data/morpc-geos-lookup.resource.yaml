@@ -12,6 +12,6 @@ path: morpc-geos-lookup.csv
 scheme: file
 format: csv
 mediatype: text/csv
-hash: 7aad3b372c7c7536077b0e354b8ab5cd
-bytes: 130861
+hash: 35fb7e7d886a259eeffd46c1158b0ef2
+bytes: 130804
 schema: morpc-geos-lookup.schema.yaml
