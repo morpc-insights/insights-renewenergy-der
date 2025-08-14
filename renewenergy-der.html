@@ -7312,7 +7312,6 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
-                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7609,18 +7608,16 @@ a.anchor-link {
 <div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">frictionless</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">textwrap</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"../morpc-common"</span><span class="p">))</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">morpc</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">textwrap</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span> <span class="nn">morpc</span>
 </pre></div>
 </div>
 </div>
@@ -7740,7 +7737,7 @@ a.anchor-link {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Input data will be archived in directory: input_data
 Output data will be stored in directory: output_data
-Charts will be stored in directory: output_data/charts
+Charts will be stored in directory: output_data\charts
 </pre>
 </div>
 </div>
@@ -7839,7 +7836,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
+<pre>Resource file: ..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.resource.yaml
 </pre>
 </div>
 </div>
@@ -7889,7 +7886,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
+<pre>Resource file: ..\morpc-geos-collect\output_data\morpc-geos-lookup.resource.yaml
 </pre>
 </div>
 </div>
@@ -7927,7 +7924,7 @@ Charts will be stored in directory: output_data/charts
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">MEMBERS_DATA_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-lookup/Member_List.xlsx"</span>
 <span class="n">MEMBERS_SHEET</span> <span class="o">=</span> <span class="s2">"Current Year Members"</span>
-<span class="n">MEMBERS_SCHEMA_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-lookup/Member_List_schema.json"</span>
+<span class="n">MEMBERS_SCHEMA_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-lookup/Member_List.schema.yaml"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Data: </span><span class="si">{}</span><span class="s2">, sheet '</span><span class="si">{}</span><span class="s2">'"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_DATA_PATH</span><span class="p">,</span> <span class="n">MEMBERS_SHEET</span><span class="p">))</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"Schema: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_SCHEMA_PATH</span><span class="p">))</span>
 </pre></div>
@@ -7943,7 +7940,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>Data: ../morpc-lookup/Member_List.xlsx, sheet 'Current Year Members'
-Schema: ../morpc-lookup/Member_List_schema.json
+Schema: ../morpc-lookup/Member_List.schema.yaml
 </pre>
 </div>
 </div>
@@ -8074,9 +8071,9 @@ Schema: ../morpc-lookup/Member_List_schema.json
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Data: output_data/renewenergy-der-long.csv
-Schema: output_data/renewenergy-der-long.schema.yaml
-Resource file: output_data/renewenergy-der-long.resource.yaml
+<pre>Data: output_data\renewenergy-der-long.csv
+Schema: output_data\renewenergy-der-long.schema.yaml
+Resource file: output_data\renewenergy-der-long.resource.yaml
 </pre>
 </div>
 </div>
@@ -8123,7 +8120,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">geosRaw</span><span class="p">,</span> <span class="n">geosRawResource</span><span class="p">,</span> <span class="n">geosRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless_load_data</span><span class="p">(</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">geosRaw</span><span class="p">,</span> <span class="n">geosRawResource</span><span class="p">,</span> <span class="n">geosRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span>
     <span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span><span class="p">,</span> 
     <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
     <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span>
@@ -8140,29 +8137,30 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.load_frictionless_data | INFO | Loading Frictionless Resource file at location ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
-morpc.load_frictionless_data | INFO | Copying data, resource file, and schema to directory input_data
-morpc.load_frictionless_data | INFO | --&gt; Data file: input_data/morpc-geos-lookup.csv
-morpc.load_frictionless_data | INFO | --&gt; Resource file: input_data/morpc-geos-lookup.resource.yaml
-morpc.load_frictionless_data | INFO | --&gt; Schema file: input_data/morpc-geos-lookup.schema.yaml
-morpc.load_frictionless_data | INFO | Validating resource including data and schema.
-morpc.frictionless_validate_resource | INFO | Validating resource on disk (including data and schema). This may take some time.
-morpc.frictionless_validate_resource | INFO | Resource is valid
-morpc.load_frictionless_data | INFO | Loading data.
-frictionless_cast_field_types | INFO | Casting field GEOIDFQ as type string.
-frictionless_cast_field_types | INFO | Casting field GEOID as type string.
-frictionless_cast_field_types | INFO | Casting field SUMLEVEL as type string.
-frictionless_cast_field_types | INFO | Casting field GEOTYPE as type string.
-frictionless_cast_field_types | INFO | Casting field NAME as type string.
-frictionless_cast_field_types | INFO | Casting field SOURCE as type string.
-frictionless_cast_field_types | INFO | Casting field STATEFP as type string.
-frictionless_cast_field_types | INFO | Casting field COUNTYFP as type string.
-frictionless_cast_field_types | INFO | Casting field COUSUBFP as type string.
-frictionless_cast_field_types | INFO | Casting field PLACEFP as type string.
-frictionless_cast_field_types | INFO | Casting field TRACTCE as type string.
-frictionless_cast_field_types | INFO | Casting field CLASSFP as type string.
-frictionless_cast_field_types | INFO | Casting field MUNITYPE as type string.
-frictionless_cast_field_types | INFO | Casting field PLACECOMBO as type string.
+<pre>morpc.frictionless.load_data | INFO | Loading Frictionless Resource file at location ..\morpc-geos-collect\output_data\morpc-geos-lookup.resource.yaml
+morpc.frictionless.load_data | INFO | Using schema path specified in resource file.
+morpc.frictionless.load_data | INFO | Copying data, resource file, and schema (if applicable) to directory input_data
+morpc.frictionless.load_data | INFO | --&gt; Data file: input_data\morpc-geos-lookup.csv
+morpc.frictionless.load_data | INFO | --&gt; Resource file: input_data\morpc-geos-lookup.resource.yaml
+morpc.frictionless.load_data | INFO | --&gt; Schema file: input_data\morpc-geos-lookup.schema.yaml
+morpc.frictionless.load_data | INFO | Validating resource including data and schema (if applicable).
+morpc.validate_resource | INFO | Validating resource on disk including data and schema (if applicable). This may take some time.
+morpc.validate_resource | INFO | Resource is valid
+morpc.frictionless.load_data | INFO | Loading data.
+morpc.frictionless.cast_field_types | INFO | Casting field GEOIDFQ as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field SUMLEVEL as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field GEOTYPE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field NAME as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field SOURCE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field STATEFP as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field COUNTYFP as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field COUSUBFP as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field PLACEFP as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field TRACTCE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field CLASSFP as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field MUNITYPE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type string.
 </pre>
 </div>
 </div>
@@ -8382,7 +8380,7 @@ frictionless_cast_field_types | INFO | Casting field PLACECOMBO as type string.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">facilitiesRaw</span><span class="p">,</span> <span class="n">facilitiesRawResource</span><span class="p">,</span> <span class="n">facilitiesRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless_load_data</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">facilitiesRaw</span><span class="p">,</span> <span class="n">facilitiesRawResource</span><span class="p">,</span> <span class="n">facilitiesRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8395,22 +8393,23 @@ frictionless_cast_field_types | INFO | Casting field PLACECOMBO as type string.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.load_frictionless_data | INFO | Loading Frictionless Resource file at location ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
-morpc.load_frictionless_data | INFO | Copying data, resource file, and schema to directory input_data
-morpc.load_frictionless_data | INFO | --&gt; Data file: input_data/morpc-renewenergyfacilities-der-long.csv
-morpc.load_frictionless_data | INFO | --&gt; Resource file: input_data/morpc-renewenergyfacilities-der-long.resource.yaml
-morpc.load_frictionless_data | INFO | --&gt; Schema file: input_data/morpc-renewenergyfacilities-der-long.schema.yaml
-morpc.load_frictionless_data | INFO | Validating resource including data and schema.
-morpc.frictionless_validate_resource | INFO | Validating resource on disk (including data and schema). This may take some time.
-morpc.frictionless_validate_resource | INFO | Resource is valid
-morpc.load_frictionless_data | INFO | Loading data.
-frictionless_cast_field_types | INFO | Casting field NAME as type string.
-frictionless_cast_field_types | INFO | Casting field GEOIDFQ as type string.
-frictionless_cast_field_types | INFO | Casting field SUMLEVEL as type string.
-frictionless_cast_field_types | INFO | Casting field YEAR as type integer.
-frictionless_cast_field_types | INFO | Casting field METRIC as type string.
-frictionless_cast_field_types | INFO | Casting field FUEL_TYPE as type string.
-frictionless_cast_field_types | INFO | Casting field VALUE as type number.
+<pre>morpc.frictionless.load_data | INFO | Loading Frictionless Resource file at location ..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.resource.yaml
+morpc.frictionless.load_data | INFO | Using schema path specified in resource file.
+morpc.frictionless.load_data | INFO | Copying data, resource file, and schema (if applicable) to directory input_data
+morpc.frictionless.load_data | INFO | --&gt; Data file: input_data\morpc-renewenergyfacilities-der-long.csv
+morpc.frictionless.load_data | INFO | --&gt; Resource file: input_data\morpc-renewenergyfacilities-der-long.resource.yaml
+morpc.frictionless.load_data | INFO | --&gt; Schema file: input_data\morpc-renewenergyfacilities-der-long.schema.yaml
+morpc.frictionless.load_data | INFO | Validating resource including data and schema (if applicable).
+morpc.validate_resource | INFO | Validating resource on disk including data and schema (if applicable). This may take some time.
+morpc.validate_resource | INFO | Resource is valid
+morpc.frictionless.load_data | INFO | Loading data.
+morpc.frictionless.cast_field_types | INFO | Casting field NAME as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field GEOIDFQ as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field SUMLEVEL as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field YEAR as type integer.
+morpc.frictionless.cast_field_types | INFO | Casting field METRIC as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field FUEL_TYPE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 </pre>
 </div>
 </div>
@@ -8759,7 +8758,7 @@ frictionless_cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">membersSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">load_avro_schema</span><span class="p">(</span><span class="n">MEMBERS_SCHEMA_PATH</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">membersSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_schema</span><span class="p">(</span><span class="n">MEMBERS_SCHEMA_PATH</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8784,7 +8783,7 @@ frictionless_cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">membersRaw</span><span class="p">,</span> <span class="n">membersSchema</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">membersRaw</span><span class="p">,</span> <span class="n">membersSchema</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8797,20 +8796,28 @@ frictionless_cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Casting field PLACECOMBO as type string.
-Casting field PlaceLink as type string.
-Casting field Local Member as type boolean.
-Casting field County Member as type boolean.
-Casting field Contains Any Member as type boolean.
-Casting field MPO Member as type boolean.
-Casting field MPO County as type boolean.
-Casting field CORPO County as type boolean.
-Casting field Model Area as type boolean.
-Casting field FCPH Service Area as type boolean.
-Casting field County as type string.
-Casting field Place Name as type string.
-Casting field GovType as type string.
-Casting field GEOID as type string.
+<pre>morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field PlaceLink as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field Local Member as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field Local Member is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field County Member as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field County Member is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field Contains Any Member as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field Contains Any Member already cast as boolean type. Skipping casting for this field.
+morpc.frictionless.cast_field_types | INFO | Casting field MPO Member as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field MPO Member is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field MPO County as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field MPO County is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field CORPO County as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field CORPO County is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field Model Area as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field Model Area is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field FCPH Service Area as type boolean.
+morpc.frictionless.cast_field_types | WARNING | Field FCPH Service Area is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | INFO | Casting field County as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field Place Name as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field GovType as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 </pre>
 </div>
 </div>
@@ -8827,7 +8834,7 @@ Casting field GEOID as type string.
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=79f91ad9-586f-4f2f-90d6-dc567cc3f180">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4d73e2f4-0b1b-42df-97e1-ea430bb65001">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9254,7 +9261,7 @@ Casting field GEOID as type string.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless_load_schema</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_schema</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">)</span>
 <span class="n">facilitiesSchema</span>
 </pre></div>
 </div>
@@ -9363,13 +9370,13 @@ Casting field GEOID as type string.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>frictionless_cast_field_types | INFO | Casting field GEOIDFQ as type string.
-frictionless_cast_field_types | INFO | Casting field NAME as type string.
-frictionless_cast_field_types | INFO | Casting field GEOTYPE as type string.
-frictionless_cast_field_types | INFO | Casting field YEAR as type integer.
-frictionless_cast_field_types | INFO | Casting field FUEL_TYPE as type string.
-frictionless_cast_field_types | INFO | Casting field FACILITIES as type integer.
-frictionless_cast_field_types | INFO | Casting field CAPACITY as type number.
+<pre>morpc.frictionless.cast_field_types | INFO | Casting field GEOIDFQ as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field NAME as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field GEOTYPE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field YEAR as type integer.
+morpc.frictionless.cast_field_types | INFO | Casting field FUEL_TYPE as type string.
+morpc.frictionless.cast_field_types | INFO | Casting field FACILITIES as type integer.
+morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type number.
 </pre>
 </div>
 </div>
@@ -9608,7 +9615,7 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type number.
 <div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesResource</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless_create_resource</span><span class="p">(</span><span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">,</span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesResource</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">create_resource</span><span class="p">(</span><span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">,</span> 
     <span class="n">resourcePath</span><span class="o">=</span><span class="n">FACILITIES_TABLE_RESOURCE_PATH</span><span class="p">,</span>
     <span class="n">title</span><span class="o">=</span><span class="s2">"MORPC Insights | Distributed Energy Resources Facilities by Year"</span><span class="p">,</span> 
     <span class="n">name</span><span class="o">=</span><span class="s2">"renewenergy_der"</span><span class="p">,</span> 
@@ -9629,12 +9636,12 @@ frictionless_cast_field_types | INFO | Casting field CAPACITY as type number.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless_create_resource | INFO | Format not specified. Using format derived from data file extension: csv
-morpc.frictionless_create_resource | INFO | Schema path not specified. Using path derived from data file path: renewenergy-der-long.schema.yaml
-morpc.frictionless_create_resource | INFO | Writing Frictionless Resource file to output_data/renewenergy-der-long.resource.yaml
-morpc.frictionless_create_resource | INFO | Validating resource on disk.
-morpc.frictionless_validate_resource | INFO | Validating resource on disk (including data and schema). This may take some time.
-morpc.frictionless_validate_resource | INFO | Resource is valid
+<pre>morpc.frictionless.create_resource | INFO | Format not specified. Using format derived from data file extension: csv
+morpc.frictionless.create_resource | INFO | Schema path not specified. Using path derived from data file path: renewenergy-der-long.schema.yaml
+morpc.frictionless.create_resource | INFO | Writing Frictionless Resource file to output_data\renewenergy-der-long.resource.yaml
+morpc.frictionless.create_resource | INFO | Validating resource on disk.
+morpc.validate_resource | INFO | Validating resource on disk including data and schema (if applicable). This may take some time.
+morpc.validate_resource | INFO | Resource is valid
 </pre>
 </div>
 </div>
@@ -9653,8 +9660,8 @@ morpc.frictionless_validate_resource | INFO | Resource is valid
  'scheme': 'file',
  'format': 'csv',
  'mediatype': 'text/csv',
- 'hash': 'b80ad2ccf8fb45d1e42e69c30f3a7aa9',
- 'bytes': 3849056,
+ 'hash': '3e6e5f2dc8b7bd275f902487cb694ab7',
+ 'bytes': 3936224,
  'schema': 'renewenergy-der-long.schema.yaml'}</pre>
 </div>
 </div>
