@@ -9,6 +9,6 @@ path: renewenergy-der-long.csv
 scheme: file
 format: csv
 mediatype: text/csv
-hash: 3e6e5f2dc8b7bd275f902487cb694ab7
-bytes: 3936224
+hash: 4162527fbc4eb7d2ec098dc9fffba68a
+bytes: 124516
 schema: renewenergy-der-long.schema.yaml
