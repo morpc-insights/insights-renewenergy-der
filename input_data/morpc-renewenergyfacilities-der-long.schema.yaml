@@ -3,13 +3,11 @@ fields:
     type: string
   - name: GEOIDFQ
     type: string
-  - name: SUMLEVEL
-    type: string
   - name: YEAR
     type: integer
-  - name: METRIC
-    type: string
   - name: FUEL_TYPE
+    type: string
+  - name: METRIC
     type: string
   - name: VALUE
     type: number

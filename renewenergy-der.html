@@ -7312,6 +7312,7 @@ a.anchor-link {
                     processEnvironments: true
                 },
                 displayAlign: 'center',
+                messageStyle: 'none',
                 CommonHTML: {
                     linebreaks: {
                     automatic: true
@@ -7571,9 +7572,8 @@ a.anchor-link {
 <ol>
 <li>Clone the <a href="https://github.com/morpc/morpc-renewenergyfacilities-summarize">morpc-renewenergyfacilities-summarize</a> repository and ensure that the paths are correct in the "Define inputs" section below.</li>
 <li>Execute the morpc-renewenergyfacilities-summarize workflow (including any upstream workflows as needed) to ensure that the outputs captured in the repository are up to date.</li>
-<li>Clone the <a href="https://github.com/morpc/morpc-common">morpc-common</a> repository and adjust the path to morpc-common/morpc.py in the "Load required libraries" section below (if necessary).</li>
 <li>Clone the <a href="https://github.com/morpc/morpc-geos-collect">morpc-geos-collect</a> repository and ensure that the paths are correct in the "Define inputs" section below.</li>
-<li>Clone the <a href="https://github.com/morpc/morpc-lookup">morpc-lookup</a> repository and ensure that the paths are correct in the "Define inputs" section below.</li>
+<li>Clone the <a href="https://github.com/morpc/morpc-dues">morpc-dues</a> repository and ensure that the paths are correct in the "Define inputs" section below.</li>
 </ol>
 </div>
 </div>
@@ -7586,6 +7586,37 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="Setup">Setup<a class="anchor-link" href="#Setup">¶</a></h2>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=10d561bd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">morpc.logs</span><span class="w"> </span><span class="kn">import</span> <span class="n">config_logs</span>
+
+<span class="n">config_logs</span><span class="p">(</span><span class="s1">'renewenergy-der.log'</span><span class="p">,</span> <span class="s1">'info'</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">'__name__'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:30:09,339 | INFO | morpc.logs.config_logs: Set up logging save to file "renewenergy-der.log", log level "info"
+</pre>
+</div>
 </div>
 </div>
 </div>
@@ -7605,19 +7636,20 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">sys</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">datetime</span>
-<span class="kn">import</span> <span class="nn">textwrap</span>
-<span class="kn">import</span> <span class="nn">matplotlib</span>
-<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
-<span class="kn">import</span> <span class="nn">morpc</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">datetime</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">textwrap</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">matplotlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">morpc</span>
 </pre></div>
 </div>
 </div>
@@ -7645,18 +7677,15 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cda8a1e3-db9a-4d81-a3d4-146e8f66018c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=dbb9a7a0">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># YEAR_RANGE is a two-element list of integers that specifies the range of years for facility openings </span>
-<span class="c1"># to include in the output.  The first element is the beginning year in the range and the second element</span>
-<span class="c1"># is the final year.</span>
-<span class="n">YEAR_RANGE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span> <span class="mi">2024</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">YEAR_RANGE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2025</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -7689,21 +7718,21 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># A copy of all input data will be archived in the location specified for INPUT_DIR</span>
 <span class="n">INPUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"./input_data"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Input data will be archived in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">INPUT_DIR</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Input data will be archived in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">INPUT_DIR</span><span class="p">))</span>
 
 <span class="c1"># Output data produced by the script will stored in the location specified for OUTPUT_DIR</span>
 <span class="n">OUTPUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"./output_data"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Output data will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Output data will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">))</span>
 
 <span class="c1"># Charts produced by the script as images and Excel files will be stored in a subdirectory</span>
 <span class="c1"># of OUTPUT_DIR with the name specified in CHART_DIRNAME</span>
 <span class="n">CHART_DIRNAME</span> <span class="o">=</span> <span class="s2">"charts"</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Charts will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">,</span> <span class="n">CHART_DIRNAME</span><span class="p">)))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Charts will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">,</span> <span class="n">CHART_DIRNAME</span><span class="p">)))</span>
 
 <span class="c1"># Not all geographies will have tiles for facilities or generating capacity in the Insights platform.</span>
 <span class="c1"># Create an empty dictionary which will contain lists of which geographies will be included in </span>
@@ -7735,9 +7764,15 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Input data will be archived in directory: input_data
-Output data will be stored in directory: output_data
-Charts will be stored in directory: output_data\charts
+<pre>2026-03-16 14:30:09,498 | INFO | __name__.&lt;module&gt;: Input data will be archived in directory: input_data
+2026-03-16 14:30:09,499 | INFO | __name__.&lt;module&gt;: Output data will be stored in directory: output_data
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:30:09,500 | INFO | __name__.&lt;module&gt;: Charts will be stored in directory: output_data/charts
 </pre>
 </div>
 </div>
@@ -7781,7 +7816,7 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inputDir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">INPUT_DIR</span><span class="p">)</span>
@@ -7819,11 +7854,11 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DER_INPUT_TABLE_RESOURCE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7836,7 +7871,7 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.resource.yaml
+<pre>2026-03-16 14:30:09,566 | INFO | __name__.&lt;module&gt;: Resource file: ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
 </pre>
 </div>
 </div>
@@ -7869,11 +7904,11 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7886,7 +7921,7 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ..\morpc-geos-collect\output_data\morpc-geos-lookup.resource.yaml
+<pre>2026-03-16 14:30:09,624 | INFO | __name__.&lt;module&gt;: Resource file: ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
 </pre>
 </div>
 </div>
@@ -7919,14 +7954,11 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">MEMBERS_DATA_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-lookup/Member_List.xlsx"</span>
-<span class="n">MEMBERS_SHEET</span> <span class="o">=</span> <span class="s2">"Current Year Members"</span>
-<span class="n">MEMBERS_SCHEMA_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-lookup/Member_List.schema.yaml"</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Data: </span><span class="si">{}</span><span class="s2">, sheet '</span><span class="si">{}</span><span class="s2">'"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_DATA_PATH</span><span class="p">,</span> <span class="n">MEMBERS_SHEET</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Schema: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_SCHEMA_PATH</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">MEMBERS_RESOURCE_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml"</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_RESOURCE_PATH</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7939,8 +7971,7 @@ Charts will be stored in directory: output_data\charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Data: ../morpc-lookup/Member_List.xlsx, sheet 'Current Year Members'
-Schema: ../morpc-lookup/Member_List.schema.yaml
+<pre>2026-03-16 14:30:09,655 | INFO | __name__.&lt;module&gt;: Resource file: ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
 </pre>
 </div>
 </div>
@@ -7984,7 +8015,7 @@ Schema: ../morpc-lookup/Member_List.schema.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">outputDir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">)</span>
@@ -8011,7 +8042,7 @@ Schema: ../morpc-lookup/Member_List.schema.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [68]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">chartDir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outputDir</span><span class="p">,</span> <span class="n">CHART_DIRNAME</span><span class="p">)</span>
@@ -8049,16 +8080,16 @@ Schema: ../morpc-lookup/Member_List.schema.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">FACILITIES_TABLE_FILENAME</span> <span class="o">=</span> <span class="s2">"renewenergy-der-long.csv"</span>
 <span class="n">FACILITIES_TABLE_PATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outputDir</span><span class="p">,</span> <span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">)</span>
 <span class="n">FACILITIES_TABLE_SCHEMA_PATH</span> <span class="o">=</span> <span class="n">FACILITIES_TABLE_PATH</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">".csv"</span><span class="p">,</span><span class="s2">".schema.yaml"</span><span class="p">)</span>
 <span class="n">FACILITIES_TABLE_RESOURCE_PATH</span> <span class="o">=</span> <span class="n">FACILITIES_TABLE_PATH</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">".csv"</span><span class="p">,</span><span class="s2">".resource.yaml"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Data: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Schema: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_RESOURCE_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Data: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Schema: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_RESOURCE_PATH</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8071,9 +8102,11 @@ Schema: ../morpc-lookup/Member_List.schema.yaml
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Data: output_data\renewenergy-der-long.csv
-Schema: output_data\renewenergy-der-long.schema.yaml
-Resource file: output_data\renewenergy-der-long.resource.yaml
+<pre>2026-03-16 14:30:09,757 | INFO | __name__.&lt;module&gt;: Data: output_data/renewenergy-der-long.csv
+2026-03-16 14:30:09,758 | INFO | __name__.&lt;module&gt;: Schema: output_data/renewenergy-der-long.schema.yaml
+2026-03-16 14:30:09,759 | INFO | __name__.&lt;module&gt;: Resource file: output_data/renewenergy-der-long.resource.yaml
+2026-03-16 14:30:09,758 | INFO | __name__.&lt;module&gt;: Schema: output_data/renewenergy-der-long.schema.yaml
+2026-03-16 14:30:09,759 | INFO | __name__.&lt;module&gt;: Resource file: output_data/renewenergy-der-long.resource.yaml
 </pre>
 </div>
 </div>
@@ -8117,12 +8150,11 @@ Resource file: output_data\renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">geosRaw</span><span class="p">,</span> <span class="n">geosRawResource</span><span class="p">,</span> <span class="n">geosRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span>
     <span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span><span class="p">,</span> 
-    <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
     <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span>
 <span class="p">)</span>
 </pre></div>
@@ -8137,30 +8169,15 @@ Resource file: output_data\renewenergy-der-long.resource.yaml
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless.load_data | INFO | Loading Frictionless Resource file at location ..\morpc-geos-collect\output_data\morpc-geos-lookup.resource.yaml
-morpc.frictionless.load_data | INFO | Using schema path specified in resource file.
-morpc.frictionless.load_data | INFO | Copying data, resource file, and schema (if applicable) to directory input_data
-morpc.frictionless.load_data | INFO | --&gt; Data file: input_data\morpc-geos-lookup.csv
-morpc.frictionless.load_data | INFO | --&gt; Resource file: input_data\morpc-geos-lookup.resource.yaml
-morpc.frictionless.load_data | INFO | --&gt; Schema file: input_data\morpc-geos-lookup.schema.yaml
-morpc.frictionless.load_data | INFO | Validating resource including data and schema (if applicable).
-morpc.validate_resource | INFO | Validating resource on disk including data and schema (if applicable). This may take some time.
-morpc.validate_resource | INFO | Resource is valid
-morpc.frictionless.load_data | INFO | Loading data.
-morpc.frictionless.cast_field_types | INFO | Casting field GEOIDFQ as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field SUMLEVEL as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field GEOTYPE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field NAME as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field SOURCE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field STATEFP as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field COUNTYFP as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field COUSUBFP as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field PLACEFP as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field TRACTCE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field CLASSFP as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field MUNITYPE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type string.
+<pre>2026-03-16 14:30:09,785 | INFO | morpc.frictionless.frictionless.load_data: Loading Frictionless Resource file at location ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
+2026-03-16 14:30:09,796 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:30:09,796 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:30:09,797 | INFO | morpc.frictionless.frictionless.load_data: Copying data, resource file, and schema (if applicable) to directory input_data
+2026-03-16 14:30:09,800 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: input_data/morpc-geos-lookup.csv
+2026-03-16 14:30:09,801 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: input_data/morpc-geos-lookup.resource.yaml
+2026-03-16 14:30:09,802 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: input_data/morpc-geos-lookup.schema.yaml
+2026-03-16 14:30:09,803 | INFO | morpc.frictionless.frictionless.load_data: Loading data.
+2026-03-16 14:30:09,812 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
 </pre>
 </div>
 </div>
@@ -8182,7 +8199,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type st
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geosRaw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8196,7 +8213,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type st
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8341,7 +8358,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type st
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geos</span> <span class="o">=</span> <span class="n">geosRaw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8377,7 +8394,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type st
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">facilitiesRaw</span><span class="p">,</span> <span class="n">facilitiesRawResource</span><span class="p">,</span> <span class="n">facilitiesRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span><span class="p">)</span>
@@ -8393,23 +8410,24 @@ morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type st
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless.load_data | INFO | Loading Frictionless Resource file at location ..\morpc-renewenergyfacilities-summarize\output_data\morpc-renewenergyfacilities-der-long.resource.yaml
-morpc.frictionless.load_data | INFO | Using schema path specified in resource file.
-morpc.frictionless.load_data | INFO | Copying data, resource file, and schema (if applicable) to directory input_data
-morpc.frictionless.load_data | INFO | --&gt; Data file: input_data\morpc-renewenergyfacilities-der-long.csv
-morpc.frictionless.load_data | INFO | --&gt; Resource file: input_data\morpc-renewenergyfacilities-der-long.resource.yaml
-morpc.frictionless.load_data | INFO | --&gt; Schema file: input_data\morpc-renewenergyfacilities-der-long.schema.yaml
-morpc.frictionless.load_data | INFO | Validating resource including data and schema (if applicable).
-morpc.validate_resource | INFO | Validating resource on disk including data and schema (if applicable). This may take some time.
-morpc.validate_resource | INFO | Resource is valid
-morpc.frictionless.load_data | INFO | Loading data.
-morpc.frictionless.cast_field_types | INFO | Casting field NAME as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field GEOIDFQ as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field SUMLEVEL as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field YEAR as type integer.
-morpc.frictionless.cast_field_types | INFO | Casting field METRIC as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field FUEL_TYPE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
+<pre>2026-03-16 14:30:09,915 | INFO | morpc.frictionless.frictionless.load_data: Loading Frictionless Resource file at location ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
+2026-03-16 14:30:09,921 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:30:09,922 | INFO | morpc.frictionless.frictionless.load_data: Copying data, resource file, and schema (if applicable) to directory input_data
+2026-03-16 14:30:09,925 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: input_data/morpc-renewenergyfacilities-der-long.csv
+2026-03-16 14:30:09,926 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: input_data/morpc-renewenergyfacilities-der-long.resource.yaml
+2026-03-16 14:30:09,926 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: input_data/morpc-renewenergyfacilities-der-long.schema.yaml
+2026-03-16 14:30:09,927 | INFO | morpc.frictionless.frictionless.load_data: Validating resource including data and schema (if applicable).
+2026-03-16 14:30:09,921 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:30:09,922 | INFO | morpc.frictionless.frictionless.load_data: Copying data, resource file, and schema (if applicable) to directory input_data
+2026-03-16 14:30:09,925 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: input_data/morpc-renewenergyfacilities-der-long.csv
+2026-03-16 14:30:09,926 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: input_data/morpc-renewenergyfacilities-der-long.resource.yaml
+2026-03-16 14:30:09,926 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: input_data/morpc-renewenergyfacilities-der-long.schema.yaml
+2026-03-16 14:30:09,927 | INFO | morpc.frictionless.frictionless.load_data: Validating resource including data and schema (if applicable).
+2026-03-16 14:30:09,927 | INFO | morpc.frictionless.frictionless.validate_resource: Validating resource on disk including data and schema (if applicable). This may take some time.
+2026-03-16 14:30:09,934 | INFO | morpc.frictionless.frictionless.convert_lineend: Converting morpc-renewenergyfacilities-der-long.csv to dos line ends
+2026-03-16 14:30:09,974 | INFO | morpc.frictionless.frictionless.validate_resource: Resource is valid
+2026-03-16 14:30:09,975 | INFO | morpc.frictionless.frictionless.load_data: Loading data.
+2026-03-16 14:30:09,981 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
 </pre>
 </div>
 </div>
@@ -8431,7 +8449,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesRaw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8445,7 +8463,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8467,63 +8485,148 @@ morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 <th></th>
 <th>NAME</th>
 <th>GEOIDFQ</th>
-<th>SUMLEVEL</th>
 <th>YEAR</th>
-<th>METRIC</th>
 <th>FUEL_TYPE</th>
+<th>METRIC</th>
 <th>VALUE</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th>0</th>
-<td>15-County Region</td>
-<td>M010000US001</td>
-<td>M01</td>
-<td>2000</td>
+<td>Ashley Village</td>
+<td>M100000US3902582</td>
+<td>2022</td>
+<td>Solar</td>
 <td>Facilities</td>
-<td>Biofuel</td>
-<td>0.0</td>
+<td>1.0</td>
 </tr>
 <tr>
 <th>1</th>
-<td>15-County Region</td>
-<td>M010000US001</td>
-<td>M01</td>
-<td>2001</td>
+<td>Bainbridge Village</td>
+<td>M100000US3903604</td>
+<td>2021</td>
+<td>Solar</td>
 <td>Facilities</td>
-<td>Biofuel</td>
-<td>0.0</td>
+<td>1.0</td>
 </tr>
 <tr>
 <th>2</th>
-<td>15-County Region</td>
-<td>M010000US001</td>
-<td>M01</td>
-<td>2002</td>
+<td>Bainbridge Village</td>
+<td>M100000US3903604</td>
+<td>2023</td>
+<td>Solar</td>
 <td>Facilities</td>
-<td>Biofuel</td>
-<td>0.0</td>
+<td>1.0</td>
 </tr>
 <tr>
 <th>3</th>
-<td>15-County Region</td>
-<td>M010000US001</td>
-<td>M01</td>
-<td>2003</td>
+<td>Baltimore Village</td>
+<td>M100000US3903758</td>
+<td>2017</td>
+<td>Solar</td>
 <td>Facilities</td>
-<td>Biofuel</td>
-<td>0.0</td>
+<td>1.0</td>
 </tr>
 <tr>
 <th>4</th>
-<td>15-County Region</td>
-<td>M010000US001</td>
-<td>M01</td>
-<td>2004</td>
+<td>Baltimore Village</td>
+<td>M100000US3903758</td>
+<td>2019</td>
+<td>Solar</td>
 <td>Facilities</td>
-<td>Biofuel</td>
-<td>0.0</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9fc96cb8">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesRaw</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>YEAR</th>
+<th>VALUE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>count</th>
+<td>4164.000000</td>
+<td>4164.000000</td>
+</tr>
+<tr>
+<th>mean</th>
+<td>2019.595581</td>
+<td>123.518531</td>
+</tr>
+<tr>
+<th>std</th>
+<td>4.569136</td>
+<td>960.414554</td>
+</tr>
+<tr>
+<th>min</th>
+<td>2000.000000</td>
+<td>0.000000</td>
+</tr>
+<tr>
+<th>25%</th>
+<td>2017.000000</td>
+<td>1.800000</td>
+</tr>
+<tr>
+<th>50%</th>
+<td>2021.000000</td>
+<td>6.132500</td>
+</tr>
+<tr>
+<th>75%</th>
+<td>2023.000000</td>
+<td>20.000000</td>
+</tr>
+<tr>
+<th>max</th>
+<td>2025.000000</td>
+<td>23851.512000</td>
 </tr>
 </tbody>
 </table>
@@ -8548,7 +8651,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilitiesRaw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8595,195 +8698,10 @@ morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">membersRaw</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">MEMBERS_DATA_PATH</span><span class="p">,</span> <span class="n">sheet_name</span><span class="o">=</span><span class="n">MEMBERS_SHEET</span><span class="p">)</span>
-<span class="n">membersRaw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>PLACECOMBO</th>
-<th>PlaceLink</th>
-<th>Local Member</th>
-<th>County Member</th>
-<th>Contains Any Member</th>
-<th>MPO Member</th>
-<th>MPO County</th>
-<th>CORPO County</th>
-<th>Model Area</th>
-<th>FCPH Service Area</th>
-<th>County</th>
-<th>Place Name</th>
-<th>GovType</th>
-<th>GEOID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>DELAWARE_ASHLEY_VILLAGE</td>
-<td>4.0</td>
-<td>0.0</td>
-<td>1</td>
-<td>True</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>Delaware</td>
-<td>Ashley</td>
-<td>Village</td>
-<td>1550000US3902582041</td>
-</tr>
-<tr>
-<th>1</th>
-<td>DELAWARE_BERKSHIRE_TOWNSHIP</td>
-<td>113.0</td>
-<td>0.0</td>
-<td>1</td>
-<td>True</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>Delaware</td>
-<td>Berkshire</td>
-<td>Township</td>
-<td>0700000US390410577499999</td>
-</tr>
-<tr>
-<th>2</th>
-<td>DELAWARE_BERLIN_TOWNSHIP</td>
-<td>114.0</td>
-<td>0.0</td>
-<td>1</td>
-<td>True</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>Delaware</td>
-<td>Berlin</td>
-<td>Township</td>
-<td>0700000US390410578899999</td>
-</tr>
-<tr>
-<th>3</th>
-<td>DELAWARE_BROWN_TOWNSHIP</td>
-<td>115.0</td>
-<td>0.0</td>
-<td>1</td>
-<td>True</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>Delaware</td>
-<td>Brown</td>
-<td>Township</td>
-<td>0700000US390410942899999</td>
-</tr>
-<tr>
-<th>4</th>
-<td>DELAWARE_COLUMBUS_CITY</td>
-<td>22.0</td>
-<td>1.0</td>
-<td>1</td>
-<td>True</td>
-<td>1</td>
-<td>1</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>Delaware</td>
-<td>Columbus</td>
-<td>City</td>
-<td>1550000US3918000041</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=19c51f5c-c82d-453c-8363-0be3e7927514">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Load the schema.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7add8fc6-0436-4018-b364-19e4231a9a5d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">membersSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_schema</span><span class="p">(</span><span class="n">MEMBERS_SCHEMA_PATH</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6101ed3a-7c54-453f-871f-3288acab01d4">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Verify that the fields are all the expected types.</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8b0906af-639d-4ab6-8cda-c61c272705f5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">membersRaw</span><span class="p">,</span> <span class="n">membersSchema</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">membersRaw</span><span class="p">,</span> <span class="n">memberResource</span><span class="p">,</span> <span class="n">membersSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">MEMBERS_RESOURCE_PATH</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8796,28 +8714,16 @@ morpc.frictionless.cast_field_types | INFO | Casting field VALUE as type number.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless.cast_field_types | INFO | Casting field PLACECOMBO as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field PlaceLink as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field Local Member as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field Local Member is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field County Member as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field County Member is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field Contains Any Member as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field Contains Any Member already cast as boolean type. Skipping casting for this field.
-morpc.frictionless.cast_field_types | INFO | Casting field MPO Member as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field MPO Member is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field MPO County as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field MPO County is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field CORPO County as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field CORPO County is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field Model Area as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field Model Area is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field FCPH Service Area as type boolean.
-morpc.frictionless.cast_field_types | WARNING | Field FCPH Service Area is numeric type. Using standard numeric boolean associations. Nulls will be interpreted as False. To change this, set nullBoolValue.
-morpc.frictionless.cast_field_types | INFO | Casting field County as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field Place Name as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field GovType as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
+<pre>2026-03-16 14:30:10,114 | INFO | morpc.frictionless.frictionless.load_data: Loading Frictionless Resource file at location ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
+2026-03-16 14:30:10,123 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:30:10,124 | INFO | morpc.frictionless.frictionless.load_data: Loading data, resource file, and schema (if applicable) from their source locations
+2026-03-16 14:30:10,125 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: ../morpc-dues/input_data/morpc-membership-status-lookup.csv
+2026-03-16 14:30:10,126 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
+2026-03-16 14:30:10,126 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: ../morpc-dues/input_data/morpc-membership-status-lookup.schema.yaml
+2026-03-16 14:30:10,127 | INFO | morpc.frictionless.frictionless.load_data: Loading data.
+2026-03-16 14:30:10,134 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
+morpc.frictionless.cast_field_types | WARNING | Field MEMBERINDIV is string type. Will interpret using truth values specified in schema (or Frictionless defaults). Nulls will be interpreted as False. To change this, set nullBoolValue.
+morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string type. Will interpret using truth values specified in schema (or Frictionless defaults). Nulls will be interpreted as False. To change this, set nullBoolValue.
 </pre>
 </div>
 </div>
@@ -8839,10 +8745,10 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">members</span><span class="p">[</span><span class="s2">"Local Member"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">membersRaw</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">membersRaw</span><span class="p">[</span><span class="s2">"MEMBERINDIV"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8859,24 +8765,211 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4ff9058c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[79]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>GEOIDFQ</th>
+<th>YEAR</th>
+<th>COUNTY</th>
+<th>NAME</th>
+<th>MUNITYPE</th>
+<th>MEMBERCLASSINDIV</th>
+<th>MEMBERCLASSCOUNTY</th>
+<th>MEMBERINDIV</th>
+<th>MEMBERCOUNTY</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>4</th>
+<td>M110000US3918000041</td>
+<td>2023</td>
+<td>Delaware</td>
+<td>Columbus</td>
+<td>City</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>6</th>
+<td>M110000US3921434041</td>
+<td>2023</td>
+<td>Delaware</td>
+<td>Delaware</td>
+<td>City</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>8</th>
+<td>M110000US3922694041</td>
+<td>2023</td>
+<td>Delaware</td>
+<td>Dublin</td>
+<td>City</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>9</th>
+<td>M110000US3929148041</td>
+<td>2023</td>
+<td>Delaware</td>
+<td>Galena</td>
+<td>Village</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>19</th>
+<td>M110000US3964486041</td>
+<td>2023</td>
+<td>Delaware</td>
+<td>Powell</td>
+<td>City</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>1554</th>
+<td>M110000US3914184141</td>
+<td>2026</td>
+<td>Ross</td>
+<td>Chillicothe</td>
+<td>City</td>
+<td>RPC</td>
+<td>RPC</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr>
+<th>1579</th>
+<td>M110000US3922694159</td>
+<td>2026</td>
+<td>Union</td>
+<td>Dublin</td>
+<td>City</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>1581</th>
+<td>M110000US391593904699999</td>
+<td>2026</td>
+<td>Union</td>
+<td>Jerome</td>
+<td>Township</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>1585</th>
+<td>M110000US3948160159</td>
+<td>2026</td>
+<td>Union</td>
+<td>Marysville</td>
+<td>City</td>
+<td>RPC</td>
+<td>CORPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr>
+<th>1589</th>
+<td>M110000US3963030159</td>
+<td>2026</td>
+<td>Union</td>
+<td>Plain City</td>
+<td>Village</td>
+<td>MPO</td>
+<td>MPO</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>330 rows × 9 columns</p>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b600a1af-b8bc-488d-a309-9e3f41982926">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span><span class="p">[</span><span class="s2">"PLACEFP"</span><span class="p">]</span> <span class="o">=</span> <span class="n">members</span><span class="p">[</span><span class="s2">"GEOID"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">11</span><span class="p">:</span><span class="mi">16</span><span class="p">])</span>
-<span class="n">members</span><span class="p">[</span><span class="s2">"COUSUBFP"</span><span class="p">]</span> <span class="o">=</span> <span class="n">members</span><span class="p">[</span><span class="s2">"GEOID"</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">14</span><span class="p">:</span><span class="mi">19</span><span class="p">])</span>
-<span class="n">members</span><span class="p">[</span><span class="s2">"COUNTYID"</span><span class="p">]</span> <span class="o">=</span> <span class="n">members</span><span class="p">[</span><span class="s2">"County"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COUNTY_NAME_TO_ID</span><span class="p">)</span>
-<span class="n">members</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="n">temp</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">members</span><span class="p">[</span><span class="s2">"GovType"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Township"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">temp</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"GEOID"</span><span class="p">]</span>
-<span class="n">members</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
-<span class="n">temp</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">members</span><span class="p">[</span><span class="s2">"GovType"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"Township"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-<span class="n">temp</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"1600000US39"</span> <span class="o">+</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"PLACEFP"</span><span class="p">]</span>
-<span class="n">members</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">members</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">members</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">geos</span><span class="p">[[</span><span class="s1">'GEOIDFQ'</span><span class="p">,</span> <span class="s1">'GEOID'</span><span class="p">,</span> <span class="s1">'PLACEFP'</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">"left"</span><span class="p">)</span>
+<span class="n">members</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">members</span><span class="p">[</span><span class="s2">"MUNITYPE"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Township"</span><span class="p">,</span> <span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"M100000US"</span> <span class="o">+</span> <span class="n">members</span><span class="p">[</span><span class="s2">"GEOID"</span><span class="p">]</span>
+<span class="n">members</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">members</span><span class="p">[</span><span class="s2">"MUNITYPE"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"Township"</span><span class="p">,</span> <span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"M100000US39"</span> <span class="o">+</span> <span class="n">members</span><span class="p">[</span><span class="s2">"PLACEFP"</span><span class="p">]</span>
+<span class="n">members</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">])</span><span class="o">.</span><span class="n">first</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -8898,7 +8991,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">members</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -8923,7 +9016,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">"0500000US</span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COUNTY_NAME_TO_ID</span><span class="p">[</span><span class="n">x</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">morpc</span><span class="o">.</span><span class="n">CONST_REGIONS</span><span class="p">[</span><span class="s1">'REGION15'</span><span class="p">]]</span>
@@ -8948,7 +9041,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"M010000US001"</span><span class="p">)</span>
@@ -8995,11 +9088,166 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"YEAR"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">))]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=af40dbdf">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[85]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>NAME</th>
+<th>GEOIDFQ</th>
+<th>YEAR</th>
+<th>FUEL_TYPE</th>
+<th>METRIC</th>
+<th>VALUE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>Ashley Village</td>
+<td>M100000US3902582</td>
+<td>2022</td>
+<td>Solar</td>
+<td>Facilities</td>
+<td>1.000</td>
+</tr>
+<tr>
+<th>1</th>
+<td>Bainbridge Village</td>
+<td>M100000US3903604</td>
+<td>2021</td>
+<td>Solar</td>
+<td>Facilities</td>
+<td>1.000</td>
+</tr>
+<tr>
+<th>2</th>
+<td>Bainbridge Village</td>
+<td>M100000US3903604</td>
+<td>2023</td>
+<td>Solar</td>
+<td>Facilities</td>
+<td>1.000</td>
+</tr>
+<tr>
+<th>3</th>
+<td>Baltimore Village</td>
+<td>M100000US3903758</td>
+<td>2017</td>
+<td>Solar</td>
+<td>Facilities</td>
+<td>1.000</td>
+</tr>
+<tr>
+<th>4</th>
+<td>Baltimore Village</td>
+<td>M100000US3903758</td>
+<td>2019</td>
+<td>Solar</td>
+<td>Facilities</td>
+<td>1.000</td>
+</tr>
+<tr>
+<th>...</th>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+<tr>
+<th>4159</th>
+<td>15-County Region</td>
+<td>M010000US001</td>
+<td>2023</td>
+<td>Solar</td>
+<td>Capacity</td>
+<td>23851.512</td>
+</tr>
+<tr>
+<th>4160</th>
+<td>15-County Region</td>
+<td>M010000US001</td>
+<td>2024</td>
+<td>Energy Storage</td>
+<td>Capacity</td>
+<td>1668.740</td>
+</tr>
+<tr>
+<th>4161</th>
+<td>15-County Region</td>
+<td>M010000US001</td>
+<td>2024</td>
+<td>Solar</td>
+<td>Capacity</td>
+<td>21017.826</td>
+</tr>
+<tr>
+<th>4162</th>
+<td>15-County Region</td>
+<td>M010000US001</td>
+<td>2025</td>
+<td>Energy Storage</td>
+<td>Capacity</td>
+<td>489.460</td>
+</tr>
+<tr>
+<th>4163</th>
+<td>15-County Region</td>
+<td>M010000US001</td>
+<td>2025</td>
+<td>Solar</td>
+<td>Capacity</td>
+<td>15734.406</td>
+</tr>
+</tbody>
+</table>
+<p>4164 rows × 6 columns</p>
+</div>
 </div>
 </div>
 </div>
@@ -9031,10 +9279,10 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"SUMLEVEL"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">HIERARCHY_STRING_LOOKUP</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]])</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">HIERARCHY_STRING_LOOKUP</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -9056,7 +9304,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">"NAME"</span><span class="p">)</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">geos</span><span class="p">[[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"COUNTYFP"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="s2">"GEOIDFQ"</span><span class="p">)</span>
@@ -9081,7 +9329,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTYFP"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"39"</span> <span class="o">+</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTYFP"</span><span class="p">]</span>
@@ -9106,7 +9354,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTY"</span><span class="p">]</span> <span class="o">=</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTYFP"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COUNTY_ID_TO_NAME</span><span class="p">)</span>
@@ -9131,10 +9379,10 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"SUMLEVEL"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"070"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"99999"</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">temp</span><span class="p">[</span><span class="s2">"NAME"</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"NAME"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" Township ("</span> <span class="o">+</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"COUNTY"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">")"</span>
 <span class="n">facilities</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">)</span>
 </pre></div>
@@ -9158,10 +9406,10 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"SUMLEVEL"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"050"</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"050"</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 <span class="n">temp</span><span class="p">[</span><span class="s2">"NAME"</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">[</span><span class="s2">"NAME"</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" County"</span>
 <span class="n">facilities</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">temp</span><span class="p">,</span> <span class="n">overwrite</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">errors</span><span class="o">=</span><span class="s2">"ignore"</span><span class="p">)</span>
 </pre></div>
@@ -9196,7 +9444,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"METRIC"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">,</span><span class="s2">"VALUE"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -9221,7 +9469,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [93]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"METRIC"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"VALUE"</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -9258,7 +9506,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [94]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_schema</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">)</span>
@@ -9273,7 +9521,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[34]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[94]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'fields': [{'name': 'GEOIDFQ',
              'type': 'string',
@@ -9290,7 +9538,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
                             'applies.  The combination of GEOTYPE and GEOID '
                             'uniquely identify the geography for the record.'},
             {'name': 'YEAR',
-             'type': 'integer',
+             'type': 'year',
              'description': 'Four-digit year in which the Distributed Energy '
                             'Resource facility was registered.'},
             {'name': 'FUEL_TYPE',
@@ -9326,7 +9574,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span>
@@ -9354,7 +9602,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">facilities</span><span class="p">,</span> <span class="n">facilitiesSchema</span><span class="p">)</span>
@@ -9370,13 +9618,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field GEOID as type string.
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless.cast_field_types | INFO | Casting field GEOIDFQ as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field NAME as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field GEOTYPE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field YEAR as type integer.
-morpc.frictionless.cast_field_types | INFO | Casting field FUEL_TYPE as type string.
-morpc.frictionless.cast_field_types | INFO | Casting field FACILITIES as type integer.
-morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type number.
+<pre>2026-03-16 14:30:10,745 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
 </pre>
 </div>
 </div>
@@ -9398,7 +9640,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="n">facilitiesSchema</span><span class="o">.</span><span class="n">field_names</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -9423,7 +9665,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">])</span>
@@ -9448,10 +9690,10 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -9462,7 +9704,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[39]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[99]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9493,54 +9735,54 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 </thead>
 <tbody>
 <tr>
-<th>0</th>
-<td>0500000US39041</td>
-<td>Delaware County</td>
-<td>COUNTY</td>
-<td>2000</td>
-<td>Biofuel</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<th>1</th>
-<td>0500000US39041</td>
-<td>Delaware County</td>
-<td>COUNTY</td>
-<td>2000</td>
-<td>Energy Storage</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<th>2</th>
-<td>0500000US39041</td>
-<td>Delaware County</td>
-<td>COUNTY</td>
-<td>2000</td>
-<td>Natural Gas/Propane</td>
-<td>0</td>
-<td>0.0</td>
-</tr>
-<tr>
-<th>3</th>
-<td>0500000US39041</td>
-<td>Delaware County</td>
-<td>COUNTY</td>
-<td>2000</td>
+<th>330</th>
+<td>M010000US001</td>
+<td>15-County Region</td>
+<td>REGION15</td>
+<td>2023</td>
 <td>Solar</td>
-<td>0</td>
-<td>0.0</td>
+<td>1991</td>
+<td>23851.512</td>
 </tr>
 <tr>
-<th>4</th>
-<td>0500000US39041</td>
-<td>Delaware County</td>
-<td>COUNTY</td>
-<td>2000</td>
-<td>Waste Gas</td>
-<td>0</td>
-<td>0.0</td>
+<th>331</th>
+<td>M010000US001</td>
+<td>15-County Region</td>
+<td>REGION15</td>
+<td>2024</td>
+<td>Energy Storage</td>
+<td>33</td>
+<td>1668.740</td>
+</tr>
+<tr>
+<th>332</th>
+<td>M010000US001</td>
+<td>15-County Region</td>
+<td>REGION15</td>
+<td>2024</td>
+<td>Solar</td>
+<td>2127</td>
+<td>21017.826</td>
+</tr>
+<tr>
+<th>333</th>
+<td>M010000US001</td>
+<td>15-County Region</td>
+<td>REGION15</td>
+<td>2025</td>
+<td>Energy Storage</td>
+<td>76</td>
+<td>489.460</td>
+</tr>
+<tr>
+<th>334</th>
+<td>M010000US001</td>
+<td>15-County Region</td>
+<td>REGION15</td>
+<td>2025</td>
+<td>Solar</td>
+<td>1770</td>
+<td>15734.406</td>
 </tr>
 </tbody>
 </table>
@@ -9576,7 +9818,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -9612,7 +9854,7 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesResource</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">create_resource</span><span class="p">(</span><span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">,</span> 
@@ -9636,17 +9878,21 @@ morpc.frictionless.cast_field_types | INFO | Casting field CAPACITY as type numb
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless.create_resource | INFO | Format not specified. Using format derived from data file extension: csv
-morpc.frictionless.create_resource | INFO | Schema path not specified. Using path derived from data file path: renewenergy-der-long.schema.yaml
-morpc.frictionless.create_resource | INFO | Writing Frictionless Resource file to output_data\renewenergy-der-long.resource.yaml
-morpc.frictionless.create_resource | INFO | Validating resource on disk.
-morpc.validate_resource | INFO | Validating resource on disk including data and schema (if applicable). This may take some time.
-morpc.validate_resource | INFO | Resource is valid
+<pre>2026-03-16 14:30:11,042 | INFO | morpc.frictionless.frictionless.create_resource: Format not specified. Using format derived from data file extension: csv
+2026-03-16 14:30:11,043 | INFO | morpc.frictionless.frictionless.create_resource: morpc.frictionless.create_resource | INFO | Schema path not specified. Using path derived from data file path: renewenergy-der-long.schema.yaml
+2026-03-16 14:30:11,044 | INFO | morpc.frictionless.frictionless.create_resource: Sources not specified. No source information will be included in the resource.
+2026-03-16 14:30:11,046 | INFO | morpc.frictionless.frictionless.create_resource: Changing line endings.
+2026-03-16 14:30:11,047 | INFO | morpc.frictionless.frictionless.convert_lineend: Converting output_data/renewenergy-der-long.csv to dos line ends
+2026-03-16 14:30:11,051 | INFO | morpc.frictionless.frictionless.create_resource: Writing Frictionless Resource file to output_data/renewenergy-der-long.resource.yaml
+2026-03-16 14:30:11,057 | INFO | morpc.frictionless.frictionless.create_resource: Validating resource on disk.
+2026-03-16 14:30:11,058 | INFO | morpc.frictionless.frictionless.validate_resource: Validating resource on disk including data and schema (if applicable). This may take some time.
+2026-03-16 14:30:11,065 | INFO | morpc.frictionless.frictionless.convert_lineend: Converting renewenergy-der-long.csv to dos line ends
+2026-03-16 14:30:11,106 | INFO | morpc.frictionless.frictionless.validate_resource: Resource is valid
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[101]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'name': 'renewenergy_der',
  'type': 'table',
@@ -9660,8 +9906,8 @@ morpc.validate_resource | INFO | Resource is valid
  'scheme': 'file',
  'format': 'csv',
  'mediatype': 'text/csv',
- 'hash': '3e6e5f2dc8b7bd275f902487cb694ab7',
- 'bytes': 3936224,
+ 'hash': '2c43e5d9017a5449f447a6a7dce0ac30',
+ 'bytes': 141825,
  'schema': 'renewenergy-der-long.schema.yaml'}</pre>
 </div>
 </div>
@@ -9716,7 +9962,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">scandir</span><span class="p">(</span><span class="n">chartDir</span><span class="p">):</span>
@@ -9742,11 +9988,542 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">colorset</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COLOR_CYCLES</span><span class="p">[</span><span class="s2">"matplotlib"</span><span class="p">]))</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ea9a9dfe">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h4 id="Reindex-to-include-empty-observations-for-all-years">Reindex to include empty observations for all years<a class="anchor-link" href="#Reindex-to-include-empty-observations-for-all-years">¶</a></h4>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9fe296c7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Create index for all years for memebers in the data.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5b06d0f4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities_all_index</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">memberList</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s1">'GEOIDFQ'</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">():</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s1">'GEOIDFQ'</span><span class="p">]</span><span class="o">==</span><span class="n">member</span><span class="p">,</span> <span class="s1">'NAME'</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">geotype</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s1">'GEOIDFQ'</span><span class="p">]</span><span class="o">==</span><span class="n">member</span><span class="p">,</span> <span class="s1">'GEOTYPE'</span><span class="p">]</span><span class="o">.</span><span class="n">to_list</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+            <span class="k">for</span> <span class="n">fuel_type</span> <span class="ow">in</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s1">'FUEL_TYPE'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()]:</span>
+                <span class="n">facilities_all_index</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">member</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">geotype</span><span class="p">,</span> <span class="n">year</span><span class="p">,</span> <span class="n">fuel_type</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ea92da21">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>apply new index and correct column names.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1263be6f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities_all</span> <span class="o">=</span> <span class="n">facilities</span> \
+    <span class="o">.</span><span class="n">set_index</span><span class="p">([</span><span class="s1">'GEOIDFQ'</span><span class="p">,</span> <span class="s1">'NAME'</span><span class="p">,</span> <span class="s1">'GEOTYPE'</span><span class="p">,</span> <span class="s1">'YEAR'</span><span class="p">,</span> <span class="s1">'FUEL_TYPE'</span><span class="p">])</span>\
+    <span class="o">.</span><span class="n">reindex</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">MultiIndex</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">facilities_all_index</span><span class="p">))</span>\
+    <span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>\
+    <span class="o">.</span><span class="n">rename</span><span class="p">(</span>
+        <span class="n">columns</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s1">'level_0'</span><span class="p">:</span> <span class="s1">'GEOIDFQ'</span><span class="p">,</span>
+            <span class="s1">'level_1'</span><span class="p">:</span> <span class="s1">'NAME'</span><span class="p">,</span>
+            <span class="s1">'level_2'</span><span class="p">:</span> <span class="s1">'GEOTYPE'</span><span class="p">,</span>
+            <span class="s1">'level_3'</span><span class="p">:</span> <span class="s1">'YEAR'</span><span class="p">,</span>
+            <span class="s1">'level_4'</span><span class="p">:</span> <span class="s1">'FUEL_TYPE'</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=807099fe">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[106]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['M100000US3901154',
+ 'M100000US3902680',
+ 'M100000US3903758',
+ 'M100000US390450695099999',
+ 'M100000US390458020699999',
+ 'M100000US390490692299999',
+ 'M100000US390490944299999',
+ 'M100000US390491611299999',
+ 'M100000US390492828099999',
+ 'M100000US390493777299999',
+ 'M100000US390493861299999',
+ 'M100000US390494641099999',
+ 'M100000US390495006499999',
+ 'M100000US390496184099999',
+ 'M100000US390496297499999',
+ 'M100000US390496457099999',
+ 'M100000US390497771499999',
+ 'M100000US390498124299999',
+ 'M100000US3905130',
+ 'M100000US3906278',
+ 'M100000US390892569099999',
+ 'M100000US390893141699999',
+ 'M100000US3909890',
+ 'M100000US3911332',
+ 'M100000US3914184',
+ 'M100000US3915070',
+ 'M100000US391593904699999',
+ 'M100000US3918000',
+ 'M100000US3921434',
+ 'M100000US3922694',
+ 'M100000US3929106',
+ 'M100000US3929148',
+ 'M100000US3929246',
+ 'M100000US3931304',
+ 'M100000US3931402',
+ 'M100000US3932592',
+ 'M100000US3932606',
+ 'M100000US3934748',
+ 'M100000US3934790',
+ 'M100000US3935476',
+ 'M100000US3939340',
+ 'M100000US3941720',
+ 'M100000US3944086',
+ 'M100000US3944310',
+ 'M100000US3944674',
+ 'M100000US3947474',
+ 'M100000US3947754',
+ 'M100000US3948160',
+ 'M100000US3950862',
+ 'M100000US3953046',
+ 'M100000US3953102',
+ 'M100000US3953970',
+ 'M100000US3954040',
+ 'M100000US3954866',
+ 'M100000US3957862',
+ 'M100000US3961112',
+ 'M100000US3962498',
+ 'M100000US3963030',
+ 'M100000US3964486',
+ 'M100000US3966390',
+ 'M100000US3967440',
+ 'M100000US3971976',
+ 'M100000US3972977',
+ 'M100000US3973068',
+ 'M100000US3975602',
+ 'M100000US3979002',
+ 'M100000US3979100',
+ 'M100000US3983342',
+ 'M100000US3983580',
+ 'M100000US3984742',
+ 'M100000US3986604',
+ '0500000US39041',
+ '0500000US39045',
+ '0500000US39049',
+ '0500000US39089',
+ '0500000US39097',
+ '0500000US39129',
+ '0500000US39159',
+ '0500000US39083',
+ '0500000US39101',
+ '0500000US39117',
+ '0500000US39047',
+ '0500000US39073',
+ '0500000US39091',
+ '0500000US39127',
+ '0500000US39141',
+ 'M010000US001']</pre>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7b297038">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [107]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s1">'GEOIDFQ'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[107]:</div>
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
+<pre>['0500000US39041',
+ '0500000US39045',
+ '0500000US39047',
+ '0500000US39049',
+ '0500000US39073',
+ '0500000US39083',
+ '0500000US39089',
+ '0500000US39091',
+ '0500000US39097',
+ '0500000US39101',
+ '0500000US39117',
+ '0500000US39127',
+ '0500000US39129',
+ '0500000US39141',
+ '0500000US39159',
+ 'M100000US3902582',
+ 'M100000US3903604',
+ 'M100000US3903758',
+ 'M100000US391270458499999',
+ 'M100000US3905116',
+ 'M100000US3905130',
+ 'M100000US390890549499999',
+ 'M100000US391170550899999',
+ 'M100000US390730557899999',
+ 'M100000US390410577499999',
+ 'M100000US390410578899999',
+ 'M100000US390830584499999',
+ 'M100000US390450595699999',
+ 'M100000US3906278',
+ 'M100000US391010634899999',
+ 'M100000US390490692299999',
+ 'M100000US390910711899999',
+ 'M100000US3907188',
+ 'M100000US390890794499999',
+ 'M100000US391010795899999',
+ 'M100000US3908392',
+ 'M100000US3908532',
+ 'M100000US390410942899999',
+ 'M100000US390490944299999',
+ 'M100000US390830947099999',
+ 'M100000US3909890',
+ 'M100000US390891036699999',
+ 'M100000US390971123499999',
+ 'M100000US391171124899999',
+ 'M100000US3912084',
+ 'M100000US391171209899999',
+ 'M100000US3913036',
+ 'M100000US391171403099999',
+ 'M100000US3914184',
+ 'M100000US3915070',
+ 'M100000US391591511299999',
+ 'M100000US391011519699999',
+ 'M100000US390831550499999',
+ 'M100000US391271565899999',
+ 'M100000US390491611299999',
+ 'M100000US390831614099999',
+ 'M100000US391271635099999',
+ 'M100000US390831668699999',
+ 'M100000US3918000',
+ 'M100000US3918070',
+ 'M100000US390411814099999',
+ 'M100000US390471815499999',
+ 'M100000US391411823899999',
+ 'M100000US391171829499999',
+ 'M100000US3918770',
+ 'M100000US3919456',
+ 'M100000US3920114',
+ 'M100000US390972014299999',
+ 'M100000US391292015699999',
+ 'M100000US391592017099999',
+ 'M100000US3921378',
+ 'M100000US390972115499999',
+ 'M100000US3921434',
+ 'M100000US390412144899999',
+ 'M100000US3922694',
+ 'M100000US3924598',
+ 'M100000US390892569099999',
+ 'M100000US390972606899999',
+ 'M100000US390732648899999',
+ 'M100000US390492828099999',
+ 'M100000US390892833699999',
+ 'M100000US391172837899999',
+ 'M100000US391412842099999',
+ 'M100000US3928658',
+ 'M100000US3929050',
+ 'M100000US3929106',
+ 'M100000US3929148',
+ 'M100000US3929246',
+ 'M100000US3929288',
+ 'M100000US390412969499999',
+ 'M100000US391173012899999',
+ 'M100000US3930436',
+ 'M100000US390733084299999',
+ 'M100000US391013119299999',
+ 'M100000US3931304',
+ 'M100000US3931402',
+ 'M100000US390893141699999',
+ 'M100000US3931948',
+ 'M100000US391013196299999',
+ 'M100000US390473172499999',
+ 'M100000US390733178099999',
+ 'M100000US391413182299999',
+ 'M100000US390453206099999',
+ 'M100000US3932592',
+ 'M100000US3932606',
+ 'M100000US390493302699999',
+ 'M100000US3933292',
+ 'M100000US390893329999999',
+ 'M100000US390413351699999',
+ 'M100000US391173360099999',
+ 'M100000US3933740',
+ 'M100000US390833388099999',
+ 'M100000US390893389499999',
+ 'M100000US390913390899999',
+ 'M100000US391273396499999',
+ 'M100000US391413400699999',
+ 'M100000US390893418899999',
+ 'M100000US3934748',
+ 'M100000US3934790',
+ 'M100000US390833546299999',
+ 'M100000US3935476',
+ 'M100000US390453581299999',
+ 'M100000US390893631699999',
+ 'M100000US391273638699999',
+ 'M100000US390833652699999',
+ 'M100000US391413689099999',
+ 'M100000US390493777299999',
+ 'M100000US391593810899999',
+ 'M100000US390473859899999',
+ 'M100000US390493861299999',
+ 'M100000US390833866899999',
+ 'M100000US390913868299999',
+ 'M100000US390973869699999',
+ 'M100000US391413880899999',
+ 'M100000US3938920',
+ 'M100000US391593904699999',
+ 'M100000US390893910299999',
+ 'M100000US3939340',
+ 'M100000US390414036299999',
+ 'M100000US3940572',
+ 'M100000US3941902',
+ 'M100000US3941720',
+ 'M100000US390734205699999',
+ 'M100000US391594249099999',
+ 'M100000US390414310699999',
+ 'M100000US390454312099999',
+ 'M100000US390834321899999',
+ 'M100000US390894323299999',
+ 'M100000US390914324699999',
+ 'M100000US391414330299999',
+ 'M100000US391594335899999',
+ 'M100000US390894345699999',
+ 'M100000US391174368099999',
+ 'M100000US3944632',
+ 'M100000US3944674',
+ 'M100000US390454638299999',
+ 'M100000US390474639699999',
+ 'M100000US390494641099999',
+ 'M100000US390894650899999',
+ 'M100000US391274655099999',
+ 'M100000US3947474',
+ 'M100000US3947754',
+ 'M100000US390474768499999',
+ 'M100000US390734774099999',
+ 'M100000US391014776899999',
+ 'M100000US390414790899999',
+ 'M100000US390894813299999',
+ 'M100000US3948160',
+ 'M100000US390894611699999',
+ 'M100000US390834965899999',
+ 'M100000US390495006499999',
+ 'M100000US3950218',
+ 'M100000US390835020499999',
+ 'M100000US391595028899999',
+ 'M100000US3950316',
+ 'M100000US390835033099999',
+ 'M100000US3950400',
+ 'M100000US3950862',
+ 'M100000US390835143699999',
+ 'M100000US390895145099999',
+ 'M100000US390915146499999',
+ 'M100000US390975147899999',
+ 'M100000US391275152099999',
+ 'M100000US391295153499999',
+ 'M100000US391015173099999',
+ 'M100000US390835210899999',
+ 'M100000US390835229099999',
+ 'M100000US3952738',
+ 'M100000US3953046',
+ 'M100000US3953102',
+ 'M100000US3953970',
+ 'M100000US3954726',
+ 'M100000US3954866',
+ 'M100000US3955552',
+ 'M100000US3954040',
+ 'M100000US390895405499999',
+ 'M100000US390895558099999',
+ 'M100000US391175622499999',
+ 'M100000US390495734499999',
+ 'M100000US390975770899999',
+ 'M100000US3957862',
+ 'M100000US390415861899999',
+ 'M100000US3958940',
+ 'M100000US390415926299999',
+ 'M100000US390475948699999',
+ 'M100000US390975952899999',
+ 'M100000US391595986499999',
+ 'M100000US3961112',
+ 'M100000US390476182699999',
+ 'M100000US390496184099999',
+ 'M100000US390896192499999',
+ 'M100000US390916193899999',
+ 'M100000US391176198099999',
+ 'M100000US391296200899999',
+ 'M100000US391176226099999',
+ 'M100000US391296248499999',
+ 'M100000US3962498',
+ 'M100000US390836265299999',
+ 'M100000US390976266699999',
+ 'M100000US391276268099999',
+ 'M100000US3963030',
+ 'M100000US390496297499999',
+ 'M100000US390456324099999',
+ 'M100000US390496325499999',
+ 'M100000US390836331099999',
+ 'M100000US390916332499999',
+ 'M100000US390976333899999',
+ 'M100000US391016335299999',
+ 'M100000US391276336699999',
+ 'M100000US3963716',
+ 'M100000US390416417899999',
+ 'M100000US3964486',
+ 'M100000US390496457099999',
+ 'M100000US391016479499999',
+ 'M100000US3965200',
+ 'M100000US390416531299999',
+ 'M100000US390976548099999',
+ 'M100000US391276576099999',
+ 'M100000US3966390',
+ 'M100000US390456668499999',
+ 'M100000US390916674099999',
+ 'M100000US391016675499999',
+ 'M100000US3966936',
+ 'M100000US3967440',
+ 'M100000US3968560',
+ 'M100000US390456912099999',
+ 'M100000US390916913499999',
+ 'M100000US3969176',
+ 'M100000US3969204',
+ 'M100000US3969302',
+ 'M100000US391277022699999',
+ 'M100000US390417084299999',
+ 'M100000US391297087099999',
+ 'M100000US391417089899999',
+ 'M100000US391017107399999',
+ 'M100000US390497178799999',
+ 'M100000US3971962',
+ 'M100000US3971976',
+ 'M100000US390977296099999',
+ 'M100000US3972977',
+ 'M100000US391177306199999',
+ 'M100000US3973768',
+ 'M100000US391417412999999',
+ 'M100000US390896945699999',
+ 'M100000US3969652',
+ 'M100000US390737440599999',
+ 'M100000US390917478099999',
+ 'M100000US390977478499999',
+ 'M100000US3975252',
+ 'M100000US3975602',
+ 'M100000US391597619499999',
+ 'M100000US391277665999999',
+ 'M100000US3976680',
+ 'M100000US390417733699999',
+ 'M100000US390417756099999',
+ 'M100000US390497771499999',
+ 'M100000US391017774299999',
+ 'M100000US391417800899999',
+ 'M100000US390477831699999',
+ 'M100000US390837835899999',
+ 'M100000US390897840099999',
+ 'M100000US390977842899999',
+ 'M100000US391417854099999',
+ 'M100000US391597858299999',
+ 'M100000US3978834',
+ 'M100000US3979002',
+ 'M100000US3979100',
+ 'M100000US3979114',
+ 'M100000US3979282',
+ 'M100000US390458020699999',
+ 'M100000US3980500',
+ 'M100000US391018051499999',
+ 'M100000US390458057099999',
+ 'M100000US390738078099999',
+ 'M100000US3981718',
+ 'M100000US390498124299999',
+ 'M100000US390738135499999',
+ 'M100000US390898141099999',
+ 'M100000US390918142499999',
+ 'M100000US391178150899999',
+ 'M100000US391598166299999',
+ 'M100000US390478216699999',
+ 'M100000US390838219499999',
+ 'M100000US3983580',
+ 'M100000US3983734',
+ 'M100000US3983818',
+ 'M100000US3984182',
+ 'M100000US3983342',
+ 'M100000US391178345499999',
+ 'M100000US3984742',
+ 'M100000US3986604',
+ 'M100000US391598712299999',
+ 'M100000US390918804299999',
+ 'M010000US001']</pre>
 </div>
 </div>
 </div>
@@ -9767,7 +10544,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> agg  
@@ -9777,7 +10554,7 @@ morpc.validate_resource | INFO | Resource is valid
 <span class="n">platformIncludeLists</span><span class="p">[</span><span class="s2">"facilities"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Iterate over each geography in data set</span>
-<span class="k">for</span> <span class="n">geoid</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
+<span class="k">for</span> <span class="n">geoid</span> <span class="ow">in</span> <span class="n">facilities_all</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
     <span class="c1"># If the geography is not a MORPC member, skip it. The platform only features members.</span>
     <span class="k">if</span><span class="p">(</span><span class="ow">not</span> <span class="n">geoid</span> <span class="ow">in</span> <span class="n">memberList</span><span class="p">):</span>
         <span class="k">continue</span>
@@ -9785,7 +10562,7 @@ morpc.validate_resource | INFO | Resource is valid
     <span class="c1"># Extract the data for a single geography.  If the resulting dataframe is empty, this</span>
     <span class="c1"># means there are no records for that geography.  In that case, skip this geography</span>
     <span class="c1"># and restart the loop with the next geography.</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">==</span> <span class="n">geoid</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">facilities_all</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities_all</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">==</span> <span class="n">geoid</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="k">if</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">empty</span><span class="p">):</span>
         <span class="k">continue</span>
     
@@ -9930,7 +10707,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> agg  
@@ -9940,7 +10717,7 @@ morpc.validate_resource | INFO | Resource is valid
 <span class="n">platformIncludeLists</span><span class="p">[</span><span class="s2">"capacity"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Iterate over each geography in data set</span>
-<span class="k">for</span> <span class="n">geoid</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
+<span class="k">for</span> <span class="n">geoid</span> <span class="ow">in</span> <span class="n">facilities_all</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">():</span>
     <span class="c1"># If the geography is not a MORPC member, skip it. The platform only features members.</span>
     <span class="k">if</span><span class="p">(</span><span class="ow">not</span> <span class="n">geoid</span> <span class="ow">in</span> <span class="n">memberList</span><span class="p">):</span>
         <span class="k">continue</span>
@@ -9948,7 +10725,7 @@ morpc.validate_resource | INFO | Resource is valid
     <span class="c1"># Extract the data for a single geography.  If the resulting dataframe is empty, this</span>
     <span class="c1"># means there are no records for that geography.  In that case, skip this geography</span>
     <span class="c1"># and restart the loop with the next geography.</span>
-    <span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">==</span> <span class="n">geoid</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="n">facilities_all</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities_all</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span> <span class="o">==</span> <span class="n">geoid</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
     <span class="k">if</span><span class="p">(</span><span class="n">temp</span><span class="o">.</span><span class="n">empty</span><span class="p">):</span>
         <span class="k">continue</span>
     
@@ -10106,7 +10883,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">columnNames</span><span class="o">=</span><span class="p">[</span><span class="s2">"TileID"</span><span class="p">,</span><span class="s2">"TilesetID"</span><span class="p">,</span><span class="s2">"GeoType"</span><span class="p">,</span><span class="s2">"GeoName"</span><span class="p">,</span><span class="s2">"Category"</span><span class="p">,</span><span class="s2">"Headline"</span><span class="p">,</span><span class="s2">"Commentary"</span><span class="p">,</span><span class="s2">"ThumbnailURL"</span><span class="p">,</span><span class="s2">"Contributor"</span><span class="p">,</span><span class="s2">"Vintage"</span><span class="p">,</span><span class="s2">"UpdateInterval"</span><span class="p">,</span><span class="s2">"ShareURL"</span><span class="p">,</span><span class="s2">"DataProductURL"</span><span class="p">,</span><span class="s2">"MoreContextURL"</span><span class="p">,</span><span class="s2">"TechDetailsURL"</span><span class="p">]</span>
@@ -10131,7 +10908,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">firstTime</span> <span class="o">=</span> <span class="kc">True</span>
@@ -10223,7 +11000,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -10237,7 +11014,7 @@ morpc.validate_resource | INFO | Resource is valid
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[48]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[112]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10286,7 +11063,7 @@ morpc.validate_resource | INFO | Resource is valid
 <td>TBD</td>
 <td>https://raw.githubusercontent.com/morpc-insigh...</td>
 <td>Mid-Ohio Regional Planning Commission</td>
-<td>2025</td>
+<td>2026</td>
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
@@ -10304,7 +11081,7 @@ morpc.validate_resource | INFO | Resource is valid
 <td>TBD</td>
 <td>https://raw.githubusercontent.com/morpc-insigh...</td>
 <td>Mid-Ohio Regional Planning Commission</td>
-<td>2025</td>
+<td>2026</td>
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
@@ -10322,7 +11099,7 @@ morpc.validate_resource | INFO | Resource is valid
 <td>TBD</td>
 <td>https://raw.githubusercontent.com/morpc-insigh...</td>
 <td>Mid-Ohio Regional Planning Commission</td>
-<td>2025</td>
+<td>2026</td>
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
@@ -10340,7 +11117,7 @@ morpc.validate_resource | INFO | Resource is valid
 <td>TBD</td>
 <td>https://raw.githubusercontent.com/morpc-insigh...</td>
 <td>Mid-Ohio Regional Planning Commission</td>
-<td>2025</td>
+<td>2026</td>
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
@@ -10358,7 +11135,7 @@ morpc.validate_resource | INFO | Resource is valid
 <td>TBD</td>
 <td>https://raw.githubusercontent.com/morpc-insigh...</td>
 <td>Mid-Ohio Regional Planning Commission</td>
-<td>2025</td>
+<td>2026</td>
 <td>annually</td>
 <td>None</td>
 <td>https://www.arcgis.com/apps/dashboards/3f2b48c...</td>
@@ -10388,7 +11165,7 @@ morpc.validate_resource | INFO | Resource is valid
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"catalog.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
