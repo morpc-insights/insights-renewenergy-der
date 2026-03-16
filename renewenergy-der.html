@@ -7589,6 +7589,37 @@ a.anchor-link {
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=10d561bd">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">morpc.logs</span><span class="w"> </span><span class="kn">import</span> <span class="n">config_logs</span>
+
+<span class="n">config_logs</span><span class="p">(</span><span class="s1">'renewenergy-der.log'</span><span class="p">,</span> <span class="s1">'info'</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s1">'__name__'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:04:03,900 | INFO | morpc.logs.config_logs: Set up logging save to file "renewenergy-der.log", log level "info"
+</pre>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e78b2de3-e2a7-4a7f-8ac4-15b7ec9e1878">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -7605,7 +7636,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7651,7 +7682,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">YEAR_RANGE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2000</span><span class="p">,</span><span class="mi">2024</span><span class="p">]</span>
@@ -7687,21 +7718,21 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># A copy of all input data will be archived in the location specified for INPUT_DIR</span>
 <span class="n">INPUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"./input_data"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Input data will be archived in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">INPUT_DIR</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Input data will be archived in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">INPUT_DIR</span><span class="p">))</span>
 
 <span class="c1"># Output data produced by the script will stored in the location specified for OUTPUT_DIR</span>
 <span class="n">OUTPUT_DIR</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"./output_data"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Output data will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Output data will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">))</span>
 
 <span class="c1"># Charts produced by the script as images and Excel files will be stored in a subdirectory</span>
 <span class="c1"># of OUTPUT_DIR with the name specified in CHART_DIRNAME</span>
 <span class="n">CHART_DIRNAME</span> <span class="o">=</span> <span class="s2">"charts"</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Charts will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">,</span> <span class="n">CHART_DIRNAME</span><span class="p">)))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Charts will be stored in directory: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">,</span> <span class="n">CHART_DIRNAME</span><span class="p">)))</span>
 
 <span class="c1"># Not all geographies will have tiles for facilities or generating capacity in the Insights platform.</span>
 <span class="c1"># Create an empty dictionary which will contain lists of which geographies will be included in </span>
@@ -7733,9 +7764,11 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Input data will be archived in directory: input_data
-Output data will be stored in directory: output_data
-Charts will be stored in directory: output_data/charts
+<pre>2026-03-16 14:04:04,270 | INFO | __name__.&lt;module&gt;: Input data will be archived in directory: input_data
+2026-03-16 14:04:04,271 | INFO | __name__.&lt;module&gt;: Output data will be stored in directory: output_data
+2026-03-16 14:04:04,272 | INFO | __name__.&lt;module&gt;: Charts will be stored in directory: output_data/charts
+2026-03-16 14:04:04,271 | INFO | __name__.&lt;module&gt;: Output data will be stored in directory: output_data
+2026-03-16 14:04:04,272 | INFO | __name__.&lt;module&gt;: Charts will be stored in directory: output_data/charts
 </pre>
 </div>
 </div>
@@ -7779,7 +7812,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">inputDir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">INPUT_DIR</span><span class="p">)</span>
@@ -7817,11 +7850,11 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">DER_INPUT_TABLE_RESOURCE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7834,7 +7867,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
+<pre>2026-03-16 14:04:04,328 | INFO | __name__.&lt;module&gt;: Resource file: ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
 </pre>
 </div>
 </div>
@@ -7867,11 +7900,11 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="s2">"../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">GEOS_LOOKUP_TABLE_RESOURCE</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7884,7 +7917,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
+<pre>2026-03-16 14:04:04,355 | INFO | __name__.&lt;module&gt;: Resource file: ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
 </pre>
 </div>
 </div>
@@ -7917,11 +7950,11 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">MEMBERS_RESOURCE_PATH</span> <span class="o">=</span> <span class="s2">"../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml"</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_RESOURCE_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">MEMBERS_RESOURCE_PATH</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -7934,7 +7967,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Resource file: ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
+<pre>2026-03-16 14:04:04,386 | INFO | __name__.&lt;module&gt;: Resource file: ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
 </pre>
 </div>
 </div>
@@ -7978,7 +8011,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">outputDir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">normpath</span><span class="p">(</span><span class="n">OUTPUT_DIR</span><span class="p">)</span>
@@ -8005,7 +8038,7 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">chartDir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outputDir</span><span class="p">,</span> <span class="n">CHART_DIRNAME</span><span class="p">)</span>
@@ -8043,16 +8076,16 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">FACILITIES_TABLE_FILENAME</span> <span class="o">=</span> <span class="s2">"renewenergy-der-long.csv"</span>
 <span class="n">FACILITIES_TABLE_PATH</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outputDir</span><span class="p">,</span> <span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">)</span>
 <span class="n">FACILITIES_TABLE_SCHEMA_PATH</span> <span class="o">=</span> <span class="n">FACILITIES_TABLE_PATH</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">".csv"</span><span class="p">,</span><span class="s2">".schema.yaml"</span><span class="p">)</span>
 <span class="n">FACILITIES_TABLE_RESOURCE_PATH</span> <span class="o">=</span> <span class="n">FACILITIES_TABLE_PATH</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">".csv"</span><span class="p">,</span><span class="s2">".resource.yaml"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Data: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Schema: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_RESOURCE_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Data: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Schema: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">))</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">"Resource file: </span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">FACILITIES_TABLE_RESOURCE_PATH</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -8065,9 +8098,11 @@ Charts will be stored in directory: output_data/charts
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Data: output_data/renewenergy-der-long.csv
-Schema: output_data/renewenergy-der-long.schema.yaml
-Resource file: output_data/renewenergy-der-long.resource.yaml
+<pre>2026-03-16 14:04:04,459 | INFO | __name__.&lt;module&gt;: Data: output_data/renewenergy-der-long.csv
+2026-03-16 14:04:04,460 | INFO | __name__.&lt;module&gt;: Schema: output_data/renewenergy-der-long.schema.yaml
+2026-03-16 14:04:04,461 | INFO | __name__.&lt;module&gt;: Resource file: output_data/renewenergy-der-long.resource.yaml
+2026-03-16 14:04:04,460 | INFO | __name__.&lt;module&gt;: Schema: output_data/renewenergy-der-long.schema.yaml
+2026-03-16 14:04:04,461 | INFO | __name__.&lt;module&gt;: Resource file: output_data/renewenergy-der-long.resource.yaml
 </pre>
 </div>
 </div>
@@ -8106,12 +8141,12 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ea238b49-e395-4837-9189-2c317e1b2381">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=ea238b49-e395-4837-9189-2c317e1b2381">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">geosRaw</span><span class="p">,</span> <span class="n">geosRawResource</span><span class="p">,</span> <span class="n">geosRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span>
@@ -8119,6 +8154,26 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
     <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span>
 <span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:04:04,727 | INFO | morpc.frictionless.frictionless.load_data: Loading Frictionless Resource file at location ../morpc-geos-collect/output_data/morpc-geos-lookup.resource.yaml
+2026-03-16 14:04:05,934 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:04:05,936 | INFO | morpc.frictionless.frictionless.load_data: Copying data, resource file, and schema (if applicable) to directory input_data
+2026-03-16 14:04:05,939 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: input_data/morpc-geos-lookup.csv
+2026-03-16 14:04:05,940 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: input_data/morpc-geos-lookup.resource.yaml
+2026-03-16 14:04:05,941 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: input_data/morpc-geos-lookup.schema.yaml
+2026-03-16 14:04:05,942 | INFO | morpc.frictionless.frictionless.load_data: Loading data.
+2026-03-16 14:04:05,952 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
+</pre>
 </div>
 </div>
 </div>
@@ -8139,7 +8194,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geosRaw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8153,7 +8208,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8298,7 +8353,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">geos</span> <span class="o">=</span> <span class="n">geosRaw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8329,16 +8384,43 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2d947ec7-5338-47ef-8a66-418db1472a88">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=2d947ec7-5338-47ef-8a66-418db1472a88">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">facilitiesRaw</span><span class="p">,</span> <span class="n">facilitiesRawResource</span><span class="p">,</span> <span class="n">facilitiesRawSchema</span><span class="p">)</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">DER_INPUT_TABLE_RESOURCE</span><span class="p">,</span> <span class="n">validate</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">archiveDir</span><span class="o">=</span><span class="n">inputDir</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:04:06,058 | INFO | morpc.frictionless.frictionless.load_data: Loading Frictionless Resource file at location ../morpc-renewenergyfacilities-summarize/output_data/morpc-renewenergyfacilities-der-long.resource.yaml
+2026-03-16 14:04:06,064 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:04:06,066 | INFO | morpc.frictionless.frictionless.load_data: Copying data, resource file, and schema (if applicable) to directory input_data
+2026-03-16 14:04:06,068 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: input_data/morpc-renewenergyfacilities-der-long.csv
+2026-03-16 14:04:06,064 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:04:06,066 | INFO | morpc.frictionless.frictionless.load_data: Copying data, resource file, and schema (if applicable) to directory input_data
+2026-03-16 14:04:06,068 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: input_data/morpc-renewenergyfacilities-der-long.csv
+2026-03-16 14:04:06,069 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: input_data/morpc-renewenergyfacilities-der-long.resource.yaml
+2026-03-16 14:04:06,071 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: input_data/morpc-renewenergyfacilities-der-long.schema.yaml
+2026-03-16 14:04:06,072 | INFO | morpc.frictionless.frictionless.load_data: Validating resource including data and schema (if applicable).
+2026-03-16 14:04:06,074 | INFO | morpc.frictionless.frictionless.validate_resource: Validating resource on disk including data and schema (if applicable). This may take some time.
+2026-03-16 14:04:06,080 | INFO | morpc.frictionless.frictionless.convert_lineend: Converting morpc-renewenergyfacilities-der-long.csv to dos line ends
+2026-03-16 14:04:06,118 | INFO | morpc.frictionless.frictionless.validate_resource: Resource is valid
+2026-03-16 14:04:06,119 | INFO | morpc.frictionless.frictionless.load_data: Loading data.
+2026-03-16 14:04:06,125 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
+</pre>
 </div>
 </div>
 </div>
@@ -8359,7 +8441,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesRaw</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8373,7 +8455,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8459,7 +8541,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesRaw</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -8473,7 +8555,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8561,7 +8643,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilitiesRaw</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8608,7 +8690,7 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">membersRaw</span><span class="p">,</span> <span class="n">memberResource</span><span class="p">,</span> <span class="n">membersSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="n">MEMBERS_RESOURCE_PATH</span><span class="p">)</span>
@@ -8624,7 +8706,16 @@ Resource file: output_data/renewenergy-der-long.resource.yaml
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>morpc.frictionless.cast_field_types | WARNING | Field MEMBERINDIV is string type. Will interpret using truth values specified in schema (or Frictionless defaults). Nulls will be interpreted as False. To change this, set nullBoolValue.
+<pre>2026-03-16 14:04:06,252 | INFO | morpc.frictionless.frictionless.load_data: Loading Frictionless Resource file at location ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
+2026-03-16 14:04:06,261 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:04:06,261 | INFO | morpc.frictionless.frictionless.load_data: Using schema path specified in resource file.
+2026-03-16 14:04:06,263 | INFO | morpc.frictionless.frictionless.load_data: Loading data, resource file, and schema (if applicable) from their source locations
+2026-03-16 14:04:06,265 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Data file: ../morpc-dues/input_data/morpc-membership-status-lookup.csv
+2026-03-16 14:04:06,266 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Resource file: ../morpc-dues/input_data/morpc-membership-status-lookup.resource.yaml
+2026-03-16 14:04:06,267 | INFO | morpc.frictionless.frictionless.load_data: --&gt; Schema file: ../morpc-dues/input_data/morpc-membership-status-lookup.schema.yaml
+2026-03-16 14:04:06,268 | INFO | morpc.frictionless.frictionless.load_data: Loading data.
+2026-03-16 14:04:06,273 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
+morpc.frictionless.cast_field_types | WARNING | Field MEMBERINDIV is string type. Will interpret using truth values specified in schema (or Frictionless defaults). Nulls will be interpreted as False. To change this, set nullBoolValue.
 morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string type. Will interpret using truth values specified in schema (or Frictionless defaults). Nulls will be interpreted as False. To change this, set nullBoolValue.
 </pre>
 </div>
@@ -8647,7 +8738,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">membersRaw</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">membersRaw</span><span class="p">[</span><span class="s2">"MEMBERINDIV"</span><span class="p">]</span> <span class="o">==</span> <span class="kc">True</span><span class="p">]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8672,7 +8763,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span>
@@ -8686,7 +8777,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[112]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8863,7 +8954,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">members</span> <span class="o">=</span> <span class="n">members</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -8893,7 +8984,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">members</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
@@ -8918,7 +9009,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span> <span class="o">+=</span> <span class="p">[</span><span class="s2">"0500000US</span><span class="si">{}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COUNTY_NAME_TO_ID</span><span class="p">[</span><span class="n">x</span><span class="p">])</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">morpc</span><span class="o">.</span><span class="n">CONST_REGIONS</span><span class="p">[</span><span class="s1">'REGION15'</span><span class="p">]]</span>
@@ -8943,7 +9034,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">memberList</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"M010000US001"</span><span class="p">)</span>
@@ -8990,7 +9081,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"YEAR"</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">YEAR_RANGE</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="mi">1</span><span class="p">))]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -9004,7 +9095,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span>
@@ -9018,7 +9109,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[118]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[27]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9181,7 +9272,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]])</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">HIERARCHY_STRING_LOOKUP</span><span class="p">)</span>
@@ -9206,7 +9297,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s2">"NAME"</span><span class="p">)</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">geos</span><span class="p">[[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"COUNTYFP"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">]],</span> <span class="n">on</span><span class="o">=</span><span class="s2">"GEOIDFQ"</span><span class="p">)</span>
@@ -9231,7 +9322,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTYFP"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"39"</span> <span class="o">+</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTYFP"</span><span class="p">]</span>
@@ -9256,7 +9347,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [122]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTY"</span><span class="p">]</span> <span class="o">=</span> <span class="n">facilities</span><span class="p">[</span><span class="s2">"COUNTYFP"</span><span class="p">]</span><span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COUNTY_ID_TO_NAME</span><span class="p">)</span>
@@ -9281,7 +9372,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [123]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"99999"</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -9308,7 +9399,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [124]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">facilities</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"050"</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -9346,7 +9437,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [125]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"METRIC"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">,</span><span class="s2">"VALUE"</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -9371,7 +9462,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">pivot</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOIDFQ"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="s2">"METRIC"</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">"VALUE"</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -9408,7 +9499,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [127]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesSchema</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">load_schema</span><span class="p">(</span><span class="n">FACILITIES_TABLE_SCHEMA_PATH</span><span class="p">)</span>
@@ -9423,7 +9514,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[127]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[36]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'fields': [{'name': 'GEOIDFQ',
              'type': 'string',
@@ -9476,7 +9567,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [128]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span>
@@ -9499,16 +9590,29 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3e507aea-11c4-424f-a7c0-0982a7d12dbc">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=3e507aea-11c4-424f-a7c0-0982a7d12dbc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [129]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">cast_field_types</span><span class="p">(</span><span class="n">facilities</span><span class="p">,</span> <span class="n">facilitiesSchema</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:04:06,888 | INFO | morpc.frictionless.frictionless.cast_field_types: handleMissingValues set to True, converting [''] to np.nan
+</pre>
 </div>
 </div>
 </div>
@@ -9529,7 +9633,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [130]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">items</span><span class="o">=</span><span class="n">facilitiesSchema</span><span class="o">.</span><span class="n">field_names</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s2">"columns"</span><span class="p">)</span>
@@ -9554,7 +9658,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span> <span class="o">=</span> <span class="n">facilities</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s2">"GEOTYPE"</span><span class="p">,</span><span class="s2">"NAME"</span><span class="p">,</span><span class="s2">"YEAR"</span><span class="p">,</span><span class="s2">"FUEL_TYPE"</span><span class="p">])</span>
@@ -9579,7 +9683,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [132]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -9593,7 +9697,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[132]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[41]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -9707,7 +9811,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [133]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">FACILITIES_TABLE_PATH</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -9743,7 +9847,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [134]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilitiesResource</span> <span class="o">=</span> <span class="n">morpc</span><span class="o">.</span><span class="n">frictionless</span><span class="o">.</span><span class="n">create_resource</span><span class="p">(</span><span class="n">FACILITIES_TABLE_FILENAME</span><span class="p">,</span> 
@@ -9764,8 +9868,24 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2026-03-16 14:04:07,164 | INFO | morpc.frictionless.frictionless.create_resource: Format not specified. Using format derived from data file extension: csv
+2026-03-16 14:04:07,165 | INFO | morpc.frictionless.frictionless.create_resource: morpc.frictionless.create_resource | INFO | Schema path not specified. Using path derived from data file path: renewenergy-der-long.schema.yaml
+2026-03-16 14:04:07,167 | INFO | morpc.frictionless.frictionless.create_resource: Sources not specified. No source information will be included in the resource.
+2026-03-16 14:04:07,168 | INFO | morpc.frictionless.frictionless.create_resource: Changing line endings.
+2026-03-16 14:04:07,169 | INFO | morpc.frictionless.frictionless.convert_lineend: Converting output_data/renewenergy-der-long.csv to dos line ends
+2026-03-16 14:04:07,172 | INFO | morpc.frictionless.frictionless.create_resource: Writing Frictionless Resource file to output_data/renewenergy-der-long.resource.yaml
+2026-03-16 14:04:07,179 | INFO | morpc.frictionless.frictionless.create_resource: Validating resource on disk.
+2026-03-16 14:04:07,180 | INFO | morpc.frictionless.frictionless.validate_resource: Validating resource on disk including data and schema (if applicable). This may take some time.
+2026-03-16 14:04:07,186 | INFO | morpc.frictionless.frictionless.convert_lineend: Converting renewenergy-der-long.csv to dos line ends
+2026-03-16 14:04:07,224 | INFO | morpc.frictionless.frictionless.validate_resource: Resource is valid
+</pre>
+</div>
+</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[134]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[43]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>{'name': 'renewenergy_der',
  'type': 'table',
@@ -9779,8 +9899,8 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
  'scheme': 'file',
  'format': 'csv',
  'mediatype': 'text/csv',
- 'hash': '4162527fbc4eb7d2ec098dc9fffba68a',
- 'bytes': 124516,
+ 'hash': '528a066242687f67c54ff61c72871ecd',
+ 'bytes': 126377,
  'schema': 'renewenergy-der-long.schema.yaml'}</pre>
 </div>
 </div>
@@ -9835,7 +9955,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [135]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">scandir</span><span class="p">(</span><span class="n">chartDir</span><span class="p">):</span>
@@ -9861,7 +9981,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [136]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">colorset</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">morpc</span><span class="o">.</span><span class="n">CONST_COLOR_CYCLES</span><span class="p">[</span><span class="s2">"matplotlib"</span><span class="p">]))</span>
@@ -9897,7 +10017,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities_all_index</span> <span class="o">=</span> <span class="p">[]</span>
@@ -9929,7 +10049,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">facilities_all</span> <span class="o">=</span> <span class="n">facilities</span> \
@@ -9966,7 +10086,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [151]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> agg  
@@ -10129,7 +10249,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [152]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> agg  
@@ -10305,7 +10425,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [153]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">columnNames</span><span class="o">=</span><span class="p">[</span><span class="s2">"TileID"</span><span class="p">,</span><span class="s2">"TilesetID"</span><span class="p">,</span><span class="s2">"GeoType"</span><span class="p">,</span><span class="s2">"GeoName"</span><span class="p">,</span><span class="s2">"Category"</span><span class="p">,</span><span class="s2">"Headline"</span><span class="p">,</span><span class="s2">"Commentary"</span><span class="p">,</span><span class="s2">"ThumbnailURL"</span><span class="p">,</span><span class="s2">"Contributor"</span><span class="p">,</span><span class="s2">"Vintage"</span><span class="p">,</span><span class="s2">"UpdateInterval"</span><span class="p">,</span><span class="s2">"ShareURL"</span><span class="p">,</span><span class="s2">"DataProductURL"</span><span class="p">,</span><span class="s2">"MoreContextURL"</span><span class="p">,</span><span class="s2">"TechDetailsURL"</span><span class="p">]</span>
@@ -10330,7 +10450,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [154]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">firstTime</span> <span class="o">=</span> <span class="kc">True</span>
@@ -10422,7 +10542,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [155]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -10436,7 +10556,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[155]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -10587,7 +10707,7 @@ morpc.frictionless.cast_field_types | WARNING | Field MEMBERCOUNTY is string typ
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [156]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">catalog</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s2">"catalog.xlsx"</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
