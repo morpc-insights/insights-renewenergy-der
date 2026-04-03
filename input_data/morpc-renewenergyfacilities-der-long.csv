@@ -8,6 +8,7 @@ Baltimore Village,M100000US3903758,2020,Solar,Facilities,3.0
 Baltimore Village,M100000US3903758,2021,Solar,Facilities,2.0
 Baltimore Village,M100000US3903758,2022,Solar,Facilities,2.0
 Baltimore Village,M100000US3903758,2023,Solar,Facilities,2.0
+Baltimore Village,M100000US3903758,2025,Solar,Facilities,5.0
 Berkshire Township,M100000US390410577499999,2014,Solar,Facilities,1.0
 Berkshire Township,M100000US390410577499999,2018,Solar,Facilities,1.0
 Berkshire Township,M100000US390410577499999,2019,Solar,Facilities,3.0
@@ -17,6 +18,7 @@ Berkshire Township,M100000US390410577499999,2022,Solar,Facilities,4.0
 Berkshire Township,M100000US390410577499999,2023,Solar,Facilities,8.0
 Berkshire Township,M100000US390410577499999,2024,Energy Storage,Facilities,1.0
 Berkshire Township,M100000US390410577499999,2024,Solar,Facilities,4.0
+Berkshire Township,M100000US390410577499999,2025,Solar,Facilities,8.0
 Berlin Township,M100000US390410578899999,2009,Solar,Facilities,2.0
 Berlin Township,M100000US390410578899999,2013,Solar,Facilities,1.0
 Berlin Township,M100000US390410578899999,2015,Solar,Facilities,1.0
@@ -30,6 +32,8 @@ Berlin Township,M100000US390410578899999,2022,Solar,Facilities,12.0
 Berlin Township,M100000US390410578899999,2023,Energy Storage,Facilities,1.0
 Berlin Township,M100000US390410578899999,2023,Solar,Facilities,11.0
 Berlin Township,M100000US390410578899999,2024,Solar,Facilities,9.0
+Berlin Township,M100000US390410578899999,2025,Energy Storage,Facilities,1.0
+Berlin Township,M100000US390410578899999,2025,Solar,Facilities,13.0
 Brown Township,M100000US390410942899999,2013,Solar,Facilities,1.0
 Brown Township,M100000US390410942899999,2017,Solar,Facilities,1.0
 Brown Township,M100000US390410942899999,2018,Solar,Facilities,2.0
@@ -37,6 +41,7 @@ Brown Township,M100000US390410942899999,2019,Solar,Facilities,1.0
 Brown Township,M100000US390410942899999,2020,Solar,Facilities,1.0
 Brown Township,M100000US390410942899999,2021,Solar,Facilities,1.0
 Brown Township,M100000US390410942899999,2022,Solar,Facilities,1.0
+Brown Township,M100000US390410942899999,2025,Solar,Facilities,1.0
 Concord Township,M100000US390411814099999,2014,Solar,Facilities,2.0
 Concord Township,M100000US390411814099999,2015,Solar,Facilities,1.0
 Concord Township,M100000US390411814099999,2016,Solar,Facilities,1.0
@@ -49,6 +54,8 @@ Concord Township,M100000US390411814099999,2022,Solar,Facilities,12.0
 Concord Township,M100000US390411814099999,2023,Solar,Facilities,17.0
 Concord Township,M100000US390411814099999,2024,Energy Storage,Facilities,1.0
 Concord Township,M100000US390411814099999,2024,Solar,Facilities,16.0
+Concord Township,M100000US390411814099999,2025,Energy Storage,Facilities,2.0
+Concord Township,M100000US390411814099999,2025,Solar,Facilities,10.0
 Delaware Township,M100000US390412144899999,2012,Solar,Facilities,1.0
 Delaware Township,M100000US390412144899999,2013,Solar,Facilities,1.0
 Delaware Township,M100000US390412144899999,2016,Solar,Facilities,1.0
@@ -60,6 +67,7 @@ Delaware Township,M100000US390412144899999,2021,Solar,Facilities,2.0
 Delaware Township,M100000US390412144899999,2022,Solar,Facilities,2.0
 Delaware Township,M100000US390412144899999,2023,Solar,Facilities,4.0
 Delaware Township,M100000US390412144899999,2024,Solar,Facilities,2.0
+Delaware Township,M100000US390412144899999,2025,Solar,Facilities,2.0
 Genoa Township,M100000US390412969499999,2013,Solar,Facilities,2.0
 Genoa Township,M100000US390412969499999,2015,Solar,Facilities,1.0
 Genoa Township,M100000US390412969499999,2016,Solar,Facilities,3.0
@@ -73,6 +81,8 @@ Genoa Township,M100000US390412969499999,2022,Solar,Facilities,13.0
 Genoa Township,M100000US390412969499999,2023,Solar,Facilities,16.0
 Genoa Township,M100000US390412969499999,2024,Energy Storage,Facilities,2.0
 Genoa Township,M100000US390412969499999,2024,Solar,Facilities,9.0
+Genoa Township,M100000US390412969499999,2025,Energy Storage,Facilities,1.0
+Genoa Township,M100000US390412969499999,2025,Solar,Facilities,9.0
 Harlem Township,M100000US390413351699999,2013,Solar,Facilities,1.0
 Harlem Township,M100000US390413351699999,2014,Solar,Facilities,1.0
 Harlem Township,M100000US390413351699999,2015,Solar,Facilities,1.0
@@ -86,6 +96,7 @@ Harlem Township,M100000US390413351699999,2022,Solar,Facilities,3.0
 Harlem Township,M100000US390413351699999,2023,Energy Storage,Facilities,1.0
 Harlem Township,M100000US390413351699999,2023,Solar,Facilities,4.0
 Harlem Township,M100000US390413351699999,2024,Solar,Facilities,3.0
+Harlem Township,M100000US390413351699999,2025,Solar,Facilities,6.0
 Kingston Township,M100000US390414036299999,2021,Solar,Facilities,1.0
 Liberty Township,M100000US390414310699999,2004,Wind,Facilities,1.0
 Liberty Township,M100000US390414310699999,2010,Solar,Facilities,1.0
@@ -102,6 +113,8 @@ Liberty Township,M100000US390414310699999,2021,Solar,Facilities,9.0
 Liberty Township,M100000US390414310699999,2022,Solar,Facilities,10.0
 Liberty Township,M100000US390414310699999,2023,Solar,Facilities,21.0
 Liberty Township,M100000US390414310699999,2024,Solar,Facilities,14.0
+Liberty Township,M100000US390414310699999,2025,Energy Storage,Facilities,2.0
+Liberty Township,M100000US390414310699999,2025,Solar,Facilities,19.0
 Marlboro Township,M100000US390414790899999,2019,Solar,Facilities,1.0
 Orange Township,M100000US390415861899999,2012,Solar,Facilities,1.0
 Orange Township,M100000US390415861899999,2013,Solar,Facilities,1.0
@@ -116,6 +129,8 @@ Orange Township,M100000US390415861899999,2022,Energy Storage,Facilities,2.0
 Orange Township,M100000US390415861899999,2022,Solar,Facilities,29.0
 Orange Township,M100000US390415861899999,2023,Solar,Facilities,35.0
 Orange Township,M100000US390415861899999,2024,Solar,Facilities,15.0
+Orange Township,M100000US390415861899999,2025,Energy Storage,Facilities,1.0
+Orange Township,M100000US390415861899999,2025,Solar,Facilities,30.0
 Oxford Township,M100000US390415926299999,2021,Solar,Facilities,1.0
 Oxford Township,M100000US390415926299999,2022,Solar,Facilities,1.0
 Porter Township,M100000US390416417899999,2019,Solar,Facilities,2.0
@@ -143,6 +158,7 @@ Trenton Township,M100000US390417733699999,2021,Solar,Facilities,3.0
 Trenton Township,M100000US390417733699999,2022,Solar,Facilities,2.0
 Trenton Township,M100000US390417733699999,2023,Solar,Facilities,2.0
 Trenton Township,M100000US390417733699999,2024,Solar,Facilities,3.0
+Trenton Township,M100000US390417733699999,2025,Solar,Facilities,1.0
 Troy Township,M100000US390417756099999,2014,Solar,Facilities,1.0
 Troy Township,M100000US390417756099999,2015,Solar,Facilities,1.0
 Troy Township,M100000US390417756099999,2016,Solar,Facilities,3.0
@@ -152,6 +168,7 @@ Troy Township,M100000US390417756099999,2020,Solar,Facilities,1.0
 Troy Township,M100000US390417756099999,2021,Solar,Facilities,1.0
 Troy Township,M100000US390417756099999,2022,Solar,Facilities,1.0
 Troy Township,M100000US390417756099999,2023,Solar,Facilities,3.0
+Troy Township,M100000US390417756099999,2025,Solar,Facilities,5.0
 Berne Township,M100000US390450595699999,2010,Solar,Facilities,1.0
 Berne Township,M100000US390450595699999,2011,Solar,Facilities,1.0
 Berne Township,M100000US390450595699999,2013,Solar,Facilities,1.0
@@ -162,7 +179,10 @@ Berne Township,M100000US390450595699999,2021,Solar,Facilities,1.0
 Berne Township,M100000US390450595699999,2022,Solar,Facilities,1.0
 Berne Township,M100000US390450595699999,2023,Solar,Facilities,2.0
 Berne Township,M100000US390450595699999,2024,Solar,Facilities,2.0
+Berne Township,M100000US390450595699999,2025,Solar,Facilities,1.0
 Greenfield Township,M100000US390453206099999,2021,Solar,Facilities,1.0
+Greenfield Township,M100000US390453206099999,2025,Energy Storage,Facilities,1.0
+Greenfield Township,M100000US390453206099999,2025,Solar,Facilities,1.0
 Hocking Township,M100000US390453581299999,2019,Solar,Facilities,1.0
 Hocking Township,M100000US390453581299999,2020,Solar,Facilities,1.0
 Hocking Township,M100000US390453581299999,2021,Solar,Facilities,1.0
@@ -173,6 +193,7 @@ Liberty Township,M100000US390454312099999,2019,Solar,Facilities,1.0
 Liberty Township,M100000US390454312099999,2021,Solar,Facilities,1.0
 Liberty Township,M100000US390454312099999,2022,Solar,Facilities,2.0
 Liberty Township,M100000US390454312099999,2024,Solar,Facilities,2.0
+Liberty Township,M100000US390454312099999,2025,Solar,Facilities,1.0
 Madison Township,M100000US390454638299999,2019,Solar,Facilities,1.0
 Pleasant Township,M100000US390456324099999,2019,Solar,Facilities,1.0
 Pleasant Township,M100000US390456324099999,2020,Solar,Facilities,1.0
@@ -180,6 +201,7 @@ Pleasant Township,M100000US390456324099999,2021,Solar,Facilities,2.0
 Pleasant Township,M100000US390456324099999,2022,Solar,Facilities,4.0
 Pleasant Township,M100000US390456324099999,2023,Solar,Facilities,1.0
 Pleasant Township,M100000US390456324099999,2024,Solar,Facilities,4.0
+Pleasant Township,M100000US390456324099999,2025,Solar,Facilities,7.0
 Richland Township,M100000US390456668499999,2019,Solar,Facilities,1.0
 Richland Township,M100000US390456668499999,2021,Solar,Facilities,1.0
 Richland Township,M100000US390456668499999,2023,Solar,Facilities,1.0
@@ -201,6 +223,7 @@ Walnut Township,M100000US390458057099999,2019,Solar,Facilities,2.0
 Walnut Township,M100000US390458057099999,2021,Solar,Facilities,4.0
 Walnut Township,M100000US390458057099999,2022,Solar,Facilities,3.0
 Walnut Township,M100000US390458057099999,2023,Solar,Facilities,4.0
+Walnut Township,M100000US390458057099999,2025,Solar,Facilities,5.0
 Concord Township,M100000US390471815499999,2019,Solar,Facilities,1.0
 Concord Township,M100000US390471815499999,2020,Solar,Facilities,2.0
 Concord Township,M100000US390471815499999,2021,Solar,Facilities,2.0
@@ -210,6 +233,8 @@ Jefferson Township,M100000US390473859899999,2016,Solar,Facilities,1.0
 Jefferson Township,M100000US390473859899999,2021,Solar,Facilities,1.0
 Jefferson Township,M100000US390473859899999,2022,Solar,Facilities,2.0
 Jefferson Township,M100000US390473859899999,2024,Solar,Facilities,3.0
+Jefferson Township,M100000US390473859899999,2025,Energy Storage,Facilities,1.0
+Jefferson Township,M100000US390473859899999,2025,Solar,Facilities,1.0
 Madison Township,M100000US390474639699999,2010,Solar,Facilities,1.0
 Madison Township,M100000US390474639699999,2014,Solar,Facilities,1.0
 Madison Township,M100000US390474639699999,2015,Solar,Facilities,1.0
@@ -217,12 +242,15 @@ Madison Township,M100000US390474639699999,2020,Solar,Facilities,2.0
 Madison Township,M100000US390474639699999,2021,Solar,Facilities,1.0
 Madison Township,M100000US390474639699999,2022,Solar,Facilities,1.0
 Madison Township,M100000US390474639699999,2023,Solar,Facilities,1.0
+Madison Township,M100000US390474639699999,2025,Solar,Facilities,1.0
 Marion Township,M100000US390474768499999,2012,Solar,Facilities,1.0
 Marion Township,M100000US390474768499999,2014,Solar,Facilities,1.0
 Marion Township,M100000US390474768499999,2019,Solar,Facilities,2.0
+Marion Township,M100000US390474768499999,2025,Solar,Facilities,1.0
 Paint Township,M100000US390475948699999,2021,Solar,Facilities,1.0
 Paint Township,M100000US390475948699999,2022,Solar,Facilities,1.0
 Paint Township,M100000US390475948699999,2023,Solar,Facilities,1.0
+Perry Township,M100000US390476182699999,2025,Solar,Facilities,1.0
 Union Township,M100000US390477831699999,2011,Solar,Facilities,1.0
 Union Township,M100000US390477831699999,2012,Solar,Facilities,1.0
 Union Township,M100000US390477831699999,2019,Solar,Facilities,1.0
@@ -241,6 +269,8 @@ Blendon Township,M100000US390490692299999,2021,Solar,Facilities,2.0
 Blendon Township,M100000US390490692299999,2022,Solar,Facilities,7.0
 Blendon Township,M100000US390490692299999,2023,Solar,Facilities,5.0
 Blendon Township,M100000US390490692299999,2024,Solar,Facilities,17.0
+Blendon Township,M100000US390490692299999,2025,Energy Storage,Facilities,1.0
+Blendon Township,M100000US390490692299999,2025,Solar,Facilities,5.0
 Brown Township,M100000US390490944299999,2012,Solar,Facilities,1.0
 Brown Township,M100000US390490944299999,2013,Solar,Facilities,1.0
 Brown Township,M100000US390490944299999,2013,Wind,Facilities,1.0
@@ -254,6 +284,7 @@ Brown Township,M100000US390490944299999,2022,Energy Storage,Facilities,1.0
 Brown Township,M100000US390490944299999,2022,Solar,Facilities,3.0
 Brown Township,M100000US390490944299999,2023,Solar,Facilities,2.0
 Brown Township,M100000US390490944299999,2024,Solar,Facilities,5.0
+Brown Township,M100000US390490944299999,2025,Solar,Facilities,8.0
 Clinton Township,M100000US390491611299999,2014,Solar,Facilities,1.0
 Clinton Township,M100000US390491611299999,2018,Solar,Facilities,3.0
 Clinton Township,M100000US390491611299999,2021,Solar,Facilities,3.0
@@ -261,6 +292,7 @@ Clinton Township,M100000US390491611299999,2022,Solar,Facilities,2.0
 Clinton Township,M100000US390491611299999,2023,Solar,Facilities,4.0
 Clinton Township,M100000US390491611299999,2024,Energy Storage,Facilities,2.0
 Clinton Township,M100000US390491611299999,2024,Solar,Facilities,4.0
+Clinton Township,M100000US390491611299999,2025,Solar,Facilities,3.0
 Franklin Township,M100000US390492828099999,2006,Solar,Facilities,1.0
 Franklin Township,M100000US390492828099999,2013,Solar,Facilities,1.0
 Franklin Township,M100000US390492828099999,2018,Solar,Facilities,2.0
@@ -271,12 +303,14 @@ Franklin Township,M100000US390492828099999,2022,Energy Storage,Facilities,1.0
 Franklin Township,M100000US390492828099999,2022,Solar,Facilities,6.0
 Franklin Township,M100000US390492828099999,2023,Solar,Facilities,5.0
 Franklin Township,M100000US390492828099999,2024,Solar,Facilities,7.0
+Franklin Township,M100000US390492828099999,2025,Solar,Facilities,12.0
 Hamilton Township,M100000US390493302699999,2019,Solar,Facilities,1.0
 Hamilton Township,M100000US390493302699999,2020,Solar,Facilities,1.0
 Hamilton Township,M100000US390493302699999,2021,Solar,Facilities,3.0
 Hamilton Township,M100000US390493302699999,2022,Solar,Facilities,3.0
 Hamilton Township,M100000US390493302699999,2023,Solar,Facilities,3.0
 Hamilton Township,M100000US390493302699999,2024,Solar,Facilities,7.0
+Hamilton Township,M100000US390493302699999,2025,Solar,Facilities,13.0
 Jackson Township,M100000US390493777299999,2016,Solar,Facilities,4.0
 Jackson Township,M100000US390493777299999,2018,Solar,Facilities,1.0
 Jackson Township,M100000US390493777299999,2019,Solar,Facilities,6.0
@@ -285,6 +319,7 @@ Jackson Township,M100000US390493777299999,2021,Solar,Facilities,6.0
 Jackson Township,M100000US390493777299999,2022,Solar,Facilities,3.0
 Jackson Township,M100000US390493777299999,2023,Solar,Facilities,8.0
 Jackson Township,M100000US390493777299999,2024,Solar,Facilities,2.0
+Jackson Township,M100000US390493777299999,2025,Solar,Facilities,14.0
 Jefferson Township,M100000US390493861299999,2001,Wind,Facilities,1.0
 Jefferson Township,M100000US390493861299999,2011,Solar,Facilities,1.0
 Jefferson Township,M100000US390493861299999,2012,Solar,Facilities,2.0
@@ -298,6 +333,8 @@ Jefferson Township,M100000US390493861299999,2021,Solar,Facilities,12.0
 Jefferson Township,M100000US390493861299999,2022,Solar,Facilities,23.0
 Jefferson Township,M100000US390493861299999,2023,Solar,Facilities,22.0
 Jefferson Township,M100000US390493861299999,2024,Solar,Facilities,26.0
+Jefferson Township,M100000US390493861299999,2025,Energy Storage,Facilities,2.0
+Jefferson Township,M100000US390493861299999,2025,Solar,Facilities,15.0
 Madison Township,M100000US390494641099999,2015,Solar,Facilities,1.0
 Madison Township,M100000US390494641099999,2019,Solar,Facilities,5.0
 Madison Township,M100000US390494641099999,2020,Solar,Facilities,6.0
@@ -306,6 +343,7 @@ Madison Township,M100000US390494641099999,2022,Energy Storage,Facilities,1.0
 Madison Township,M100000US390494641099999,2022,Solar,Facilities,12.0
 Madison Township,M100000US390494641099999,2023,Solar,Facilities,10.0
 Madison Township,M100000US390494641099999,2024,Solar,Facilities,18.0
+Madison Township,M100000US390494641099999,2025,Solar,Facilities,19.0
 Mifflin Township,M100000US390495006499999,2022,Solar,Facilities,2.0
 Mifflin Township,M100000US390495006499999,2023,Solar,Facilities,2.0
 Mifflin Township,M100000US390495006499999,2024,Solar,Facilities,3.0
@@ -322,6 +360,8 @@ Norwich Township,M100000US390495734499999,2022,Solar,Facilities,7.0
 Norwich Township,M100000US390495734499999,2023,Solar,Facilities,6.0
 Norwich Township,M100000US390495734499999,2024,Energy Storage,Facilities,2.0
 Norwich Township,M100000US390495734499999,2024,Solar,Facilities,13.0
+Norwich Township,M100000US390495734499999,2025,Energy Storage,Facilities,1.0
+Norwich Township,M100000US390495734499999,2025,Solar,Facilities,2.0
 Perry Township,M100000US390496184099999,2012,Solar,Facilities,1.0
 Perry Township,M100000US390496184099999,2013,Solar,Facilities,1.0
 Perry Township,M100000US390496184099999,2016,Solar,Facilities,1.0
@@ -333,6 +373,7 @@ Perry Township,M100000US390496184099999,2022,Solar,Facilities,5.0
 Perry Township,M100000US390496184099999,2023,Energy Storage,Facilities,1.0
 Perry Township,M100000US390496184099999,2023,Solar,Facilities,4.0
 Perry Township,M100000US390496184099999,2024,Solar,Facilities,5.0
+Perry Township,M100000US390496184099999,2025,Solar,Facilities,2.0
 Plain Township,M100000US390496297499999,2011,Solar,Facilities,1.0
 Plain Township,M100000US390496297499999,2017,Solar,Facilities,1.0
 Plain Township,M100000US390496297499999,2019,Solar,Facilities,1.0
@@ -341,6 +382,7 @@ Plain Township,M100000US390496297499999,2021,Solar,Facilities,4.0
 Plain Township,M100000US390496297499999,2022,Solar,Facilities,1.0
 Plain Township,M100000US390496297499999,2023,Solar,Facilities,1.0
 Plain Township,M100000US390496297499999,2024,Solar,Facilities,1.0
+Plain Township,M100000US390496297499999,2025,Solar,Facilities,3.0
 Pleasant Township,M100000US390496325499999,2011,Solar,Facilities,1.0
 Pleasant Township,M100000US390496325499999,2014,Solar,Facilities,1.0
 Pleasant Township,M100000US390496325499999,2015,Solar,Facilities,1.0
@@ -356,6 +398,7 @@ Pleasant Township,M100000US390496325499999,2023,Energy Storage,Facilities,1.0
 Pleasant Township,M100000US390496325499999,2023,Solar,Facilities,6.0
 Pleasant Township,M100000US390496325499999,2024,Energy Storage,Facilities,1.0
 Pleasant Township,M100000US390496325499999,2024,Solar,Facilities,5.0
+Pleasant Township,M100000US390496325499999,2025,Solar,Facilities,6.0
 Prairie Township,M100000US390496457099999,2009,Solar,Facilities,1.0
 Prairie Township,M100000US390496457099999,2011,Solar,Facilities,1.0
 Prairie Township,M100000US390496457099999,2015,Solar,Facilities,1.0
@@ -368,6 +411,7 @@ Prairie Township,M100000US390496457099999,2022,Solar,Facilities,23.0
 Prairie Township,M100000US390496457099999,2023,Energy Storage,Facilities,1.0
 Prairie Township,M100000US390496457099999,2023,Solar,Facilities,32.0
 Prairie Township,M100000US390496457099999,2024,Solar,Facilities,32.0
+Prairie Township,M100000US390496457099999,2025,Solar,Facilities,37.0
 Sharon Township,M100000US390497178799999,2009,Solar,Facilities,1.0
 Sharon Township,M100000US390497178799999,2011,Solar,Facilities,1.0
 Sharon Township,M100000US390497178799999,2017,Solar,Facilities,1.0
@@ -378,14 +422,18 @@ Sharon Township,M100000US390497178799999,2022,Solar,Facilities,1.0
 Sharon Township,M100000US390497178799999,2023,Energy Storage,Facilities,1.0
 Sharon Township,M100000US390497178799999,2023,Solar,Facilities,8.0
 Sharon Township,M100000US390497178799999,2024,Solar,Facilities,4.0
+Sharon Township,M100000US390497178799999,2025,Energy Storage,Facilities,1.0
+Sharon Township,M100000US390497178799999,2025,Solar,Facilities,2.0
 Truro Township,M100000US390497771499999,2019,Solar,Facilities,2.0
 Truro Township,M100000US390497771499999,2020,Solar,Facilities,1.0
 Truro Township,M100000US390497771499999,2021,Solar,Facilities,1.0
 Truro Township,M100000US390497771499999,2022,Solar,Facilities,3.0
 Truro Township,M100000US390497771499999,2023,Solar,Facilities,5.0
 Truro Township,M100000US390497771499999,2024,Solar,Facilities,4.0
+Truro Township,M100000US390497771499999,2025,Solar,Facilities,1.0
 Washington Township,M100000US390498124299999,2021,Solar,Facilities,1.0
 Washington Township,M100000US390498124299999,2023,Solar,Facilities,1.0
+Washington Township,M100000US390498124299999,2025,Solar,Facilities,1.0
 Belle Center Village,M100000US3905116,2022,Solar,Facilities,1.0
 Belle Center Village,M100000US3905116,2023,Solar,Facilities,3.0
 Bellefontaine City,M100000US3905130,2011,Solar,Facilities,1.0
@@ -410,8 +458,10 @@ Bexley City,M100000US3906278,2022,Solar,Facilities,9.0
 Bexley City,M100000US3906278,2023,Energy Storage,Facilities,1.0
 Bexley City,M100000US3906278,2023,Solar,Facilities,9.0
 Bexley City,M100000US3906278,2024,Solar,Facilities,6.0
+Bexley City,M100000US3906278,2025,Solar,Facilities,12.0
 Bloomingburg Village,M100000US3907188,2021,Solar,Facilities,1.0
 Bloomingburg Village,M100000US3907188,2022,Solar,Facilities,1.0
+Bloomingburg Village,M100000US3907188,2025,Solar,Facilities,1.0
 Benton Township,M100000US390730557899999,2016,Solar,Facilities,1.0
 Falls Township,M100000US390732648899999,2005,Solar,Facilities,1.0
 Falls Township,M100000US390732648899999,2005,Wind,Facilities,1.0
@@ -424,6 +474,7 @@ Falls Township,M100000US390732648899999,2020,Solar,Facilities,2.0
 Falls Township,M100000US390732648899999,2021,Solar,Facilities,4.0
 Falls Township,M100000US390732648899999,2022,Solar,Facilities,2.0
 Falls Township,M100000US390732648899999,2024,Solar,Facilities,5.0
+Falls Township,M100000US390732648899999,2025,Solar,Facilities,1.0
 Good Hope Township,M100000US390733084299999,2005,Wind,Facilities,1.0
 Good Hope Township,M100000US390733084299999,2019,Solar,Facilities,2.0
 Good Hope Township,M100000US390733084299999,2022,Solar,Facilities,2.0
@@ -433,6 +484,8 @@ Green Township,M100000US390733178099999,2019,Solar,Facilities,5.0
 Green Township,M100000US390733178099999,2020,Solar,Facilities,1.0
 Green Township,M100000US390733178099999,2021,Solar,Facilities,2.0
 Green Township,M100000US390733178099999,2024,Solar,Facilities,1.0
+Green Township,M100000US390733178099999,2025,Energy Storage,Facilities,1.0
+Green Township,M100000US390733178099999,2025,Solar,Facilities,2.0
 Laurel Township,M100000US390734205699999,2018,Solar,Facilities,1.0
 Marion Township,M100000US390734774099999,2010,Solar,Facilities,1.0
 Marion Township,M100000US390734774099999,2011,Solar,Facilities,2.0
@@ -446,14 +499,18 @@ Starr Township,M100000US390737440599999,2020,Solar,Facilities,1.0
 Starr Township,M100000US390737440599999,2023,Solar,Facilities,1.0
 Starr Township,M100000US390737440599999,2024,Solar,Facilities,1.0
 Ward Township,M100000US390738078099999,2023,Solar,Facilities,1.0
+Ward Township,M100000US390738078099999,2025,Solar,Facilities,1.0
 Washington Township,M100000US390738135499999,2019,Solar,Facilities,1.0
 Washington Township,M100000US390738135499999,2020,Solar,Facilities,1.0
+Washington Township,M100000US390738135499999,2025,Solar,Facilities,2.0
 Berlin Township,M100000US390830584499999,2018,Solar,Facilities,4.0
 Berlin Township,M100000US390830584499999,2019,Solar,Facilities,2.0
 Berlin Township,M100000US390830584499999,2020,Solar,Facilities,2.0
 Berlin Township,M100000US390830584499999,2021,Solar,Facilities,1.0
 Berlin Township,M100000US390830584499999,2023,Solar,Facilities,2.0
+Berlin Township,M100000US390830584499999,2024,Energy Storage,Facilities,1.0
 Berlin Township,M100000US390830584499999,2024,Solar,Facilities,2.0
+Berlin Township,M100000US390830584499999,2025,Solar,Facilities,1.0
 Brown Township,M100000US390830947099999,2023,Solar,Facilities,2.0
 Brown Township,M100000US390830947099999,2024,Solar,Facilities,2.0
 Clay Township,M100000US390831550499999,2013,Solar,Facilities,1.0
@@ -480,6 +537,7 @@ Hilliar Township,M100000US390833546299999,2020,Solar,Facilities,4.0
 Hilliar Township,M100000US390833546299999,2022,Solar,Facilities,2.0
 Hilliar Township,M100000US390833546299999,2023,Solar,Facilities,1.0
 Hilliar Township,M100000US390833546299999,2024,Solar,Facilities,1.0
+Hilliar Township,M100000US390833546299999,2025,Solar,Facilities,1.0
 Howard Township,M100000US390833652699999,2014,Solar,Facilities,1.0
 Howard Township,M100000US390833652699999,2020,Solar,Facilities,1.0
 Howard Township,M100000US390833652699999,2022,Energy Storage,Facilities,1.0
@@ -487,6 +545,7 @@ Howard Township,M100000US390833652699999,2022,Solar,Facilities,5.0
 Howard Township,M100000US390833652699999,2023,Energy Storage,Facilities,1.0
 Howard Township,M100000US390833652699999,2023,Solar,Facilities,6.0
 Howard Township,M100000US390833652699999,2024,Solar,Facilities,5.0
+Howard Township,M100000US390833652699999,2025,Solar,Facilities,1.0
 Jefferson Township,M100000US390833866899999,2022,Solar,Facilities,1.0
 Liberty Township,M100000US390834321899999,2007,Solar,Facilities,1.0
 Liberty Township,M100000US390834321899999,2014,Solar,Facilities,2.0
@@ -497,6 +556,7 @@ Liberty Township,M100000US390834321899999,2021,Solar,Facilities,3.0
 Liberty Township,M100000US390834321899999,2022,Solar,Facilities,2.0
 Liberty Township,M100000US390834321899999,2023,Solar,Facilities,1.0
 Liberty Township,M100000US390834321899999,2024,Solar,Facilities,2.0
+Liberty Township,M100000US390834321899999,2025,Solar,Facilities,1.0
 Middlebury Township,M100000US390834965899999,2018,Solar,Facilities,3.0
 Middlebury Township,M100000US390834965899999,2021,Solar,Facilities,1.0
 Milford Township,M100000US390835020499999,2022,Solar,Facilities,2.0
@@ -522,15 +582,18 @@ Morris Township,M100000US390835229099999,2020,Solar,Facilities,4.0
 Morris Township,M100000US390835229099999,2021,Solar,Facilities,3.0
 Morris Township,M100000US390835229099999,2023,Solar,Facilities,1.0
 Morris Township,M100000US390835229099999,2024,Solar,Facilities,1.0
+Morris Township,M100000US390835229099999,2025,Solar,Facilities,2.0
 Pike Township,M100000US390836265299999,2020,Solar,Facilities,1.0
 Pike Township,M100000US390836265299999,2023,Solar,Facilities,2.0
 Pleasant Township,M100000US390836331099999,2015,Solar,Facilities,2.0
 Pleasant Township,M100000US390836331099999,2019,Solar,Facilities,1.0
 Pleasant Township,M100000US390836331099999,2020,Solar,Facilities,1.0
 Pleasant Township,M100000US390836331099999,2021,Solar,Facilities,1.0
+Pleasant Township,M100000US390836331099999,2025,Solar,Facilities,1.0
 Union Township,M100000US390837835899999,2021,Solar,Facilities,1.0
 Union Township,M100000US390837835899999,2023,Solar,Facilities,1.0
 Union Township,M100000US390837835899999,2024,Solar,Facilities,1.0
+Union Township,M100000US390837835899999,2025,Solar,Facilities,2.0
 Wayne Township,M100000US390838219499999,2019,Solar,Facilities,1.0
 Wayne Township,M100000US390838219499999,2022,Solar,Facilities,1.0
 Wayne Township,M100000US390838219499999,2023,Solar,Facilities,1.0
@@ -542,12 +605,14 @@ Brice Village,M100000US3908532,2020,Solar,Facilities,1.0
 Bennington Township,M100000US390890549499999,2017,Solar,Facilities,1.0
 Bennington Township,M100000US390890549499999,2020,Solar,Facilities,1.0
 Bennington Township,M100000US390890549499999,2024,Solar,Facilities,1.0
+Bennington Township,M100000US390890549499999,2025,Solar,Facilities,1.0
 Bowling Green Township,M100000US390890794499999,2019,Solar,Facilities,1.0
 Bowling Green Township,M100000US390890794499999,2023,Solar,Facilities,1.0
 Burlington Township,M100000US390891036699999,2011,Solar,Facilities,1.0
 Burlington Township,M100000US390891036699999,2015,Solar,Facilities,1.0
 Burlington Township,M100000US390891036699999,2018,Solar,Facilities,1.0
 Burlington Township,M100000US390891036699999,2022,Solar,Facilities,1.0
+Burlington Township,M100000US390891036699999,2025,Solar,Facilities,2.0
 Etna Township,M100000US390892569099999,2010,Solar,Facilities,1.0
 Etna Township,M100000US390892569099999,2014,Solar,Facilities,1.0
 Etna Township,M100000US390892569099999,2018,Solar,Facilities,4.0
@@ -558,6 +623,7 @@ Etna Township,M100000US390892569099999,2022,Solar,Facilities,8.0
 Etna Township,M100000US390892569099999,2023,Energy Storage,Facilities,3.0
 Etna Township,M100000US390892569099999,2023,Solar,Facilities,18.0
 Etna Township,M100000US390892569099999,2024,Solar,Facilities,14.0
+Etna Township,M100000US390892569099999,2025,Solar,Facilities,9.0
 Franklin Township,M100000US390892833699999,2019,Solar,Facilities,2.0
 Franklin Township,M100000US390892833699999,2020,Solar,Facilities,1.0
 Franklin Township,M100000US390892833699999,2021,Solar,Facilities,1.0
@@ -575,9 +641,11 @@ Granville Township,M100000US390893141699999,2021,Solar,Facilities,5.0
 Granville Township,M100000US390893141699999,2022,Solar,Facilities,5.0
 Granville Township,M100000US390893141699999,2023,Solar,Facilities,8.0
 Granville Township,M100000US390893141699999,2024,Solar,Facilities,4.0
+Granville Township,M100000US390893141699999,2025,Solar,Facilities,1.0
 Hanover Township,M100000US390893329999999,2019,Solar,Facilities,1.0
 Hanover Township,M100000US390893329999999,2022,Solar,Facilities,2.0
 Hanover Township,M100000US390893329999999,2023,Solar,Facilities,1.0
+Hanover Township,M100000US390893329999999,2025,Solar,Facilities,2.0
 Harrison Township,M100000US390893389499999,2018,Solar,Facilities,1.0
 Harrison Township,M100000US390893389499999,2019,Solar,Facilities,3.0
 Harrison Township,M100000US390893389499999,2020,Solar,Facilities,3.0
@@ -585,9 +653,11 @@ Harrison Township,M100000US390893389499999,2021,Solar,Facilities,7.0
 Harrison Township,M100000US390893389499999,2022,Solar,Facilities,11.0
 Harrison Township,M100000US390893389499999,2023,Solar,Facilities,12.0
 Harrison Township,M100000US390893389499999,2024,Solar,Facilities,3.0
+Harrison Township,M100000US390893389499999,2025,Solar,Facilities,3.0
 Hartford Township,M100000US390893418899999,2017,Solar,Facilities,1.0
 Hartford Township,M100000US390893418899999,2019,Solar,Facilities,1.0
 Hopewell Township,M100000US390893631699999,2021,Solar,Facilities,1.0
+Hopewell Township,M100000US390893631699999,2025,Solar,Facilities,1.0
 Jersey Township,M100000US390893910299999,2012,Solar,Facilities,1.0
 Jersey Township,M100000US390893910299999,2015,Solar,Facilities,1.0
 Jersey Township,M100000US390893910299999,2017,Solar,Facilities,1.0
@@ -596,6 +666,7 @@ Jersey Township,M100000US390893910299999,2020,Solar,Facilities,2.0
 Jersey Township,M100000US390893910299999,2021,Solar,Facilities,4.0
 Jersey Township,M100000US390893910299999,2023,Solar,Facilities,2.0
 Jersey Township,M100000US390893910299999,2024,Solar,Facilities,1.0
+Jersey Township,M100000US390893910299999,2025,Solar,Facilities,2.0
 Liberty Township,M100000US390894323299999,2018,Solar,Facilities,2.0
 Liberty Township,M100000US390894323299999,2022,Solar,Facilities,1.0
 Licking Township,M100000US390894345699999,2006,Solar,Facilities,1.0
@@ -606,6 +677,7 @@ Licking Township,M100000US390894345699999,2020,Solar,Facilities,1.0
 Licking Township,M100000US390894345699999,2022,Solar,Facilities,3.0
 Licking Township,M100000US390894345699999,2023,Solar,Facilities,6.0
 Licking Township,M100000US390894345699999,2024,Solar,Facilities,3.0
+Licking Township,M100000US390894345699999,2025,Solar,Facilities,2.0
 McKean Township,M100000US390894611699999,2012,Solar,Facilities,1.0
 McKean Township,M100000US390894611699999,2016,Solar,Facilities,1.0
 McKean Township,M100000US390894611699999,2019,Solar,Facilities,1.0
@@ -620,12 +692,14 @@ Madison Township,M100000US390894650899999,2020,Solar,Facilities,3.0
 Madison Township,M100000US390894650899999,2021,Solar,Facilities,2.0
 Madison Township,M100000US390894650899999,2024,Energy Storage,Facilities,1.0
 Madison Township,M100000US390894650899999,2024,Solar,Facilities,3.0
+Madison Township,M100000US390894650899999,2025,Solar,Facilities,4.0
 Mary Ann Township,M100000US390894813299999,2018,Solar,Facilities,1.0
 Mary Ann Township,M100000US390894813299999,2019,Solar,Facilities,1.0
 Mary Ann Township,M100000US390894813299999,2020,Solar,Facilities,1.0
 Mary Ann Township,M100000US390894813299999,2023,Solar,Facilities,1.0
 Monroe Township,M100000US390895145099999,2021,Solar,Facilities,5.0
 Monroe Township,M100000US390895145099999,2023,Solar,Facilities,1.0
+Monroe Township,M100000US390895145099999,2025,Solar,Facilities,1.0
 Newark Township,M100000US390895405499999,2018,Solar,Facilities,1.0
 Newark Township,M100000US390895405499999,2019,Solar,Facilities,2.0
 Newark Township,M100000US390895405499999,2020,Solar,Facilities,1.0
@@ -633,12 +707,14 @@ Newark Township,M100000US390895405499999,2021,Solar,Facilities,3.0
 Newark Township,M100000US390895405499999,2022,Solar,Facilities,1.0
 Newark Township,M100000US390895405499999,2023,Solar,Facilities,1.0
 Newark Township,M100000US390895405499999,2024,Solar,Facilities,2.0
+Newark Township,M100000US390895405499999,2025,Solar,Facilities,4.0
 Newton Township,M100000US390895558099999,2012,Solar,Facilities,2.0
 Newton Township,M100000US390895558099999,2019,Solar,Facilities,2.0
 Newton Township,M100000US390895558099999,2021,Solar,Facilities,3.0
 Newton Township,M100000US390895558099999,2022,Solar,Facilities,2.0
 Newton Township,M100000US390895558099999,2023,Solar,Facilities,1.0
 Newton Township,M100000US390895558099999,2024,Solar,Facilities,10.0
+Newton Township,M100000US390895558099999,2025,Solar,Facilities,17.0
 Perry Township,M100000US390896192499999,2024,Solar,Facilities,1.0
 St. Albans Township,M100000US390896945699999,2010,Wind,Facilities,1.0
 St. Albans Township,M100000US390896945699999,2014,Solar,Facilities,1.0
@@ -651,6 +727,8 @@ St. Albans Township,M100000US390896945699999,2021,Solar,Facilities,1.0
 St. Albans Township,M100000US390896945699999,2022,Solar,Facilities,4.0
 St. Albans Township,M100000US390896945699999,2023,Solar,Facilities,3.0
 St. Albans Township,M100000US390896945699999,2024,Solar,Facilities,2.0
+St. Albans Township,M100000US390896945699999,2025,Energy Storage,Facilities,1.0
+St. Albans Township,M100000US390896945699999,2025,Solar,Facilities,2.0
 Union Township,M100000US390897840099999,2013,Solar,Facilities,1.0
 Union Township,M100000US390897840099999,2015,Solar,Facilities,1.0
 Union Township,M100000US390897840099999,2019,Solar,Facilities,2.0
@@ -659,12 +737,16 @@ Union Township,M100000US390897840099999,2021,Solar,Facilities,4.0
 Union Township,M100000US390897840099999,2022,Solar,Facilities,4.0
 Union Township,M100000US390897840099999,2023,Solar,Facilities,4.0
 Union Township,M100000US390897840099999,2024,Solar,Facilities,3.0
+Union Township,M100000US390897840099999,2025,Energy Storage,Facilities,2.0
+Union Township,M100000US390897840099999,2025,Solar,Facilities,4.0
 Washington Township,M100000US390898141099999,2022,Solar,Facilities,2.0
 Bloomfield Township,M100000US390910711899999,2023,Solar,Facilities,1.0
 Harrison Township,M100000US390913390899999,2010,Wind,Facilities,1.0
 Harrison Township,M100000US390913390899999,2021,Solar,Facilities,1.0
 Harrison Township,M100000US390913390899999,2022,Solar,Facilities,1.0
 Harrison Township,M100000US390913390899999,2024,Solar,Facilities,1.0
+Harrison Township,M100000US390913390899999,2025,Energy Storage,Facilities,1.0
+Harrison Township,M100000US390913390899999,2025,Solar,Facilities,1.0
 Jefferson Township,M100000US390913868299999,2019,Solar,Facilities,1.0
 Jefferson Township,M100000US390913868299999,2020,Solar,Facilities,2.0
 Jefferson Township,M100000US390913868299999,2022,Solar,Facilities,2.0
@@ -672,6 +754,7 @@ Jefferson Township,M100000US390913868299999,2023,Solar,Facilities,1.0
 Jefferson Township,M100000US390913868299999,2024,Solar,Facilities,2.0
 Liberty Township,M100000US390914324699999,2022,Solar,Facilities,1.0
 Liberty Township,M100000US390914324699999,2024,Solar,Facilities,2.0
+Liberty Township,M100000US390914324699999,2025,Solar,Facilities,2.0
 Monroe Township,M100000US390915146499999,2020,Solar,Facilities,1.0
 Monroe Township,M100000US390915146499999,2021,Solar,Facilities,2.0
 Perry Township,M100000US390916193899999,2021,Solar,Facilities,1.0
@@ -687,6 +770,7 @@ Rushcreek Township,M100000US390916913499999,2021,Solar,Facilities,1.0
 Rushcreek Township,M100000US390916913499999,2023,Solar,Facilities,1.0
 Stokes Township,M100000US390917478099999,2010,Wind,Facilities,1.0
 Stokes Township,M100000US390917478099999,2024,Solar,Facilities,1.0
+Stokes Township,M100000US390917478099999,2025,Solar,Facilities,2.0
 Washington Township,M100000US390918142499999,2015,Solar,Facilities,1.0
 Washington Township,M100000US390918142499999,2024,Solar,Facilities,1.0
 Zane Township,M100000US390918804299999,2013,Solar,Facilities,1.0
@@ -706,9 +790,11 @@ Canaan Township,M100000US390971123499999,2022,Solar,Facilities,2.0
 Canaan Township,M100000US390971123499999,2023,Energy Storage,Facilities,1.0
 Canaan Township,M100000US390971123499999,2023,Solar,Facilities,3.0
 Canaan Township,M100000US390971123499999,2024,Solar,Facilities,2.0
+Canaan Township,M100000US390971123499999,2025,Solar,Facilities,2.0
 Darby Township,M100000US390972014299999,2010,Wind,Facilities,1.0
 Darby Township,M100000US390972014299999,2021,Solar,Facilities,1.0
 Darby Township,M100000US390972014299999,2022,Solar,Facilities,1.0
+Darby Township,M100000US390972014299999,2025,Solar,Facilities,1.0
 Deer Creek Township,M100000US390972115499999,2010,Solar,Facilities,1.0
 Deer Creek Township,M100000US390972115499999,2011,Solar,Facilities,1.0
 Deer Creek Township,M100000US390972115499999,2015,Solar,Facilities,1.0
@@ -724,6 +810,7 @@ Fairfield Township,M100000US390972606899999,2020,Solar,Facilities,1.0
 Fairfield Township,M100000US390972606899999,2021,Solar,Facilities,1.0
 Fairfield Township,M100000US390972606899999,2022,Solar,Facilities,1.0
 Fairfield Township,M100000US390972606899999,2023,Solar,Facilities,2.0
+Fairfield Township,M100000US390972606899999,2025,Solar,Facilities,1.0
 Jefferson Township,M100000US390973869699999,2011,Solar,Facilities,1.0
 Jefferson Township,M100000US390973869699999,2013,Solar,Facilities,1.0
 Jefferson Township,M100000US390973869699999,2016,Solar,Facilities,1.0
@@ -742,11 +829,12 @@ Oak Run Township,M100000US390975770899999,2010,Wind,Facilities,1.0
 Oak Run Township,M100000US390975770899999,2020,Solar,Facilities,1.0
 Oak Run Township,M100000US390975770899999,2021,Solar,Facilities,1.0
 Oak Run Township,M100000US390975770899999,2024,Solar,Facilities,4.0
+Oak Run Township,M100000US390975770899999,2025,Solar,Facilities,1.0
 Paint Township,M100000US390975952899999,2017,Solar,Facilities,1.0
-Paint Township,M100000US390975952899999,2021,Solar,Facilities,1.0
 Paint Township,M100000US390975952899999,2023,Energy Storage,Facilities,1.0
 Paint Township,M100000US390975952899999,2023,Solar,Facilities,1.0
 Paint Township,M100000US390975952899999,2024,Solar,Facilities,1.0
+Paint Township,M100000US390975952899999,2025,Solar,Facilities,4.0
 Pike Township,M100000US390976266699999,2023,Solar,Facilities,4.0
 Pleasant Township,M100000US390976333899999,2013,Solar,Facilities,1.0
 Pleasant Township,M100000US390976333899999,2016,Solar,Facilities,1.0
@@ -770,6 +858,7 @@ Somerford Township,M100000US390977296099999,2020,Solar,Facilities,2.0
 Somerford Township,M100000US390977296099999,2021,Solar,Facilities,1.0
 Somerford Township,M100000US390977296099999,2022,Solar,Facilities,5.0
 Somerford Township,M100000US390977296099999,2024,Solar,Facilities,2.0
+Somerford Township,M100000US390977296099999,2025,Solar,Facilities,3.0
 Stokes Township,M100000US390977478499999,2019,Solar,Facilities,1.0
 Stokes Township,M100000US390977478499999,2022,Solar,Facilities,1.0
 Union Township,M100000US390977842899999,2010,Solar,Facilities,1.0
@@ -781,6 +870,7 @@ Union Township,M100000US390977842899999,2023,Solar,Facilities,3.0
 Buckeye Lake Village,M100000US3909890,2020,Solar,Facilities,1.0
 Buckeye Lake Village,M100000US3909890,2023,Solar,Facilities,1.0
 Buckeye Lake Village,M100000US3909890,2024,Solar,Facilities,3.0
+Buckeye Lake Village,M100000US3909890,2025,Solar,Facilities,1.0
 Big Island Township,M100000US391010634899999,2017,Solar,Facilities,1.0
 Big Island Township,M100000US391010634899999,2023,Solar,Facilities,2.0
 Bowling Green Township,M100000US391010795899999,2014,Solar,Facilities,1.0
@@ -789,6 +879,7 @@ Claridon Township,M100000US391011519699999,2019,Solar,Facilities,2.0
 Claridon Township,M100000US391011519699999,2022,Solar,Facilities,1.0
 Claridon Township,M100000US391011519699999,2023,Solar,Facilities,2.0
 Claridon Township,M100000US391011519699999,2024,Solar,Facilities,1.0
+Claridon Township,M100000US391011519699999,2025,Solar,Facilities,1.0
 Grand Prairie Township,M100000US391013119299999,2016,Solar,Facilities,1.0
 Grand Prairie Township,M100000US391013119299999,2019,Solar,Facilities,1.0
 Grand Prairie Township,M100000US391013119299999,2022,Solar,Facilities,1.0
@@ -798,7 +889,6 @@ Green Camp Township,M100000US391013196299999,2019,Solar,Facilities,1.0
 Green Camp Township,M100000US391013196299999,2020,Solar,Facilities,1.0
 Green Camp Township,M100000US391013196299999,2023,Solar,Facilities,1.0
 Marion Township,M100000US391014776899999,2011,Solar,Facilities,1.0
-Marion Township,M100000US391014776899999,2013,Solar,Facilities,1.0
 Marion Township,M100000US391014776899999,2017,Solar,Facilities,1.0
 Marion Township,M100000US391014776899999,2017,Waste Gas,Facilities,1.0
 Marion Township,M100000US391014776899999,2018,Solar,Facilities,1.0
@@ -808,6 +898,7 @@ Marion Township,M100000US391014776899999,2021,Solar,Facilities,3.0
 Marion Township,M100000US391014776899999,2022,Solar,Facilities,2.0
 Marion Township,M100000US391014776899999,2023,Solar,Facilities,2.0
 Marion Township,M100000US391014776899999,2024,Solar,Facilities,3.0
+Marion Township,M100000US391014776899999,2025,Solar,Facilities,9.0
 Montgomery Township,M100000US391015173099999,2015,Solar,Facilities,1.0
 Montgomery Township,M100000US391015173099999,2023,Solar,Facilities,1.0
 Montgomery Township,M100000US391015173099999,2024,Solar,Facilities,1.0
@@ -822,6 +913,7 @@ Pleasant Township,M100000US391016335299999,2020,Solar,Facilities,2.0
 Pleasant Township,M100000US391016335299999,2021,Solar,Facilities,2.0
 Pleasant Township,M100000US391016335299999,2022,Solar,Facilities,8.0
 Pleasant Township,M100000US391016335299999,2024,Solar,Facilities,3.0
+Pleasant Township,M100000US391016335299999,2025,Solar,Facilities,2.0
 Prospect Township,M100000US391016479499999,2016,Solar,Facilities,1.0
 Prospect Township,M100000US391016479499999,2023,Solar,Facilities,1.0
 Richland Township,M100000US391016675499999,2015,Solar,Facilities,1.0
@@ -829,6 +921,7 @@ Richland Township,M100000US391016675499999,2017,Solar,Facilities,1.0
 Richland Township,M100000US391016675499999,2021,Solar,Facilities,3.0
 Richland Township,M100000US391016675499999,2022,Solar,Facilities,1.0
 Richland Township,M100000US391016675499999,2023,Solar,Facilities,1.0
+Richland Township,M100000US391016675499999,2025,Solar,Facilities,2.0
 Scott Township,M100000US391017107399999,2019,Solar,Facilities,1.0
 Tully Township,M100000US391017774299999,2015,Solar,Facilities,1.0
 Waldo Township,M100000US391018051499999,2016,Solar,Facilities,1.0
@@ -837,18 +930,19 @@ Waldo Township,M100000US391018051499999,2020,Solar,Facilities,1.0
 Waldo Township,M100000US391018051499999,2021,Solar,Facilities,1.0
 Waldo Township,M100000US391018051499999,2022,Solar,Facilities,1.0
 Waldo Township,M100000US391018051499999,2023,Solar,Facilities,1.0
+Waldo Township,M100000US391018051499999,2025,Solar,Facilities,1.0
 Bennington Township,M100000US391170550899999,2020,Solar,Facilities,1.0
 Bennington Township,M100000US391170550899999,2023,Energy Storage,Facilities,1.0
 Bennington Township,M100000US391170550899999,2023,Solar,Facilities,1.0
 Bennington Township,M100000US391170550899999,2024,Solar,Facilities,1.0
 Canaan Township,M100000US391171124899999,2016,Solar,Facilities,1.0
 Canaan Township,M100000US391171124899999,2022,Solar,Facilities,1.0
+Canaan Township,M100000US391171124899999,2025,Solar,Facilities,1.0
 Cardington Township,M100000US391171209899999,2020,Solar,Facilities,1.0
 Cardington Township,M100000US391171209899999,2023,Solar,Facilities,1.0
 Cardington Township,M100000US391171209899999,2024,Solar,Facilities,2.0
 Chester Township,M100000US391171403099999,2019,Solar,Facilities,2.0
 Chester Township,M100000US391171403099999,2021,Solar,Facilities,1.0
-Congress Township,M100000US391171829499999,2018,Solar,Facilities,1.0
 Congress Township,M100000US391171829499999,2019,Solar,Facilities,2.0
 Congress Township,M100000US391171829499999,2020,Solar,Facilities,1.0
 Congress Township,M100000US391171829499999,2021,Solar,Facilities,1.0
@@ -862,6 +956,7 @@ Gilead Township,M100000US391173012899999,2019,Solar,Facilities,2.0
 Gilead Township,M100000US391173012899999,2020,Solar,Facilities,3.0
 Gilead Township,M100000US391173012899999,2021,Solar,Facilities,1.0
 Gilead Township,M100000US391173012899999,2022,Solar,Facilities,1.0
+Gilead Township,M100000US391173012899999,2025,Solar,Facilities,1.0
 Harmony Township,M100000US391173360099999,2015,Solar,Facilities,1.0
 Harmony Township,M100000US391173360099999,2018,Solar,Facilities,1.0
 Harmony Township,M100000US391173360099999,2020,Solar,Facilities,1.0
@@ -872,6 +967,7 @@ Lincoln Township,M100000US391174368099999,2018,Solar,Facilities,2.0
 Lincoln Township,M100000US391174368099999,2019,Solar,Facilities,2.0
 Lincoln Township,M100000US391174368099999,2021,Solar,Facilities,1.0
 Lincoln Township,M100000US391174368099999,2022,Solar,Facilities,1.0
+Lincoln Township,M100000US391174368099999,2025,Solar,Facilities,1.0
 North Bloomfield Township,M100000US391175622499999,2019,Solar,Facilities,1.0
 North Bloomfield Township,M100000US391175622499999,2021,Solar,Facilities,1.0
 Perry Township,M100000US391176198099999,2015,Solar,Facilities,1.0
@@ -886,15 +982,18 @@ Washington Township,M100000US391178150899999,2019,Solar,Facilities,2.0
 Washington Township,M100000US391178150899999,2022,Solar,Facilities,1.0
 Washington Township,M100000US391178150899999,2023,Solar,Facilities,1.0
 Washington Township,M100000US391178150899999,2024,Solar,Facilities,2.0
+Washington Township,M100000US391178150899999,2025,Solar,Facilities,1.0
 Westfield Township,M100000US391178345499999,2019,Solar,Facilities,1.0
 Westfield Township,M100000US391178345499999,2020,Solar,Facilities,1.0
 Westfield Township,M100000US391178345499999,2021,Solar,Facilities,1.0
 Cardington Village,M100000US3912084,2020,Solar,Facilities,1.0
 Cardington Village,M100000US3912084,2022,Solar,Facilities,3.0
 Cardington Village,M100000US3912084,2023,Solar,Facilities,1.0
+Cardington Village,M100000US3912084,2025,Solar,Facilities,1.0
 Bearfield Township,M100000US391270458499999,2019,Solar,Facilities,2.0
 Bearfield Township,M100000US391270458499999,2022,Solar,Facilities,3.0
 Bearfield Township,M100000US391270458499999,2023,Solar,Facilities,1.0
+Bearfield Township,M100000US391270458499999,2025,Solar,Facilities,1.0
 Clayton Township,M100000US391271565899999,2015,Solar,Facilities,2.0
 Clayton Township,M100000US391271565899999,2019,Solar,Facilities,1.0
 Clayton Township,M100000US391271565899999,2020,Solar,Facilities,1.0
@@ -902,11 +1001,13 @@ Clayton Township,M100000US391271565899999,2021,Solar,Facilities,1.0
 Clayton Township,M100000US391271565899999,2022,Solar,Facilities,1.0
 Clayton Township,M100000US391271565899999,2023,Solar,Facilities,2.0
 Clayton Township,M100000US391271565899999,2024,Solar,Facilities,1.0
+Clayton Township,M100000US391271565899999,2025,Solar,Facilities,2.0
 Coal Township,M100000US391271635099999,2024,Solar,Facilities,1.0
 Harrison Township,M100000US391273396499999,2015,Solar,Facilities,1.0
 Harrison Township,M100000US391273396499999,2019,Solar,Facilities,2.0
 Harrison Township,M100000US391273396499999,2021,Solar,Facilities,1.0
 Harrison Township,M100000US391273396499999,2024,Solar,Facilities,1.0
+Harrison Township,M100000US391273396499999,2025,Solar,Facilities,1.0
 Hopewell Township,M100000US391273638699999,2019,Solar,Facilities,1.0
 Hopewell Township,M100000US391273638699999,2021,Solar,Facilities,1.0
 Hopewell Township,M100000US391273638699999,2022,Solar,Facilities,1.0
@@ -921,9 +1022,11 @@ Pike Township,M100000US391276268099999,2019,Solar,Facilities,1.0
 Pike Township,M100000US391276268099999,2020,Solar,Facilities,1.0
 Pike Township,M100000US391276268099999,2022,Solar,Facilities,2.0
 Pike Township,M100000US391276268099999,2024,Solar,Facilities,2.0
+Pike Township,M100000US391276268099999,2025,Solar,Facilities,4.0
 Pleasant Township,M100000US391276336699999,2018,Solar,Facilities,1.0
 Pleasant Township,M100000US391276336699999,2020,Solar,Facilities,1.0
 Pleasant Township,M100000US391276336699999,2021,Solar,Facilities,1.0
+Pleasant Township,M100000US391276336699999,2025,Solar,Facilities,1.0
 Reading Township,M100000US391276576099999,2021,Solar,Facilities,2.0
 Salt Lick Township,M100000US391277022699999,2021,Solar,Facilities,2.0
 Thorn Township,M100000US391277665999999,2015,Solar,Facilities,1.0
@@ -935,6 +1038,7 @@ Thorn Township,M100000US391277665999999,2024,Solar,Facilities,1.0
 Darby Township,M100000US391292015699999,2019,Solar,Facilities,1.0
 Darby Township,M100000US391292015699999,2020,Solar,Facilities,1.0
 Darby Township,M100000US391292015699999,2022,Solar,Facilities,1.0
+Darby Township,M100000US391292015699999,2025,Solar,Facilities,1.0
 Monroe Township,M100000US391295153499999,2020,Solar,Facilities,1.0
 Monroe Township,M100000US391295153499999,2023,Solar,Facilities,1.0
 Perry Township,M100000US391296200899999,2022,Solar,Facilities,1.0
@@ -952,10 +1056,12 @@ Scioto Township,M100000US391297087099999,2022,Solar,Facilities,2.0
 Scioto Township,M100000US391297087099999,2023,Energy Storage,Facilities,1.0
 Scioto Township,M100000US391297087099999,2023,Solar,Facilities,6.0
 Scioto Township,M100000US391297087099999,2024,Solar,Facilities,3.0
+Scioto Township,M100000US391297087099999,2025,Solar,Facilities,3.0
 Centerburg Village,M100000US3913036,2012,Solar,Facilities,2.0
 Centerburg Village,M100000US3913036,2019,Solar,Facilities,1.0
 Centerburg Village,M100000US3913036,2020,Solar,Facilities,1.0
 Centerburg Village,M100000US3913036,2023,Solar,Facilities,2.0
+Centerburg Village,M100000US3913036,2025,Solar,Facilities,1.0
 Concord Township,M100000US391411823899999,2018,Solar,Facilities,1.0
 Franklin Township,M100000US391412842099999,2018,Solar,Facilities,1.0
 Franklin Township,M100000US391412842099999,2019,Solar,Facilities,1.0
@@ -963,19 +1069,24 @@ Franklin Township,M100000US391412842099999,2020,Solar,Facilities,1.0
 Franklin Township,M100000US391412842099999,2021,Solar,Facilities,1.0
 Franklin Township,M100000US391412842099999,2022,Solar,Facilities,2.0
 Franklin Township,M100000US391412842099999,2024,Solar,Facilities,1.0
+Franklin Township,M100000US391412842099999,2025,Solar,Facilities,2.0
 Green Township,M100000US391413182299999,2007,Solar,Facilities,1.0
 Green Township,M100000US391413182299999,2015,Solar,Facilities,1.0
 Green Township,M100000US391413182299999,2020,Solar,Facilities,1.0
+Green Township,M100000US391413182299999,2025,Solar,Facilities,2.0
 Harrison Township,M100000US391413400699999,2019,Solar,Facilities,1.0
 Harrison Township,M100000US391413400699999,2021,Solar,Facilities,1.0
+Harrison Township,M100000US391413400699999,2025,Solar,Facilities,3.0
 Huntington Township,M100000US391413689099999,2019,Solar,Facilities,3.0
 Huntington Township,M100000US391413689099999,2020,Solar,Facilities,1.0
 Huntington Township,M100000US391413689099999,2022,Solar,Facilities,1.0
 Huntington Township,M100000US391413689099999,2023,Solar,Facilities,4.0
+Huntington Township,M100000US391413689099999,2025,Solar,Facilities,1.0
 Jefferson Township,M100000US391413880899999,2015,Solar,Facilities,1.0
 Jefferson Township,M100000US391413880899999,2020,Solar,Facilities,1.0
 Jefferson Township,M100000US391413880899999,2022,Solar,Facilities,2.0
 Jefferson Township,M100000US391413880899999,2023,Solar,Facilities,2.0
+Jefferson Township,M100000US391413880899999,2025,Solar,Facilities,1.0
 Liberty Township,M100000US391414330299999,2015,Solar,Facilities,1.0
 Liberty Township,M100000US391414330299999,2018,Solar,Facilities,2.0
 Liberty Township,M100000US391414330299999,2019,Solar,Facilities,1.0
@@ -984,10 +1095,12 @@ Liberty Township,M100000US391414330299999,2021,Solar,Facilities,6.0
 Liberty Township,M100000US391414330299999,2022,Solar,Facilities,2.0
 Liberty Township,M100000US391414330299999,2023,Solar,Facilities,4.0
 Liberty Township,M100000US391414330299999,2024,Solar,Facilities,1.0
+Liberty Township,M100000US391414330299999,2025,Solar,Facilities,1.0
 Scioto Township,M100000US391417089899999,2018,Solar,Facilities,1.0
 Scioto Township,M100000US391417089899999,2020,Solar,Facilities,1.0
 Scioto Township,M100000US391417089899999,2021,Solar,Facilities,2.0
 Scioto Township,M100000US391417089899999,2024,Solar,Facilities,2.0
+Scioto Township,M100000US391417089899999,2025,Solar,Facilities,3.0
 Springfield Township,M100000US391417412999999,2021,Solar,Facilities,1.0
 Springfield Township,M100000US391417412999999,2023,Solar,Facilities,1.0
 Springfield Township,M100000US391417412999999,2024,Solar,Facilities,1.0
@@ -998,6 +1111,7 @@ Twin Township,M100000US391417800899999,2022,Energy Storage,Facilities,1.0
 Twin Township,M100000US391417800899999,2022,Solar,Facilities,3.0
 Twin Township,M100000US391417800899999,2023,Solar,Facilities,2.0
 Twin Township,M100000US391417800899999,2024,Solar,Facilities,3.0
+Twin Township,M100000US391417800899999,2025,Solar,Facilities,7.0
 Union Township,M100000US391417854099999,2013,Biofuel,Facilities,1.0
 Union Township,M100000US391417854099999,2019,Solar,Facilities,2.0
 Union Township,M100000US391417854099999,2020,Solar,Facilities,2.0
@@ -1005,6 +1119,7 @@ Union Township,M100000US391417854099999,2021,Solar,Facilities,1.0
 Union Township,M100000US391417854099999,2022,Solar,Facilities,1.0
 Union Township,M100000US391417854099999,2023,Solar,Facilities,2.0
 Union Township,M100000US391417854099999,2024,Solar,Facilities,5.0
+Union Township,M100000US391417854099999,2025,Solar,Facilities,4.0
 Chillicothe City,M100000US3914184,2011,Solar,Facilities,1.0
 Chillicothe City,M100000US3914184,2013,Solar,Facilities,1.0
 Chillicothe City,M100000US3914184,2015,Solar,Facilities,1.0
@@ -1015,6 +1130,7 @@ Chillicothe City,M100000US3914184,2022,Energy Storage,Facilities,1.0
 Chillicothe City,M100000US3914184,2022,Solar,Facilities,11.0
 Chillicothe City,M100000US3914184,2023,Solar,Facilities,2.0
 Chillicothe City,M100000US3914184,2024,Solar,Facilities,9.0
+Chillicothe City,M100000US3914184,2025,Solar,Facilities,43.0
 Circleville City,M100000US3915070,2018,Solar,Facilities,1.0
 Circleville City,M100000US3915070,2019,Solar,Facilities,3.0
 Circleville City,M100000US3915070,2020,Solar,Facilities,1.0
@@ -1023,15 +1139,18 @@ Circleville City,M100000US3915070,2021,Solar,Facilities,4.0
 Circleville City,M100000US3915070,2022,Solar,Facilities,2.0
 Circleville City,M100000US3915070,2023,Solar,Facilities,9.0
 Circleville City,M100000US3915070,2024,Solar,Facilities,6.0
+Circleville City,M100000US3915070,2025,Solar,Facilities,15.0
 Claibourne Township,M100000US391591511299999,2011,Solar,Facilities,1.0
 Claibourne Township,M100000US391591511299999,2018,Solar,Facilities,1.0
 Claibourne Township,M100000US391591511299999,2019,Solar,Facilities,1.0
 Claibourne Township,M100000US391591511299999,2020,Solar,Facilities,1.0
 Claibourne Township,M100000US391591511299999,2024,Solar,Facilities,3.0
+Claibourne Township,M100000US391591511299999,2025,Solar,Facilities,1.0
 Darby Township,M100000US391592017099999,2020,Solar,Facilities,1.0
 Darby Township,M100000US391592017099999,2021,Solar,Facilities,1.0
 Darby Township,M100000US391592017099999,2022,Solar,Facilities,2.0
 Darby Township,M100000US391592017099999,2023,Solar,Facilities,2.0
+Darby Township,M100000US391592017099999,2025,Solar,Facilities,1.0
 Jackson Township,M100000US391593810899999,2019,Solar,Facilities,1.0
 Jackson Township,M100000US391593810899999,2021,Solar,Facilities,1.0
 Jackson Township,M100000US391593810899999,2022,Energy Storage,Facilities,1.0
@@ -1040,10 +1159,14 @@ Jerome Township,M100000US391593904699999,2015,Solar,Facilities,1.0
 Jerome Township,M100000US391593904699999,2018,Solar,Facilities,1.0
 Jerome Township,M100000US391593904699999,2021,Solar,Facilities,2.0
 Jerome Township,M100000US391593904699999,2022,Solar,Facilities,2.0
-Jerome Township,M100000US391593904699999,2023,Solar,Facilities,9.0
+Jerome Township,M100000US391593904699999,2023,Solar,Facilities,8.0
 Jerome Township,M100000US391593904699999,2024,Solar,Facilities,8.0
+Jerome Township,M100000US391593904699999,2025,Energy Storage,Facilities,2.0
+Jerome Township,M100000US391593904699999,2025,Solar,Facilities,7.0
 Leesburg Township,M100000US391594249099999,2021,Solar,Facilities,1.0
+Leesburg Township,M100000US391594249099999,2025,Solar,Facilities,1.0
 Liberty Township,M100000US391594335899999,2022,Solar,Facilities,1.0
+Liberty Township,M100000US391594335899999,2025,Solar,Facilities,1.0
 Millcreek Township,M100000US391595028899999,2016,Solar,Facilities,1.0
 Millcreek Township,M100000US391595028899999,2018,Solar,Facilities,1.0
 Millcreek Township,M100000US391595028899999,2020,Solar,Facilities,1.0
@@ -1057,6 +1180,7 @@ Union Township,M100000US391597858299999,2017,Solar,Facilities,1.0
 Union Township,M100000US391597858299999,2020,Solar,Facilities,1.0
 Union Township,M100000US391597858299999,2022,Solar,Facilities,1.0
 Union Township,M100000US391597858299999,2023,Solar,Facilities,1.0
+Union Township,M100000US391597858299999,2025,Solar,Facilities,1.0
 Washington Township,M100000US391598166299999,2020,Solar,Facilities,1.0
 Washington Township,M100000US391598166299999,2022,Solar,Facilities,1.0
 York Township,M100000US391598712299999,2019,Solar,Facilities,1.0
@@ -1087,15 +1211,20 @@ Columbus City,M100000US3918000,2023,Energy Storage,Facilities,33.0
 Columbus City,M100000US3918000,2023,Solar,Facilities,849.0
 Columbus City,M100000US3918000,2024,Energy Storage,Facilities,8.0
 Columbus City,M100000US3918000,2024,Solar,Facilities,949.0
+Columbus City,M100000US3918000,2025,Energy Storage,Facilities,31.0
+Columbus City,M100000US3918000,2025,Solar,Facilities,638.0
 Commercial Point Village,M100000US3918070,2022,Solar,Facilities,1.0
 Commercial Point Village,M100000US3918070,2023,Solar,Facilities,4.0
 Commercial Point Village,M100000US3918070,2024,Solar,Facilities,1.0
+Commercial Point Village,M100000US3918070,2025,Solar,Facilities,1.0
 Corning Village,M100000US3918770,2022,Solar,Facilities,1.0
 Crooksville Village,M100000US3919456,2024,Solar,Facilities,1.0
+Crooksville Village,M100000US3919456,2025,Solar,Facilities,1.0
 Danville Village,M100000US3920114,2011,Solar,Facilities,1.0
 Danville Village,M100000US3920114,2019,Solar,Facilities,1.0
 Danville Village,M100000US3920114,2020,Solar,Facilities,2.0
 Danville Village,M100000US3920114,2023,Solar,Facilities,2.0
+Danville Village,M100000US3920114,2025,Solar,Facilities,1.0
 De Graff Village,M100000US3921378,2023,Solar,Facilities,1.0
 De Graff Village,M100000US3921378,2024,Solar,Facilities,1.0
 Delaware City,M100000US3921434,2006,Solar,Facilities,1.0
@@ -1113,6 +1242,8 @@ Delaware City,M100000US3921434,2023,Energy Storage,Facilities,3.0
 Delaware City,M100000US3921434,2023,Solar,Facilities,88.0
 Delaware City,M100000US3921434,2024,Energy Storage,Facilities,2.0
 Delaware City,M100000US3921434,2024,Solar,Facilities,78.0
+Delaware City,M100000US3921434,2025,Energy Storage,Facilities,2.0
+Delaware City,M100000US3921434,2025,Solar,Facilities,74.0
 Dublin City,M100000US3922694,2007,Solar,Facilities,1.0
 Dublin City,M100000US3922694,2010,Solar,Facilities,1.0
 Dublin City,M100000US3922694,2012,Solar,Facilities,1.0
@@ -1131,9 +1262,12 @@ Dublin City,M100000US3922694,2023,Energy Storage,Facilities,1.0
 Dublin City,M100000US3922694,2023,Solar,Facilities,33.0
 Dublin City,M100000US3922694,2024,Energy Storage,Facilities,2.0
 Dublin City,M100000US3922694,2024,Solar,Facilities,33.0
+Dublin City,M100000US3922694,2025,Energy Storage,Facilities,2.0
+Dublin City,M100000US3922694,2025,Solar,Facilities,34.0
 Edison Village,M100000US3924598,2020,Solar,Facilities,1.0
 Edison Village,M100000US3924598,2023,Solar,Facilities,2.0
 Edison Village,M100000US3924598,2024,Solar,Facilities,1.0
+Edison Village,M100000US3924598,2025,Solar,Facilities,1.0
 Fredericktown Village,M100000US3928658,2014,Solar,Facilities,1.0
 Fredericktown Village,M100000US3928658,2016,Solar,Facilities,1.0
 Fredericktown Village,M100000US3928658,2020,Solar,Facilities,2.0
@@ -1156,9 +1290,12 @@ Gahanna City,M100000US3929106,2022,Solar,Facilities,40.0
 Gahanna City,M100000US3929106,2023,Energy Storage,Facilities,1.0
 Gahanna City,M100000US3929106,2023,Solar,Facilities,52.0
 Gahanna City,M100000US3929106,2024,Solar,Facilities,82.0
+Gahanna City,M100000US3929106,2025,Energy Storage,Facilities,1.0
+Gahanna City,M100000US3929106,2025,Solar,Facilities,41.0
 Galena Village,M100000US3929148,2020,Solar,Facilities,2.0
 Galena Village,M100000US3929148,2021,Solar,Facilities,2.0
 Galena Village,M100000US3929148,2024,Solar,Facilities,1.0
+Galena Village,M100000US3929148,2025,Solar,Facilities,1.0
 Gambier Village,M100000US3929246,2015,Solar,Facilities,1.0
 Gambier Village,M100000US3929246,2017,Solar,Facilities,8.0
 Gambier Village,M100000US3929246,2018,Solar,Facilities,1.0
@@ -1166,6 +1303,7 @@ Gambier Village,M100000US3929246,2019,Solar,Facilities,1.0
 Gambier Village,M100000US3929246,2020,Solar,Facilities,1.0
 Gambier Village,M100000US3929246,2022,Solar,Facilities,2.0
 Gambier Village,M100000US3929246,2023,Solar,Facilities,1.0
+Gambier Village,M100000US3929246,2025,Solar,Facilities,3.0
 Gann (Brinkhaven) Village,M100000US3929288,2021,Solar,Facilities,1.0
 Gann (Brinkhaven) Village,M100000US3929288,2023,Solar,Facilities,1.0
 Glenford Village,M100000US3930436,2021,Solar,Facilities,2.0
@@ -1179,6 +1317,7 @@ Grandview Heights City,M100000US3931304,2021,Solar,Facilities,6.0
 Grandview Heights City,M100000US3931304,2022,Solar,Facilities,9.0
 Grandview Heights City,M100000US3931304,2023,Solar,Facilities,6.0
 Grandview Heights City,M100000US3931304,2024,Solar,Facilities,5.0
+Grandview Heights City,M100000US3931304,2025,Solar,Facilities,10.0
 Granville Village,M100000US3931402,2009,Solar,Facilities,1.0
 Granville Village,M100000US3931402,2010,Solar,Facilities,1.0
 Granville Village,M100000US3931402,2012,Solar,Facilities,2.0
@@ -1195,6 +1334,7 @@ Granville Village,M100000US3931402,2022,Solar,Facilities,2.0
 Granville Village,M100000US3931402,2023,Solar,Facilities,4.0
 Granville Village,M100000US3931402,2024,Energy Storage,Facilities,1.0
 Granville Village,M100000US3931402,2024,Solar,Facilities,3.0
+Granville Village,M100000US3931402,2025,Solar,Facilities,3.0
 Green Camp Village,M100000US3931948,2021,Solar,Facilities,1.0
 Grove City City,M100000US3932592,2010,Solar,Facilities,1.0
 Grove City City,M100000US3932592,2011,Solar,Facilities,2.0
@@ -1211,6 +1351,8 @@ Grove City City,M100000US3932592,2023,Energy Storage,Facilities,2.0
 Grove City City,M100000US3932592,2023,Natural Gas/Propane,Facilities,1.0
 Grove City City,M100000US3932592,2023,Solar,Facilities,68.0
 Grove City City,M100000US3932592,2024,Solar,Facilities,76.0
+Grove City City,M100000US3932592,2025,Energy Storage,Facilities,1.0
+Grove City City,M100000US3932592,2025,Solar,Facilities,52.0
 Groveport City,M100000US3932606,2000,Wind,Facilities,1.0
 Groveport City,M100000US3932606,2008,Solar,Facilities,1.0
 Groveport City,M100000US3932606,2014,Solar,Facilities,1.0
@@ -1220,10 +1362,12 @@ Groveport City,M100000US3932606,2021,Solar,Facilities,1.0
 Groveport City,M100000US3932606,2022,Solar,Facilities,6.0
 Groveport City,M100000US3932606,2023,Solar,Facilities,7.0
 Groveport City,M100000US3932606,2024,Solar,Facilities,13.0
+Groveport City,M100000US3932606,2025,Solar,Facilities,5.0
 Hanover Village,M100000US3933292,2018,Solar,Facilities,1.0
 Hanover Village,M100000US3933292,2022,Solar,Facilities,1.0
 Hanover Village,M100000US3933292,2023,Solar,Facilities,1.0
 Hanover Village,M100000US3933292,2024,Solar,Facilities,2.0
+Hanover Village,M100000US3933292,2025,Solar,Facilities,3.0
 Harrisburg Village,M100000US3933740,2023,Solar,Facilities,1.0
 Heath City,M100000US3934748,2008,Solar,Facilities,1.0
 Heath City,M100000US3934748,2016,Solar,Facilities,1.0
@@ -1234,11 +1378,13 @@ Heath City,M100000US3934748,2021,Solar,Facilities,3.0
 Heath City,M100000US3934748,2022,Solar,Facilities,1.0
 Heath City,M100000US3934748,2023,Solar,Facilities,8.0
 Heath City,M100000US3934748,2024,Solar,Facilities,14.0
+Heath City,M100000US3934748,2025,Solar,Facilities,11.0
 Hebron Village,M100000US3934790,2018,Solar,Facilities,1.0
 Hebron Village,M100000US3934790,2019,Solar,Facilities,2.0
 Hebron Village,M100000US3934790,2022,Solar,Facilities,1.0
 Hebron Village,M100000US3934790,2023,Solar,Facilities,2.0
 Hebron Village,M100000US3934790,2024,Solar,Facilities,2.0
+Hebron Village,M100000US3934790,2025,Solar,Facilities,4.0
 Hilliard City,M100000US3935476,2011,Solar,Facilities,3.0
 Hilliard City,M100000US3935476,2012,Solar,Facilities,1.0
 Hilliard City,M100000US3935476,2015,Solar,Facilities,1.0
@@ -1254,6 +1400,8 @@ Hilliard City,M100000US3935476,2023,Energy Storage,Facilities,2.0
 Hilliard City,M100000US3935476,2023,Solar,Facilities,66.0
 Hilliard City,M100000US3935476,2024,Energy Storage,Facilities,1.0
 Hilliard City,M100000US3935476,2024,Solar,Facilities,48.0
+Hilliard City,M100000US3935476,2025,Energy Storage,Facilities,1.0
+Hilliard City,M100000US3935476,2025,Solar,Facilities,28.0
 Jeffersonville Village,M100000US3938920,2023,Solar,Facilities,1.0
 Jeffersonville Village,M100000US3938920,2024,Solar,Facilities,1.0
 Johnstown City,M100000US3939340,2019,Solar,Facilities,1.0
@@ -1261,6 +1409,8 @@ Johnstown City,M100000US3939340,2021,Solar,Facilities,1.0
 Johnstown City,M100000US3939340,2022,Solar,Facilities,4.0
 Johnstown City,M100000US3939340,2023,Solar,Facilities,1.0
 Johnstown City,M100000US3939340,2024,Solar,Facilities,4.0
+Johnstown City,M100000US3939340,2025,Energy Storage,Facilities,1.0
+Johnstown City,M100000US3939340,2025,Solar,Facilities,3.0
 Kirkersville Village,M100000US3940572,2024,Solar,Facilities,1.0
 Lancaster City,M100000US3941720,2010,Solar,Facilities,1.0
 Lancaster City,M100000US3941720,2011,Solar,Facilities,1.0
@@ -1276,6 +1426,7 @@ Lancaster City,M100000US3941720,2022,Solar,Facilities,21.0
 Lancaster City,M100000US3941720,2023,Energy Storage,Facilities,2.0
 Lancaster City,M100000US3941720,2023,Solar,Facilities,18.0
 Lancaster City,M100000US3941720,2024,Solar,Facilities,23.0
+Lancaster City,M100000US3941720,2025,Solar,Facilities,24.0
 La Rue Village,M100000US3941902,2023,Solar,Facilities,1.0
 Logan City,M100000US3944632,2010,Solar,Facilities,1.0
 Logan City,M100000US3944632,2010,Wind,Facilities,1.0
@@ -1286,6 +1437,7 @@ Logan City,M100000US3944632,2020,Solar,Facilities,2.0
 Logan City,M100000US3944632,2021,Solar,Facilities,4.0
 Logan City,M100000US3944632,2023,Solar,Facilities,1.0
 Logan City,M100000US3944632,2024,Solar,Facilities,1.0
+Logan City,M100000US3944632,2025,Solar,Facilities,5.0
 London City,M100000US3944674,2011,Solar,Facilities,2.0
 London City,M100000US3944674,2012,Solar,Facilities,2.0
 London City,M100000US3944674,2013,Solar,Facilities,1.0
@@ -1298,43 +1450,54 @@ London City,M100000US3944674,2022,Energy Storage,Facilities,1.0
 London City,M100000US3944674,2022,Solar,Facilities,6.0
 London City,M100000US3944674,2023,Solar,Facilities,3.0
 London City,M100000US3944674,2024,Solar,Facilities,14.0
+London City,M100000US3944674,2025,Energy Storage,Facilities,1.0
+London City,M100000US3944674,2025,Solar,Facilities,20.0
 Marble Cliff Village,M100000US3947474,2018,Solar,Facilities,1.0
 Marble Cliff Village,M100000US3947474,2020,Solar,Facilities,3.0
 Marble Cliff Village,M100000US3947474,2022,Solar,Facilities,1.0
 Marble Cliff Village,M100000US3947474,2023,Solar,Facilities,1.0
 Marble Cliff Village,M100000US3947474,2024,Solar,Facilities,1.0
+Marble Cliff Village,M100000US3947474,2025,Solar,Facilities,3.0
 Marion City,M100000US3947754,2016,Solar,Facilities,1.0
 Marion City,M100000US3947754,2019,Solar,Facilities,3.0
-Marion City,M100000US3947754,2020,Solar,Facilities,6.0
+Marion City,M100000US3947754,2020,Solar,Facilities,5.0
 Marion City,M100000US3947754,2021,Solar,Facilities,3.0
 Marion City,M100000US3947754,2022,Energy Storage,Facilities,2.0
 Marion City,M100000US3947754,2022,Solar,Facilities,13.0
-Marion City,M100000US3947754,2023,Solar,Facilities,5.0
+Marion City,M100000US3947754,2023,Solar,Facilities,4.0
 Marion City,M100000US3947754,2024,Solar,Facilities,11.0
+Marion City,M100000US3947754,2025,Solar,Facilities,10.0
 Marysville City,M100000US3948160,2019,Solar,Facilities,3.0
 Marysville City,M100000US3948160,2020,Solar,Facilities,3.0
 Marysville City,M100000US3948160,2021,Solar,Facilities,4.0
 Marysville City,M100000US3948160,2022,Solar,Facilities,13.0
 Marysville City,M100000US3948160,2023,Solar,Facilities,20.0
 Marysville City,M100000US3948160,2024,Solar,Facilities,13.0
+Marysville City,M100000US3948160,2025,Solar,Facilities,14.0
 Milford Center Village,M100000US3950218,2022,Solar,Facilities,2.0
+Milledgeville Village,M100000US3950316,2025,Energy Storage,Facilities,1.0
+Milledgeville Village,M100000US3950316,2025,Solar,Facilities,1.0
 Millersport Village,M100000US3950400,2022,Solar,Facilities,2.0
 Millersport Village,M100000US3950400,2023,Solar,Facilities,2.0
+Millersport Village,M100000US3950400,2025,Solar,Facilities,2.0
 Minerva Park Village,M100000US3950862,2019,Solar,Facilities,3.0
 Minerva Park Village,M100000US3950862,2020,Solar,Facilities,2.0
 Minerva Park Village,M100000US3950862,2021,Solar,Facilities,4.0
 Minerva Park Village,M100000US3950862,2022,Solar,Facilities,8.0
 Minerva Park Village,M100000US3950862,2023,Solar,Facilities,12.0
 Minerva Park Village,M100000US3950862,2024,Solar,Facilities,9.0
+Minerva Park Village,M100000US3950862,2025,Solar,Facilities,1.0
 Mount Gilead Village,M100000US3952738,2014,Solar,Facilities,1.0
 Mount Gilead Village,M100000US3952738,2018,Solar,Facilities,1.0
 Mount Gilead Village,M100000US3952738,2019,Solar,Facilities,1.0
 Mount Gilead Village,M100000US3952738,2021,Solar,Facilities,1.0
 Mount Gilead Village,M100000US3952738,2022,Solar,Facilities,2.0
+Mount Gilead Village,M100000US3952738,2025,Solar,Facilities,1.0
 Mount Sterling Village,M100000US3953046,2020,Solar,Facilities,1.0
 Mount Sterling Village,M100000US3953046,2022,Solar,Facilities,1.0
 Mount Sterling Village,M100000US3953046,2023,Solar,Facilities,1.0
 Mount Sterling Village,M100000US3953046,2024,Solar,Facilities,10.0
+Mount Sterling Village,M100000US3953046,2025,Solar,Facilities,3.0
 Mount Vernon City,M100000US3953102,2018,Solar,Facilities,1.0
 Mount Vernon City,M100000US3953102,2019,Solar,Facilities,3.0
 Mount Vernon City,M100000US3953102,2020,Solar,Facilities,4.0
@@ -1343,6 +1506,7 @@ Mount Vernon City,M100000US3953102,2022,Solar,Facilities,6.0
 Mount Vernon City,M100000US3953102,2023,Energy Storage,Facilities,1.0
 Mount Vernon City,M100000US3953102,2023,Solar,Facilities,12.0
 Mount Vernon City,M100000US3953102,2024,Solar,Facilities,9.0
+Mount Vernon City,M100000US3953102,2025,Solar,Facilities,8.0
 New Albany City,M100000US3953970,2007,Solar,Facilities,1.0
 New Albany City,M100000US3953970,2012,Solar,Facilities,1.0
 New Albany City,M100000US3953970,2013,Solar,Facilities,1.0
@@ -1357,6 +1521,8 @@ New Albany City,M100000US3953970,2022,Solar,Facilities,4.0
 New Albany City,M100000US3953970,2023,Energy Storage,Facilities,2.0
 New Albany City,M100000US3953970,2023,Solar,Facilities,7.0
 New Albany City,M100000US3953970,2024,Solar,Facilities,5.0
+New Albany City,M100000US3953970,2025,Energy Storage,Facilities,2.0
+New Albany City,M100000US3953970,2025,Solar,Facilities,7.0
 Newark City,M100000US3954040,2013,Solar,Facilities,1.0
 Newark City,M100000US3954040,2015,Solar,Facilities,3.0
 Newark City,M100000US3954040,2016,Solar,Facilities,1.0
@@ -1369,6 +1535,8 @@ Newark City,M100000US3954040,2022,Solar,Facilities,22.0
 Newark City,M100000US3954040,2023,Natural Gas/Propane,Facilities,1.0
 Newark City,M100000US3954040,2023,Solar,Facilities,34.0
 Newark City,M100000US3954040,2024,Solar,Facilities,35.0
+Newark City,M100000US3954040,2025,Energy Storage,Facilities,2.0
+Newark City,M100000US3954040,2025,Solar,Facilities,52.0
 New Holland Village,M100000US3954726,2020,Solar,Facilities,1.0
 New Holland Village,M100000US3954726,2022,Solar,Facilities,2.0
 New Lexington Village,M100000US3954866,2018,Solar,Facilities,2.0
@@ -1376,13 +1544,16 @@ New Lexington Village,M100000US3954866,2019,Solar,Facilities,1.0
 New Lexington Village,M100000US3954866,2020,Solar,Facilities,1.0
 New Lexington Village,M100000US3954866,2021,Solar,Facilities,1.0
 New Lexington Village,M100000US3954866,2022,Solar,Facilities,1.0
+New Lexington Village,M100000US3954866,2025,Solar,Facilities,1.0
 New Straitsville Village,M100000US3955552,2020,Solar,Facilities,1.0
+New Straitsville Village,M100000US3955552,2025,Solar,Facilities,1.0
 Obetz City,M100000US3957862,2018,Solar,Facilities,1.0
 Obetz City,M100000US3957862,2020,Solar,Facilities,3.0
 Obetz City,M100000US3957862,2022,Solar,Facilities,6.0
 Obetz City,M100000US3957862,2023,Energy Storage,Facilities,3.0
 Obetz City,M100000US3957862,2023,Solar,Facilities,17.0
 Obetz City,M100000US3957862,2024,Solar,Facilities,41.0
+Obetz City,M100000US3957862,2025,Solar,Facilities,11.0
 Ostrander Village,M100000US3958940,2017,Solar,Facilities,1.0
 Ostrander Village,M100000US3958940,2020,Solar,Facilities,1.0
 Ostrander Village,M100000US3958940,2021,Solar,Facilities,1.0
@@ -1398,6 +1569,8 @@ Pataskala City,M100000US3961112,2022,Solar,Facilities,16.0
 Pataskala City,M100000US3961112,2023,Energy Storage,Facilities,1.0
 Pataskala City,M100000US3961112,2023,Solar,Facilities,28.0
 Pataskala City,M100000US3961112,2024,Solar,Facilities,29.0
+Pataskala City,M100000US3961112,2025,Energy Storage,Facilities,2.0
+Pataskala City,M100000US3961112,2025,Solar,Facilities,15.0
 Pickerington City,M100000US3962498,2024,Energy Storage,Facilities,1.0
 Pickerington City,M100000US3962498,2024,Solar,Facilities,1.0
 Plain City Village,M100000US3963030,2012,Solar,Facilities,1.0
@@ -1410,6 +1583,8 @@ Plain City Village,M100000US3963030,2022,Energy Storage,Facilities,1.0
 Plain City Village,M100000US3963030,2022,Solar,Facilities,3.0
 Plain City Village,M100000US3963030,2023,Solar,Facilities,7.0
 Plain City Village,M100000US3963030,2024,Solar,Facilities,7.0
+Plain City Village,M100000US3963030,2025,Energy Storage,Facilities,1.0
+Plain City Village,M100000US3963030,2025,Solar,Facilities,15.0
 Pleasantville Village,M100000US3963716,2018,Solar,Facilities,1.0
 Pleasantville Village,M100000US3963716,2023,Solar,Facilities,1.0
 Powell City,M100000US3964486,2012,Solar,Facilities,1.0
@@ -1422,6 +1597,7 @@ Powell City,M100000US3964486,2022,Solar,Facilities,8.0
 Powell City,M100000US3964486,2023,Energy Storage,Facilities,3.0
 Powell City,M100000US3964486,2023,Solar,Facilities,15.0
 Powell City,M100000US3964486,2024,Solar,Facilities,9.0
+Powell City,M100000US3964486,2025,Solar,Facilities,7.0
 Quincy Village,M100000US3965200,2020,Solar,Facilities,1.0
 Quincy Village,M100000US3965200,2022,Solar,Facilities,2.0
 Quincy Village,M100000US3965200,2023,Solar,Facilities,2.0
@@ -1440,6 +1616,8 @@ Reynoldsburg City,M100000US3966390,2022,Solar,Facilities,36.0
 Reynoldsburg City,M100000US3966390,2023,Energy Storage,Facilities,1.0
 Reynoldsburg City,M100000US3966390,2023,Solar,Facilities,40.0
 Reynoldsburg City,M100000US3966390,2024,Solar,Facilities,64.0
+Reynoldsburg City,M100000US3966390,2025,Energy Storage,Facilities,1.0
+Reynoldsburg City,M100000US3966390,2025,Solar,Facilities,53.0
 Richwood Village,M100000US3966936,2019,Solar,Facilities,2.0
 Richwood Village,M100000US3966936,2021,Solar,Facilities,1.0
 Richwood Village,M100000US3966936,2022,Energy Storage,Facilities,1.0
@@ -1451,12 +1629,17 @@ Roseville Village,M100000US3968560,2019,Solar,Facilities,1.0
 Roseville Village,M100000US3968560,2024,Solar,Facilities,1.0
 Rushsylvania Village,M100000US3969176,2023,Solar,Facilities,1.0
 Rushville Village,M100000US3969204,2021,Solar,Facilities,1.0
+Rushville Village,M100000US3969204,2025,Solar,Facilities,1.0
+Russells Point Village,M100000US3969302,2025,Solar,Facilities,1.0
+St. Louisville Village,M100000US3969652,2025,Solar,Facilities,3.0
+Shawnee Village,M100000US3971962,2025,Solar,Facilities,1.0
 Shawnee Hills Village,M100000US3971976,2015,Solar,Facilities,1.0
 Shawnee Hills Village,M100000US3971976,2024,Solar,Facilities,1.0
 Somerset Village,M100000US3972977,2020,Solar,Facilities,1.0
 Somerset Village,M100000US3972977,2022,Solar,Facilities,2.0
 South Solon Village,M100000US3973768,2022,Solar,Facilities,1.0
 Sugar Grove Village,M100000US3975252,2020,Solar,Facilities,1.0
+Sugar Grove Village,M100000US3975252,2025,Solar,Facilities,1.0
 Sunbury City,M100000US3975602,2018,Solar,Facilities,1.0
 Sunbury City,M100000US3975602,2019,Solar,Facilities,1.0
 Sunbury City,M100000US3975602,2020,Solar,Facilities,1.0
@@ -1464,6 +1647,7 @@ Sunbury City,M100000US3975602,2021,Solar,Facilities,3.0
 Sunbury City,M100000US3975602,2022,Solar,Facilities,2.0
 Sunbury City,M100000US3975602,2023,Solar,Facilities,9.0
 Sunbury City,M100000US3975602,2024,Solar,Facilities,8.0
+Sunbury City,M100000US3975602,2025,Solar,Facilities,3.0
 Thornville Village,M100000US3976680,2020,Solar,Facilities,2.0
 Thornville Village,M100000US3976680,2021,Solar,Facilities,2.0
 Thornville Village,M100000US3976680,2022,Solar,Facilities,1.0
@@ -1485,11 +1669,14 @@ Upper Arlington City,M100000US3979002,2023,Energy Storage,Facilities,2.0
 Upper Arlington City,M100000US3979002,2023,Solar,Facilities,43.0
 Upper Arlington City,M100000US3979002,2024,Energy Storage,Facilities,4.0
 Upper Arlington City,M100000US3979002,2024,Solar,Facilities,42.0
+Upper Arlington City,M100000US3979002,2025,Energy Storage,Facilities,4.0
+Upper Arlington City,M100000US3979002,2025,Solar,Facilities,40.0
 Urbancrest Village,M100000US3979100,2010,Solar,Facilities,1.0
 Urbancrest Village,M100000US3979100,2019,Solar,Facilities,1.0
 Urbancrest Village,M100000US3979100,2020,Solar,Facilities,1.0
 Urbancrest Village,M100000US3979100,2022,Solar,Facilities,1.0
 Urbancrest Village,M100000US3979100,2024,Solar,Facilities,3.0
+Urbancrest Village,M100000US3979100,2025,Solar,Facilities,1.0
 Utica Village,M100000US3979114,2018,Solar,Facilities,1.0
 Utica Village,M100000US3979114,2021,Solar,Facilities,1.0
 Utica Village,M100000US3979114,2022,Solar,Facilities,2.0
@@ -1510,6 +1697,9 @@ Washington Court House City,M100000US3981718,2021,Solar,Facilities,3.0
 Washington Court House City,M100000US3981718,2022,Solar,Facilities,4.0
 Washington Court House City,M100000US3981718,2023,Solar,Facilities,5.0
 Washington Court House City,M100000US3981718,2024,Solar,Facilities,8.0
+Washington Court House City,M100000US3981718,2025,Energy Storage,Facilities,1.0
+Washington Court House City,M100000US3981718,2025,Solar,Facilities,6.0
+Westerville City,M100000US3983342,2025,Solar,Facilities,1.0
 West Jefferson Village,M100000US3983580,2012,Solar,Facilities,1.0
 West Jefferson Village,M100000US3983580,2013,Solar,Facilities,1.0
 West Jefferson Village,M100000US3983580,2015,Solar,Facilities,1.0
@@ -1518,12 +1708,16 @@ West Jefferson Village,M100000US3983580,2021,Solar,Facilities,1.0
 West Jefferson Village,M100000US3983580,2022,Solar,Facilities,2.0
 West Jefferson Village,M100000US3983580,2023,Solar,Facilities,3.0
 West Jefferson Village,M100000US3983580,2024,Solar,Facilities,6.0
+West Jefferson Village,M100000US3983580,2025,Solar,Facilities,10.0
 West Liberty Village,M100000US3983734,2019,Solar,Facilities,1.0
 West Liberty Village,M100000US3983734,2021,Solar,Facilities,1.0
 West Liberty Village,M100000US3983734,2023,Solar,Facilities,1.0
+West Liberty Village,M100000US3983734,2025,Solar,Facilities,2.0
 West Mansfield Village,M100000US3983818,2019,Solar,Facilities,1.0
 West Mansfield Village,M100000US3983818,2021,Solar,Facilities,1.0
 West Mansfield Village,M100000US3983818,2023,Solar,Facilities,2.0
+West Mansfield Village,M100000US3983818,2025,Solar,Facilities,1.0
+West Rushville Village,M100000US3984182,2025,Solar,Facilities,1.0
 Whitehall City,M100000US3984742,2011,Solar,Facilities,1.0
 Whitehall City,M100000US3984742,2014,Solar,Facilities,1.0
 Whitehall City,M100000US3984742,2016,Solar,Facilities,1.0
@@ -1534,6 +1728,7 @@ Whitehall City,M100000US3984742,2022,Solar,Facilities,14.0
 Whitehall City,M100000US3984742,2023,Energy Storage,Facilities,1.0
 Whitehall City,M100000US3984742,2023,Solar,Facilities,15.0
 Whitehall City,M100000US3984742,2024,Solar,Facilities,27.0
+Whitehall City,M100000US3984742,2025,Solar,Facilities,16.0
 Worthington City,M100000US3986604,2010,Solar,Facilities,5.0
 Worthington City,M100000US3986604,2012,Solar,Facilities,1.0
 Worthington City,M100000US3986604,2013,Solar,Facilities,1.0
@@ -1549,6 +1744,8 @@ Worthington City,M100000US3986604,2022,Solar,Facilities,12.0
 Worthington City,M100000US3986604,2023,Energy Storage,Facilities,1.0
 Worthington City,M100000US3986604,2023,Solar,Facilities,15.0
 Worthington City,M100000US3986604,2024,Solar,Facilities,7.0
+Worthington City,M100000US3986604,2025,Energy Storage,Facilities,1.0
+Worthington City,M100000US3986604,2025,Solar,Facilities,14.0
 Delaware,0500000US39041,2004,Wind,Facilities,1.0
 Delaware,0500000US39041,2006,Solar,Facilities,2.0
 Delaware,0500000US39041,2009,Solar,Facilities,2.0
@@ -1574,6 +1771,8 @@ Delaware,0500000US39041,2023,Energy Storage,Facilities,10.0
 Delaware,0500000US39041,2023,Solar,Facilities,251.0
 Delaware,0500000US39041,2024,Energy Storage,Facilities,6.0
 Delaware,0500000US39041,2024,Solar,Facilities,181.0
+Delaware,0500000US39041,2025,Energy Storage,Facilities,10.0
+Delaware,0500000US39041,2025,Solar,Facilities,195.0
 Fairfield,0500000US39045,2010,Solar,Facilities,3.0
 Fairfield,0500000US39045,2011,Solar,Facilities,2.0
 Fairfield,0500000US39045,2012,Solar,Facilities,2.0
@@ -1592,6 +1791,8 @@ Fairfield,0500000US39045,2023,Energy Storage,Facilities,2.0
 Fairfield,0500000US39045,2023,Solar,Facilities,53.0
 Fairfield,0500000US39045,2024,Energy Storage,Facilities,1.0
 Fairfield,0500000US39045,2024,Solar,Facilities,67.0
+Fairfield,0500000US39045,2025,Energy Storage,Facilities,1.0
+Fairfield,0500000US39045,2025,Solar,Facilities,58.0
 Fayette,0500000US39047,2009,Solar,Facilities,7.0
 Fayette,0500000US39047,2010,Solar,Facilities,1.0
 Fayette,0500000US39047,2011,Solar,Facilities,3.0
@@ -1606,6 +1807,8 @@ Fayette,0500000US39047,2021,Solar,Facilities,11.0
 Fayette,0500000US39047,2022,Solar,Facilities,15.0
 Fayette,0500000US39047,2023,Solar,Facilities,9.0
 Fayette,0500000US39047,2024,Solar,Facilities,13.0
+Fayette,0500000US39047,2025,Energy Storage,Facilities,3.0
+Fayette,0500000US39047,2025,Solar,Facilities,12.0
 Franklin,0500000US39049,2000,Wind,Facilities,1.0
 Franklin,0500000US39049,2001,Wind,Facilities,1.0
 Franklin,0500000US39049,2006,Solar,Facilities,2.0
@@ -1638,6 +1841,8 @@ Franklin,0500000US39049,2023,Natural Gas/Propane,Facilities,1.0
 Franklin,0500000US39049,2023,Solar,Facilities,1310.0
 Franklin,0500000US39049,2024,Energy Storage,Facilities,20.0
 Franklin,0500000US39049,2024,Solar,Facilities,1505.0
+Franklin,0500000US39049,2025,Energy Storage,Facilities,47.0
+Franklin,0500000US39049,2025,Solar,Facilities,1076.0
 Hocking,0500000US39073,2005,Solar,Facilities,1.0
 Hocking,0500000US39073,2005,Wind,Facilities,2.0
 Hocking,0500000US39073,2010,Solar,Facilities,2.0
@@ -1657,6 +1862,8 @@ Hocking,0500000US39073,2022,Solar,Facilities,4.0
 Hocking,0500000US39073,2023,Energy Storage,Facilities,1.0
 Hocking,0500000US39073,2023,Solar,Facilities,7.0
 Hocking,0500000US39073,2024,Solar,Facilities,9.0
+Hocking,0500000US39073,2025,Energy Storage,Facilities,1.0
+Hocking,0500000US39073,2025,Solar,Facilities,11.0
 Knox,0500000US39083,2007,Solar,Facilities,1.0
 Knox,0500000US39083,2011,Solar,Facilities,1.0
 Knox,0500000US39083,2012,Solar,Facilities,2.0
@@ -1673,8 +1880,9 @@ Knox,0500000US39083,2022,Energy Storage,Facilities,1.0
 Knox,0500000US39083,2022,Solar,Facilities,28.0
 Knox,0500000US39083,2023,Energy Storage,Facilities,2.0
 Knox,0500000US39083,2023,Solar,Facilities,43.0
-Knox,0500000US39083,2024,Energy Storage,Facilities,1.0
+Knox,0500000US39083,2024,Energy Storage,Facilities,2.0
 Knox,0500000US39083,2024,Solar,Facilities,35.0
+Knox,0500000US39083,2025,Solar,Facilities,22.0
 Licking,0500000US39089,2006,Solar,Facilities,1.0
 Licking,0500000US39089,2008,Solar,Facilities,1.0
 Licking,0500000US39089,2009,Solar,Facilities,1.0
@@ -1698,6 +1906,8 @@ Licking,0500000US39089,2023,Natural Gas/Propane,Facilities,1.0
 Licking,0500000US39089,2023,Solar,Facilities,158.0
 Licking,0500000US39089,2024,Energy Storage,Facilities,3.0
 Licking,0500000US39089,2024,Solar,Facilities,160.0
+Licking,0500000US39089,2025,Energy Storage,Facilities,9.0
+Licking,0500000US39089,2025,Solar,Facilities,165.0
 Logan,0500000US39091,2010,Wind,Facilities,2.0
 Logan,0500000US39091,2011,Solar,Facilities,1.0
 Logan,0500000US39091,2012,Solar,Facilities,1.0
@@ -1711,6 +1921,8 @@ Logan,0500000US39091,2021,Solar,Facilities,9.0
 Logan,0500000US39091,2022,Solar,Facilities,10.0
 Logan,0500000US39091,2023,Solar,Facilities,18.0
 Logan,0500000US39091,2024,Solar,Facilities,11.0
+Logan,0500000US39091,2025,Energy Storage,Facilities,1.0
+Logan,0500000US39091,2025,Solar,Facilities,9.0
 Madison,0500000US39097,2008,Solar,Facilities,1.0
 Madison,0500000US39097,2008,Wind,Facilities,1.0
 Madison,0500000US39097,2010,Solar,Facilities,2.0
@@ -1725,17 +1937,18 @@ Madison,0500000US39097,2017,Solar,Facilities,5.0
 Madison,0500000US39097,2018,Solar,Facilities,5.0
 Madison,0500000US39097,2019,Solar,Facilities,18.0
 Madison,0500000US39097,2020,Solar,Facilities,19.0
-Madison,0500000US39097,2021,Solar,Facilities,17.0
+Madison,0500000US39097,2021,Solar,Facilities,16.0
 Madison,0500000US39097,2022,Energy Storage,Facilities,3.0
 Madison,0500000US39097,2022,Solar,Facilities,27.0
 Madison,0500000US39097,2023,Energy Storage,Facilities,2.0
 Madison,0500000US39097,2023,Solar,Facilities,36.0
 Madison,0500000US39097,2024,Solar,Facilities,48.0
+Madison,0500000US39097,2025,Energy Storage,Facilities,1.0
+Madison,0500000US39097,2025,Solar,Facilities,54.0
 Marion,0500000US39101,2009,Wind,Facilities,1.0
 Marion,0500000US39101,2011,Solar,Facilities,2.0
 Marion,0500000US39101,2011,Wind,Facilities,1.0
 Marion,0500000US39101,2012,Solar,Facilities,1.0
-Marion,0500000US39101,2013,Solar,Facilities,1.0
 Marion,0500000US39101,2014,Solar,Facilities,2.0
 Marion,0500000US39101,2015,Solar,Facilities,3.0
 Marion,0500000US39101,2016,Solar,Facilities,4.0
@@ -1744,18 +1957,19 @@ Marion,0500000US39101,2017,Waste Gas,Facilities,1.0
 Marion,0500000US39101,2018,Solar,Facilities,6.0
 Marion,0500000US39101,2018,Wind,Facilities,1.0
 Marion,0500000US39101,2019,Solar,Facilities,15.0
-Marion,0500000US39101,2020,Solar,Facilities,10.0
+Marion,0500000US39101,2020,Solar,Facilities,9.0
 Marion,0500000US39101,2021,Solar,Facilities,13.0
 Marion,0500000US39101,2022,Energy Storage,Facilities,2.0
 Marion,0500000US39101,2022,Solar,Facilities,27.0
-Marion,0500000US39101,2023,Solar,Facilities,19.0
+Marion,0500000US39101,2023,Solar,Facilities,18.0
 Marion,0500000US39101,2024,Solar,Facilities,19.0
+Marion,0500000US39101,2025,Solar,Facilities,25.0
 Morrow,0500000US39117,2009,Wind,Facilities,2.0
 Morrow,0500000US39117,2014,Solar,Facilities,2.0
 Morrow,0500000US39117,2015,Solar,Facilities,3.0
 Morrow,0500000US39117,2016,Solar,Facilities,3.0
 Morrow,0500000US39117,2017,Solar,Facilities,2.0
-Morrow,0500000US39117,2018,Solar,Facilities,6.0
+Morrow,0500000US39117,2018,Solar,Facilities,5.0
 Morrow,0500000US39117,2019,Solar,Facilities,13.0
 Morrow,0500000US39117,2020,Solar,Facilities,10.0
 Morrow,0500000US39117,2021,Solar,Facilities,8.0
@@ -1764,6 +1978,7 @@ Morrow,0500000US39117,2022,Solar,Facilities,11.0
 Morrow,0500000US39117,2023,Energy Storage,Facilities,3.0
 Morrow,0500000US39117,2023,Solar,Facilities,9.0
 Morrow,0500000US39117,2024,Solar,Facilities,9.0
+Morrow,0500000US39117,2025,Solar,Facilities,7.0
 Perry,0500000US39127,2013,Solar,Facilities,1.0
 Perry,0500000US39127,2014,Solar,Facilities,1.0
 Perry,0500000US39127,2015,Solar,Facilities,4.0
@@ -1776,6 +1991,7 @@ Perry,0500000US39127,2022,Solar,Facilities,19.0
 Perry,0500000US39127,2023,Solar,Facilities,4.0
 Perry,0500000US39127,2024,Energy Storage,Facilities,1.0
 Perry,0500000US39127,2024,Solar,Facilities,8.0
+Perry,0500000US39127,2025,Solar,Facilities,13.0
 Pickaway,0500000US39129,2012,Solar,Facilities,1.0
 Pickaway,0500000US39129,2013,Solar,Facilities,2.0
 Pickaway,0500000US39129,2016,Solar,Facilities,1.0
@@ -1790,6 +2006,7 @@ Pickaway,0500000US39129,2022,Solar,Facilities,9.0
 Pickaway,0500000US39129,2023,Energy Storage,Facilities,1.0
 Pickaway,0500000US39129,2023,Solar,Facilities,20.0
 Pickaway,0500000US39129,2024,Solar,Facilities,10.0
+Pickaway,0500000US39129,2025,Solar,Facilities,20.0
 Ross,0500000US39141,2007,Solar,Facilities,1.0
 Ross,0500000US39141,2011,Solar,Facilities,1.0
 Ross,0500000US39141,2013,Biofuel,Facilities,1.0
@@ -1803,6 +2020,7 @@ Ross,0500000US39141,2022,Energy Storage,Facilities,2.0
 Ross,0500000US39141,2022,Solar,Facilities,22.0
 Ross,0500000US39141,2023,Solar,Facilities,18.0
 Ross,0500000US39141,2024,Solar,Facilities,22.0
+Ross,0500000US39141,2025,Solar,Facilities,67.0
 Union,0500000US39159,2011,Solar,Facilities,2.0
 Union,0500000US39159,2015,Solar,Facilities,1.0
 Union,0500000US39159,2016,Solar,Facilities,1.0
@@ -1813,8 +2031,10 @@ Union,0500000US39159,2020,Solar,Facilities,9.0
 Union,0500000US39159,2021,Solar,Facilities,13.0
 Union,0500000US39159,2022,Energy Storage,Facilities,2.0
 Union,0500000US39159,2022,Solar,Facilities,28.0
-Union,0500000US39159,2023,Solar,Facilities,38.0
+Union,0500000US39159,2023,Solar,Facilities,37.0
 Union,0500000US39159,2024,Solar,Facilities,30.0
+Union,0500000US39159,2025,Energy Storage,Facilities,3.0
+Union,0500000US39159,2025,Solar,Facilities,36.0
 15-County Region,M010000US001,2000,Wind,Facilities,1.0
 15-County Region,M010000US001,2001,Wind,Facilities,1.0
 15-County Region,M010000US001,2004,Wind,Facilities,1.0
@@ -1834,7 +2054,7 @@ Union,0500000US39159,2024,Solar,Facilities,30.0
 15-County Region,M010000US001,2012,Wind,Facilities,1.0
 15-County Region,M010000US001,2013,Biofuel,Facilities,1.0
 15-County Region,M010000US001,2013,Energy Storage,Facilities,1.0
-15-County Region,M010000US001,2013,Solar,Facilities,76.0
+15-County Region,M010000US001,2013,Solar,Facilities,75.0
 15-County Region,M010000US001,2013,Wind,Facilities,1.0
 15-County Region,M010000US001,2014,Solar,Facilities,59.0
 15-County Region,M010000US001,2015,Natural Gas/Propane,Facilities,1.0
@@ -1844,21 +2064,23 @@ Union,0500000US39159,2024,Solar,Facilities,30.0
 15-County Region,M010000US001,2017,Solar,Facilities,171.0
 15-County Region,M010000US001,2017,Waste Gas,Facilities,1.0
 15-County Region,M010000US001,2018,Natural Gas/Propane,Facilities,1.0
-15-County Region,M010000US001,2018,Solar,Facilities,241.0
+15-County Region,M010000US001,2018,Solar,Facilities,240.0
 15-County Region,M010000US001,2018,Wind,Facilities,1.0
 15-County Region,M010000US001,2019,Energy Storage,Facilities,1.0
 15-County Region,M010000US001,2019,Solar,Facilities,553.0
 15-County Region,M010000US001,2020,Energy Storage,Facilities,6.0
-15-County Region,M010000US001,2020,Solar,Facilities,683.0
+15-County Region,M010000US001,2020,Solar,Facilities,682.0
 15-County Region,M010000US001,2021,Energy Storage,Facilities,11.0
-15-County Region,M010000US001,2021,Solar,Facilities,1090.0
+15-County Region,M010000US001,2021,Solar,Facilities,1089.0
 15-County Region,M010000US001,2022,Energy Storage,Facilities,31.0
 15-County Region,M010000US001,2022,Solar,Facilities,1419.0
 15-County Region,M010000US001,2023,Energy Storage,Facilities,79.0
 15-County Region,M010000US001,2023,Natural Gas/Propane,Facilities,2.0
-15-County Region,M010000US001,2023,Solar,Facilities,1993.0
-15-County Region,M010000US001,2024,Energy Storage,Facilities,32.0
+15-County Region,M010000US001,2023,Solar,Facilities,1991.0
+15-County Region,M010000US001,2024,Energy Storage,Facilities,33.0
 15-County Region,M010000US001,2024,Solar,Facilities,2127.0
+15-County Region,M010000US001,2025,Energy Storage,Facilities,76.0
+15-County Region,M010000US001,2025,Solar,Facilities,1770.0
 Ashley Village,M100000US3902582,2022,Solar,Capacity,6.96
 Bainbridge Village,M100000US3903604,2021,Solar,Capacity,7.6
 Bainbridge Village,M100000US3903604,2023,Solar,Capacity,12.76
@@ -1868,6 +2090,7 @@ Baltimore Village,M100000US3903758,2020,Solar,Capacity,17.1
 Baltimore Village,M100000US3903758,2021,Solar,Capacity,14.3
 Baltimore Village,M100000US3903758,2022,Solar,Capacity,19.14
 Baltimore Village,M100000US3903758,2023,Solar,Capacity,22.04
+Baltimore Village,M100000US3903758,2025,Solar,Capacity,25.03
 Berkshire Township,M100000US390410577499999,2014,Solar,Capacity,5.0
 Berkshire Township,M100000US390410577499999,2018,Solar,Capacity,11.0
 Berkshire Township,M100000US390410577499999,2019,Solar,Capacity,39.199999999999996
@@ -1877,6 +2100,7 @@ Berkshire Township,M100000US390410577499999,2022,Solar,Capacity,37.93
 Berkshire Township,M100000US390410577499999,2023,Solar,Capacity,64.38
 Berkshire Township,M100000US390410577499999,2024,Energy Storage,Capacity,6.0
 Berkshire Township,M100000US390410577499999,2024,Solar,Capacity,34.4
+Berkshire Township,M100000US390410577499999,2025,Solar,Capacity,50.74
 Berlin Township,M100000US390410578899999,2009,Solar,Capacity,14.850000000000001
 Berlin Township,M100000US390410578899999,2013,Solar,Capacity,6.8
 Berlin Township,M100000US390410578899999,2015,Solar,Capacity,29.7
@@ -1890,6 +2114,8 @@ Berlin Township,M100000US390410578899999,2022,Solar,Capacity,105.41
 Berlin Township,M100000US390410578899999,2023,Energy Storage,Capacity,10.0
 Berlin Township,M100000US390410578899999,2023,Solar,Capacity,100.07
 Berlin Township,M100000US390410578899999,2024,Solar,Capacity,107.344
+Berlin Township,M100000US390410578899999,2025,Energy Storage,Capacity,0.0
+Berlin Township,M100000US390410578899999,2025,Solar,Capacity,119.86
 Brown Township,M100000US390410942899999,2013,Solar,Capacity,9.0
 Brown Township,M100000US390410942899999,2017,Solar,Capacity,11.4
 Brown Township,M100000US390410942899999,2018,Solar,Capacity,11.0
@@ -1897,6 +2123,7 @@ Brown Township,M100000US390410942899999,2019,Solar,Capacity,7.6
 Brown Township,M100000US390410942899999,2020,Solar,Capacity,10.0
 Brown Township,M100000US390410942899999,2021,Solar,Capacity,10.3
 Brown Township,M100000US390410942899999,2022,Solar,Capacity,9.99
+Brown Township,M100000US390410942899999,2025,Solar,Capacity,7.83
 Concord Township,M100000US390411814099999,2014,Solar,Capacity,13.3
 Concord Township,M100000US390411814099999,2015,Solar,Capacity,11.4
 Concord Township,M100000US390411814099999,2016,Solar,Capacity,3.0
@@ -1909,6 +2136,8 @@ Concord Township,M100000US390411814099999,2022,Solar,Capacity,137.24
 Concord Township,M100000US390411814099999,2023,Solar,Capacity,134.075
 Concord Township,M100000US390411814099999,2024,Energy Storage,Capacity,7.68
 Concord Township,M100000US390411814099999,2024,Solar,Capacity,145.06
+Concord Township,M100000US390411814099999,2025,Energy Storage,Capacity,0.0
+Concord Township,M100000US390411814099999,2025,Solar,Capacity,125.5
 Delaware Township,M100000US390412144899999,2012,Solar,Capacity,7.0
 Delaware Township,M100000US390412144899999,2013,Solar,Capacity,9.0
 Delaware Township,M100000US390412144899999,2016,Solar,Capacity,5.0
@@ -1920,10 +2149,11 @@ Delaware Township,M100000US390412144899999,2021,Solar,Capacity,18.85
 Delaware Township,M100000US390412144899999,2022,Solar,Capacity,15.66
 Delaware Township,M100000US390412144899999,2023,Solar,Capacity,26.84
 Delaware Township,M100000US390412144899999,2024,Solar,Capacity,12.95
+Delaware Township,M100000US390412144899999,2025,Solar,Capacity,26.6
 Genoa Township,M100000US390412969499999,2013,Solar,Capacity,14.2
 Genoa Township,M100000US390412969499999,2015,Solar,Capacity,10.0
 Genoa Township,M100000US390412969499999,2016,Solar,Capacity,28.0
-Genoa Township,M100000US390412969499999,2017,Solar,Capacity,10.0
+Genoa Township,M100000US390412969499999,2017,Solar,Capacity,20.0
 Genoa Township,M100000US390412969499999,2018,Solar,Capacity,24.200000000000003
 Genoa Township,M100000US390412969499999,2019,Solar,Capacity,114.7
 Genoa Township,M100000US390412969499999,2020,Solar,Capacity,38.6
@@ -1933,6 +2163,8 @@ Genoa Township,M100000US390412969499999,2022,Solar,Capacity,146.74
 Genoa Township,M100000US390412969499999,2023,Solar,Capacity,115.008
 Genoa Township,M100000US390412969499999,2024,Energy Storage,Capacity,30.0
 Genoa Township,M100000US390412969499999,2024,Solar,Capacity,69.877
+Genoa Township,M100000US390412969499999,2025,Energy Storage,Capacity,30.72
+Genoa Township,M100000US390412969499999,2025,Solar,Capacity,79.37
 Harlem Township,M100000US390413351699999,2013,Solar,Capacity,17.595
 Harlem Township,M100000US390413351699999,2014,Solar,Capacity,5.0
 Harlem Township,M100000US390413351699999,2015,Solar,Capacity,10.0
@@ -1946,6 +2178,7 @@ Harlem Township,M100000US390413351699999,2022,Solar,Capacity,34.09
 Harlem Township,M100000US390413351699999,2023,Energy Storage,Capacity,10.0
 Harlem Township,M100000US390413351699999,2023,Solar,Capacity,47.58
 Harlem Township,M100000US390413351699999,2024,Solar,Capacity,30.44
+Harlem Township,M100000US390413351699999,2025,Solar,Capacity,98.6
 Kingston Township,M100000US390414036299999,2021,Solar,Capacity,17.6
 Liberty Township,M100000US390414310699999,2004,Wind,Capacity,1.0
 Liberty Township,M100000US390414310699999,2010,Solar,Capacity,10.0
@@ -1962,6 +2195,8 @@ Liberty Township,M100000US390414310699999,2021,Solar,Capacity,81.265
 Liberty Township,M100000US390414310699999,2022,Solar,Capacity,86.92
 Liberty Township,M100000US390414310699999,2023,Solar,Capacity,164.206
 Liberty Township,M100000US390414310699999,2024,Solar,Capacity,132.82999999999998
+Liberty Township,M100000US390414310699999,2025,Energy Storage,Capacity,25.0
+Liberty Township,M100000US390414310699999,2025,Solar,Capacity,198.16
 Marlboro Township,M100000US390414790899999,2019,Solar,Capacity,6.0
 Orange Township,M100000US390415861899999,2012,Solar,Capacity,7.7
 Orange Township,M100000US390415861899999,2013,Solar,Capacity,4.5
@@ -1976,6 +2211,8 @@ Orange Township,M100000US390415861899999,2022,Energy Storage,Capacity,12.56
 Orange Township,M100000US390415861899999,2022,Solar,Capacity,226.41
 Orange Township,M100000US390415861899999,2023,Solar,Capacity,253.04
 Orange Township,M100000US390415861899999,2024,Solar,Capacity,107.196
+Orange Township,M100000US390415861899999,2025,Energy Storage,Capacity,7.08
+Orange Township,M100000US390415861899999,2025,Solar,Capacity,266.066
 Oxford Township,M100000US390415926299999,2021,Solar,Capacity,15.2
 Oxford Township,M100000US390415926299999,2022,Solar,Capacity,10.44
 Porter Township,M100000US390416417899999,2019,Solar,Capacity,17.4
@@ -2003,6 +2240,7 @@ Trenton Township,M100000US390417733699999,2021,Solar,Capacity,42.27
 Trenton Township,M100000US390417733699999,2022,Solar,Capacity,19.82
 Trenton Township,M100000US390417733699999,2023,Solar,Capacity,25.32
 Trenton Township,M100000US390417733699999,2024,Solar,Capacity,19.591
+Trenton Township,M100000US390417733699999,2025,Solar,Capacity,22.08
 Troy Township,M100000US390417756099999,2014,Solar,Capacity,6.0
 Troy Township,M100000US390417756099999,2015,Solar,Capacity,10.0
 Troy Township,M100000US390417756099999,2016,Solar,Capacity,24.8
@@ -2012,6 +2250,7 @@ Troy Township,M100000US390417756099999,2020,Solar,Capacity,12.2
 Troy Township,M100000US390417756099999,2021,Solar,Capacity,7.6
 Troy Township,M100000US390417756099999,2022,Solar,Capacity,11.6
 Troy Township,M100000US390417756099999,2023,Solar,Capacity,26.13
+Troy Township,M100000US390417756099999,2025,Solar,Capacity,51.019999999999996
 Berne Township,M100000US390450595699999,2010,Solar,Capacity,5.4
 Berne Township,M100000US390450595699999,2011,Solar,Capacity,8.7
 Berne Township,M100000US390450595699999,2013,Solar,Capacity,15.4
@@ -2022,7 +2261,10 @@ Berne Township,M100000US390450595699999,2021,Solar,Capacity,7.6
 Berne Township,M100000US390450595699999,2022,Solar,Capacity,4.64
 Berne Township,M100000US390450595699999,2023,Solar,Capacity,16.240000000000002
 Berne Township,M100000US390450595699999,2024,Solar,Capacity,9.89
+Berne Township,M100000US390450595699999,2025,Solar,Capacity,7.6
 Greenfield Township,M100000US390453206099999,2021,Solar,Capacity,17.52
+Greenfield Township,M100000US390453206099999,2025,Energy Storage,Capacity,0.0
+Greenfield Township,M100000US390453206099999,2025,Solar,Capacity,7.3
 Hocking Township,M100000US390453581299999,2019,Solar,Capacity,6.0
 Hocking Township,M100000US390453581299999,2020,Solar,Capacity,11.4
 Hocking Township,M100000US390453581299999,2021,Solar,Capacity,19.98
@@ -2033,6 +2275,7 @@ Liberty Township,M100000US390454312099999,2019,Solar,Capacity,6.0
 Liberty Township,M100000US390454312099999,2021,Solar,Capacity,11.4
 Liberty Township,M100000US390454312099999,2022,Solar,Capacity,31.21
 Liberty Township,M100000US390454312099999,2024,Solar,Capacity,22.744999999999997
+Liberty Township,M100000US390454312099999,2025,Solar,Capacity,29.32
 Madison Township,M100000US390454638299999,2019,Solar,Capacity,6.0
 Pleasant Township,M100000US390456324099999,2019,Solar,Capacity,16.4
 Pleasant Township,M100000US390456324099999,2020,Solar,Capacity,6.0
@@ -2040,6 +2283,7 @@ Pleasant Township,M100000US390456324099999,2021,Solar,Capacity,17.6
 Pleasant Township,M100000US390456324099999,2022,Solar,Capacity,41.480000000000004
 Pleasant Township,M100000US390456324099999,2023,Solar,Capacity,9.28
 Pleasant Township,M100000US390456324099999,2024,Solar,Capacity,28.47
+Pleasant Township,M100000US390456324099999,2025,Solar,Capacity,74.22
 Richland Township,M100000US390456668499999,2019,Solar,Capacity,9.8
 Richland Township,M100000US390456668499999,2021,Solar,Capacity,4.2
 Richland Township,M100000US390456668499999,2023,Solar,Capacity,8.12
@@ -2061,6 +2305,7 @@ Walnut Township,M100000US390458057099999,2019,Solar,Capacity,24.380000000000003
 Walnut Township,M100000US390458057099999,2021,Solar,Capacity,35.73
 Walnut Township,M100000US390458057099999,2022,Solar,Capacity,27.689999999999998
 Walnut Township,M100000US390458057099999,2023,Solar,Capacity,25.63
+Walnut Township,M100000US390458057099999,2025,Solar,Capacity,50.769999999999996
 Concord Township,M100000US390471815499999,2019,Solar,Capacity,7.2
 Concord Township,M100000US390471815499999,2020,Solar,Capacity,14.879999999999999
 Concord Township,M100000US390471815499999,2021,Solar,Capacity,19.2
@@ -2070,6 +2315,8 @@ Jefferson Township,M100000US390473859899999,2016,Solar,Capacity,6.0
 Jefferson Township,M100000US390473859899999,2021,Solar,Capacity,12.16
 Jefferson Township,M100000US390473859899999,2022,Solar,Capacity,17.68
 Jefferson Township,M100000US390473859899999,2024,Solar,Capacity,23.927999999999997
+Jefferson Township,M100000US390473859899999,2025,Energy Storage,Capacity,0.0
+Jefferson Township,M100000US390473859899999,2025,Solar,Capacity,23.0
 Madison Township,M100000US390474639699999,2010,Solar,Capacity,7.0
 Madison Township,M100000US390474639699999,2014,Solar,Capacity,6.0
 Madison Township,M100000US390474639699999,2015,Solar,Capacity,5.0
@@ -2077,12 +2324,15 @@ Madison Township,M100000US390474639699999,2020,Solar,Capacity,11.399999999999999
 Madison Township,M100000US390474639699999,2021,Solar,Capacity,3.0
 Madison Township,M100000US390474639699999,2022,Solar,Capacity,5.8
 Madison Township,M100000US390474639699999,2023,Solar,Capacity,7.6
+Madison Township,M100000US390474639699999,2025,Solar,Capacity,11.5
 Marion Township,M100000US390474768499999,2012,Solar,Capacity,4.1
 Marion Township,M100000US390474768499999,2014,Solar,Capacity,9.54
 Marion Township,M100000US390474768499999,2019,Solar,Capacity,8.6
+Marion Township,M100000US390474768499999,2025,Solar,Capacity,7.6
 Paint Township,M100000US390475948699999,2021,Solar,Capacity,13.53
 Paint Township,M100000US390475948699999,2022,Solar,Capacity,5.0
 Paint Township,M100000US390475948699999,2023,Solar,Capacity,10.0
+Perry Township,M100000US390476182699999,2025,Solar,Capacity,5.38
 Union Township,M100000US390477831699999,2011,Solar,Capacity,42.0
 Union Township,M100000US390477831699999,2012,Solar,Capacity,5.59
 Union Township,M100000US390477831699999,2019,Solar,Capacity,3.3
@@ -2101,6 +2351,8 @@ Blendon Township,M100000US390490692299999,2021,Solar,Capacity,11.399999999999999
 Blendon Township,M100000US390490692299999,2022,Solar,Capacity,49.199999999999996
 Blendon Township,M100000US390490692299999,2023,Solar,Capacity,25.66
 Blendon Township,M100000US390490692299999,2024,Solar,Capacity,114.0
+Blendon Township,M100000US390490692299999,2025,Energy Storage,Capacity,2.84
+Blendon Township,M100000US390490692299999,2025,Solar,Capacity,38.09
 Brown Township,M100000US390490944299999,2012,Solar,Capacity,10.8
 Brown Township,M100000US390490944299999,2013,Solar,Capacity,7.5
 Brown Township,M100000US390490944299999,2013,Wind,Capacity,30.0
@@ -2114,6 +2366,7 @@ Brown Township,M100000US390490944299999,2022,Energy Storage,Capacity,3.84
 Brown Township,M100000US390490944299999,2022,Solar,Capacity,34.99
 Brown Township,M100000US390490944299999,2023,Solar,Capacity,32.64
 Brown Township,M100000US390490944299999,2024,Solar,Capacity,66.15
+Brown Township,M100000US390490944299999,2025,Solar,Capacity,91.77
 Clinton Township,M100000US390491611299999,2014,Solar,Capacity,6.0
 Clinton Township,M100000US390491611299999,2018,Solar,Capacity,40.9
 Clinton Township,M100000US390491611299999,2021,Solar,Capacity,19.139999999999997
@@ -2121,6 +2374,7 @@ Clinton Township,M100000US390491611299999,2022,Solar,Capacity,8.41
 Clinton Township,M100000US390491611299999,2023,Solar,Capacity,32.64
 Clinton Township,M100000US390491611299999,2024,Energy Storage,Capacity,19.2
 Clinton Township,M100000US390491611299999,2024,Solar,Capacity,27.806
+Clinton Township,M100000US390491611299999,2025,Solar,Capacity,18.18
 Franklin Township,M100000US390492828099999,2006,Solar,Capacity,2.4
 Franklin Township,M100000US390492828099999,2013,Solar,Capacity,23.2
 Franklin Township,M100000US390492828099999,2018,Solar,Capacity,14.8
@@ -2131,12 +2385,14 @@ Franklin Township,M100000US390492828099999,2022,Energy Storage,Capacity,4.8
 Franklin Township,M100000US390492828099999,2022,Solar,Capacity,41.73
 Franklin Township,M100000US390492828099999,2023,Solar,Capacity,27.76
 Franklin Township,M100000US390492828099999,2024,Solar,Capacity,40.53
+Franklin Township,M100000US390492828099999,2025,Solar,Capacity,91.16
 Hamilton Township,M100000US390493302699999,2019,Solar,Capacity,3.0
 Hamilton Township,M100000US390493302699999,2020,Solar,Capacity,5.0
 Hamilton Township,M100000US390493302699999,2021,Solar,Capacity,20.1
 Hamilton Township,M100000US390493302699999,2022,Solar,Capacity,24.4
 Hamilton Township,M100000US390493302699999,2023,Solar,Capacity,22.14
 Hamilton Township,M100000US390493302699999,2024,Solar,Capacity,33.44
+Hamilton Township,M100000US390493302699999,2025,Solar,Capacity,97.14
 Jackson Township,M100000US390493777299999,2016,Solar,Capacity,46.03
 Jackson Township,M100000US390493777299999,2018,Solar,Capacity,7.3
 Jackson Township,M100000US390493777299999,2019,Solar,Capacity,65.9
@@ -2144,7 +2400,8 @@ Jackson Township,M100000US390493777299999,2020,Solar,Capacity,20.2
 Jackson Township,M100000US390493777299999,2021,Solar,Capacity,96.77
 Jackson Township,M100000US390493777299999,2022,Solar,Capacity,36.949999999999996
 Jackson Township,M100000US390493777299999,2023,Solar,Capacity,71.16
-Jackson Township,M100000US390493777299999,2024,Solar,Capacity,199.6
+Jackson Township,M100000US390493777299999,2024,Solar,Capacity,399.6
+Jackson Township,M100000US390493777299999,2025,Solar,Capacity,163.68
 Jefferson Township,M100000US390493861299999,2001,Wind,Capacity,18.0
 Jefferson Township,M100000US390493861299999,2011,Solar,Capacity,1.8
 Jefferson Township,M100000US390493861299999,2012,Solar,Capacity,482.4
@@ -2158,6 +2415,8 @@ Jefferson Township,M100000US390493861299999,2021,Solar,Capacity,81.12
 Jefferson Township,M100000US390493861299999,2022,Solar,Capacity,160.31
 Jefferson Township,M100000US390493861299999,2023,Solar,Capacity,186.22
 Jefferson Township,M100000US390493861299999,2024,Solar,Capacity,181.647
+Jefferson Township,M100000US390493861299999,2025,Energy Storage,Capacity,30.68
+Jefferson Township,M100000US390493861299999,2025,Solar,Capacity,127.71
 Madison Township,M100000US390494641099999,2015,Solar,Capacity,5.0
 Madison Township,M100000US390494641099999,2019,Solar,Capacity,103.4
 Madison Township,M100000US390494641099999,2020,Solar,Capacity,39.4
@@ -2166,6 +2425,7 @@ Madison Township,M100000US390494641099999,2022,Energy Storage,Capacity,3.84
 Madison Township,M100000US390494641099999,2022,Solar,Capacity,74.85
 Madison Township,M100000US390494641099999,2023,Solar,Capacity,59.42999999999999
 Madison Township,M100000US390494641099999,2024,Solar,Capacity,95.59
+Madison Township,M100000US390494641099999,2025,Solar,Capacity,143.09
 Mifflin Township,M100000US390495006499999,2022,Solar,Capacity,8.0
 Mifflin Township,M100000US390495006499999,2023,Solar,Capacity,8.99
 Mifflin Township,M100000US390495006499999,2024,Solar,Capacity,9.64
@@ -2182,6 +2442,8 @@ Norwich Township,M100000US390495734499999,2022,Solar,Capacity,71.58
 Norwich Township,M100000US390495734499999,2023,Solar,Capacity,42.51
 Norwich Township,M100000US390495734499999,2024,Energy Storage,Capacity,7.68
 Norwich Township,M100000US390495734499999,2024,Solar,Capacity,118.038
+Norwich Township,M100000US390495734499999,2025,Energy Storage,Capacity,20.0
+Norwich Township,M100000US390495734499999,2025,Solar,Capacity,20.256
 Perry Township,M100000US390496184099999,2012,Solar,Capacity,4.7
 Perry Township,M100000US390496184099999,2013,Solar,Capacity,3.4
 Perry Township,M100000US390496184099999,2016,Solar,Capacity,10.0
@@ -2193,6 +2455,7 @@ Perry Township,M100000US390496184099999,2022,Solar,Capacity,37.17
 Perry Township,M100000US390496184099999,2023,Energy Storage,Capacity,5.0
 Perry Township,M100000US390496184099999,2023,Solar,Capacity,31.201999999999998
 Perry Township,M100000US390496184099999,2024,Solar,Capacity,34.54
+Perry Township,M100000US390496184099999,2025,Solar,Capacity,13.57
 Plain Township,M100000US390496297499999,2011,Solar,Capacity,27.282
 Plain Township,M100000US390496297499999,2017,Solar,Capacity,11.4
 Plain Township,M100000US390496297499999,2019,Solar,Capacity,7.6
@@ -2201,6 +2464,7 @@ Plain Township,M100000US390496297499999,2021,Solar,Capacity,31.900000000000002
 Plain Township,M100000US390496297499999,2022,Solar,Capacity,9.28
 Plain Township,M100000US390496297499999,2023,Solar,Capacity,6.0
 Plain Township,M100000US390496297499999,2024,Solar,Capacity,13.96
+Plain Township,M100000US390496297499999,2025,Solar,Capacity,34.22
 Pleasant Township,M100000US390496325499999,2011,Solar,Capacity,2.0
 Pleasant Township,M100000US390496325499999,2014,Solar,Capacity,9.0
 Pleasant Township,M100000US390496325499999,2015,Solar,Capacity,13.6
@@ -2216,6 +2480,7 @@ Pleasant Township,M100000US390496325499999,2023,Energy Storage,Capacity,3.84
 Pleasant Township,M100000US390496325499999,2023,Solar,Capacity,56.9
 Pleasant Township,M100000US390496325499999,2024,Energy Storage,Capacity,7.68
 Pleasant Township,M100000US390496325499999,2024,Solar,Capacity,60.2
+Pleasant Township,M100000US390496325499999,2025,Solar,Capacity,59.4
 Prairie Township,M100000US390496457099999,2009,Solar,Capacity,12.2
 Prairie Township,M100000US390496457099999,2011,Solar,Capacity,30.0
 Prairie Township,M100000US390496457099999,2015,Solar,Capacity,6.0
@@ -2228,6 +2493,7 @@ Prairie Township,M100000US390496457099999,2022,Solar,Capacity,144.58
 Prairie Township,M100000US390496457099999,2023,Energy Storage,Capacity,3.84
 Prairie Township,M100000US390496457099999,2023,Solar,Capacity,232.82
 Prairie Township,M100000US390496457099999,2024,Solar,Capacity,215.87
+Prairie Township,M100000US390496457099999,2025,Solar,Capacity,312.31
 Sharon Township,M100000US390497178799999,2009,Solar,Capacity,0.3
 Sharon Township,M100000US390497178799999,2011,Solar,Capacity,4.4
 Sharon Township,M100000US390497178799999,2017,Solar,Capacity,7.6
@@ -2238,14 +2504,18 @@ Sharon Township,M100000US390497178799999,2022,Solar,Capacity,5.22
 Sharon Township,M100000US390497178799999,2023,Energy Storage,Capacity,3.4
 Sharon Township,M100000US390497178799999,2023,Solar,Capacity,46.0
 Sharon Township,M100000US390497178799999,2024,Solar,Capacity,18.27
+Sharon Township,M100000US390497178799999,2025,Energy Storage,Capacity,3.84
+Sharon Township,M100000US390497178799999,2025,Solar,Capacity,10.82
 Truro Township,M100000US390497771499999,2019,Solar,Capacity,6.0
 Truro Township,M100000US390497771499999,2020,Solar,Capacity,4.8
 Truro Township,M100000US390497771499999,2021,Solar,Capacity,7.24
 Truro Township,M100000US390497771499999,2022,Solar,Capacity,15.3
 Truro Township,M100000US390497771499999,2023,Solar,Capacity,31.63
 Truro Township,M100000US390497771499999,2024,Solar,Capacity,22.42
+Truro Township,M100000US390497771499999,2025,Solar,Capacity,7.98
 Washington Township,M100000US390498124299999,2021,Solar,Capacity,13.2
 Washington Township,M100000US390498124299999,2023,Solar,Capacity,15.2
+Washington Township,M100000US390498124299999,2025,Solar,Capacity,5.24
 Belle Center Village,M100000US3905116,2022,Solar,Capacity,5.8
 Belle Center Village,M100000US3905116,2023,Solar,Capacity,25.75
 Bellefontaine City,M100000US3905130,2011,Solar,Capacity,30.0
@@ -2270,8 +2540,10 @@ Bexley City,M100000US3906278,2022,Solar,Capacity,66.18
 Bexley City,M100000US3906278,2023,Energy Storage,Capacity,5.0
 Bexley City,M100000US3906278,2023,Solar,Capacity,55.480000000000004
 Bexley City,M100000US3906278,2024,Solar,Capacity,36.964999999999996
+Bexley City,M100000US3906278,2025,Solar,Capacity,97.19
 Bloomingburg Village,M100000US3907188,2021,Solar,Capacity,13.63
 Bloomingburg Village,M100000US3907188,2022,Solar,Capacity,6.09
+Bloomingburg Village,M100000US3907188,2025,Solar,Capacity,4.9
 Benton Township,M100000US390730557899999,2016,Solar,Capacity,10.0
 Falls Township,M100000US390732648899999,2005,Solar,Capacity,1.65
 Falls Township,M100000US390732648899999,2005,Wind,Capacity,5.0
@@ -2284,6 +2556,7 @@ Falls Township,M100000US390732648899999,2020,Solar,Capacity,22.299999999999997
 Falls Township,M100000US390732648899999,2021,Solar,Capacity,49.43
 Falls Township,M100000US390732648899999,2022,Solar,Capacity,23.32
 Falls Township,M100000US390732648899999,2024,Solar,Capacity,43.624
+Falls Township,M100000US390732648899999,2025,Solar,Capacity,11.6
 Good Hope Township,M100000US390733084299999,2005,Wind,Capacity,3.0
 Good Hope Township,M100000US390733084299999,2019,Solar,Capacity,25.3
 Good Hope Township,M100000US390733084299999,2022,Solar,Capacity,23.78
@@ -2293,6 +2566,8 @@ Green Township,M100000US390733178099999,2019,Solar,Capacity,41.0
 Green Township,M100000US390733178099999,2020,Solar,Capacity,7.2
 Green Township,M100000US390733178099999,2021,Solar,Capacity,20.799999999999997
 Green Township,M100000US390733178099999,2024,Solar,Capacity,11.5
+Green Township,M100000US390733178099999,2025,Energy Storage,Capacity,10.0
+Green Township,M100000US390733178099999,2025,Solar,Capacity,23.0
 Laurel Township,M100000US390734205699999,2018,Solar,Capacity,22.8
 Marion Township,M100000US390734774099999,2010,Solar,Capacity,8.4
 Marion Township,M100000US390734774099999,2011,Solar,Capacity,9.1
@@ -2306,14 +2581,18 @@ Starr Township,M100000US390737440599999,2020,Solar,Capacity,6.0
 Starr Township,M100000US390737440599999,2023,Solar,Capacity,5.584
 Starr Township,M100000US390737440599999,2024,Solar,Capacity,9.074
 Ward Township,M100000US390738078099999,2023,Solar,Capacity,4.06
+Ward Township,M100000US390738078099999,2025,Solar,Capacity,3.8
 Washington Township,M100000US390738135499999,2019,Solar,Capacity,6.0
 Washington Township,M100000US390738135499999,2020,Solar,Capacity,5.0
+Washington Township,M100000US390738135499999,2025,Solar,Capacity,18.07
 Berlin Township,M100000US390830584499999,2018,Solar,Capacity,26.0
 Berlin Township,M100000US390830584499999,2019,Solar,Capacity,47.400000000000006
 Berlin Township,M100000US390830584499999,2020,Solar,Capacity,15.2
 Berlin Township,M100000US390830584499999,2021,Solar,Capacity,17.6
 Berlin Township,M100000US390830584499999,2023,Solar,Capacity,17.91
-Berlin Township,M100000US390830584499999,2024,Solar,Capacity,20.43
+Berlin Township,M100000US390830584499999,2024,Energy Storage,Capacity,11.5
+Berlin Township,M100000US390830584499999,2024,Solar,Capacity,24.83
+Berlin Township,M100000US390830584499999,2025,Solar,Capacity,13.96
 Brown Township,M100000US390830947099999,2023,Solar,Capacity,33.379999999999995
 Brown Township,M100000US390830947099999,2024,Solar,Capacity,80.8
 Clay Township,M100000US390831550499999,2013,Solar,Capacity,5.2
@@ -2340,6 +2619,7 @@ Hilliar Township,M100000US390833546299999,2020,Solar,Capacity,51.2
 Hilliar Township,M100000US390833546299999,2022,Solar,Capacity,14.559999999999999
 Hilliar Township,M100000US390833546299999,2023,Solar,Capacity,7.04
 Hilliar Township,M100000US390833546299999,2024,Solar,Capacity,7.6
+Hilliar Township,M100000US390833546299999,2025,Solar,Capacity,17.48
 Howard Township,M100000US390833652699999,2014,Solar,Capacity,29.0
 Howard Township,M100000US390833652699999,2020,Solar,Capacity,7.6
 Howard Township,M100000US390833652699999,2022,Energy Storage,Capacity,3.84
@@ -2347,6 +2627,7 @@ Howard Township,M100000US390833652699999,2022,Solar,Capacity,37.08
 Howard Township,M100000US390833652699999,2023,Energy Storage,Capacity,3.84
 Howard Township,M100000US390833652699999,2023,Solar,Capacity,42.92
 Howard Township,M100000US390833652699999,2024,Solar,Capacity,29.281
+Howard Township,M100000US390833652699999,2025,Solar,Capacity,6.08
 Jefferson Township,M100000US390833866899999,2022,Solar,Capacity,7.54
 Liberty Township,M100000US390834321899999,2007,Solar,Capacity,6.0
 Liberty Township,M100000US390834321899999,2014,Solar,Capacity,13.9
@@ -2357,6 +2638,7 @@ Liberty Township,M100000US390834321899999,2021,Solar,Capacity,22.689999999999998
 Liberty Township,M100000US390834321899999,2022,Solar,Capacity,31.72
 Liberty Township,M100000US390834321899999,2023,Solar,Capacity,5.8
 Liberty Township,M100000US390834321899999,2024,Solar,Capacity,28.060000000000002
+Liberty Township,M100000US390834321899999,2025,Solar,Capacity,12.45
 Middlebury Township,M100000US390834965899999,2018,Solar,Capacity,55.1
 Middlebury Township,M100000US390834965899999,2021,Solar,Capacity,7.6
 Milford Township,M100000US390835020499999,2022,Solar,Capacity,21.25
@@ -2382,15 +2664,18 @@ Morris Township,M100000US390835229099999,2020,Solar,Capacity,21.4
 Morris Township,M100000US390835229099999,2021,Solar,Capacity,27.38
 Morris Township,M100000US390835229099999,2023,Solar,Capacity,7.8
 Morris Township,M100000US390835229099999,2024,Solar,Capacity,6.48
+Morris Township,M100000US390835229099999,2025,Solar,Capacity,12.89
 Pike Township,M100000US390836265299999,2020,Solar,Capacity,16.4
 Pike Township,M100000US390836265299999,2023,Solar,Capacity,10.28
 Pleasant Township,M100000US390836331099999,2015,Solar,Capacity,16.0
 Pleasant Township,M100000US390836331099999,2019,Solar,Capacity,5.0
 Pleasant Township,M100000US390836331099999,2020,Solar,Capacity,9.5
 Pleasant Township,M100000US390836331099999,2021,Solar,Capacity,6.67
+Pleasant Township,M100000US390836331099999,2025,Solar,Capacity,9.88
 Union Township,M100000US390837835899999,2021,Solar,Capacity,7.6
 Union Township,M100000US390837835899999,2023,Solar,Capacity,10.0
 Union Township,M100000US390837835899999,2024,Solar,Capacity,11.168
+Union Township,M100000US390837835899999,2025,Solar,Capacity,33.44
 Wayne Township,M100000US390838219499999,2019,Solar,Capacity,11.4
 Wayne Township,M100000US390838219499999,2022,Solar,Capacity,20.16
 Wayne Township,M100000US390838219499999,2023,Solar,Capacity,10.44
@@ -2402,12 +2687,14 @@ Brice Village,M100000US3908532,2020,Solar,Capacity,5.0
 Bennington Township,M100000US390890549499999,2017,Solar,Capacity,6.0
 Bennington Township,M100000US390890549499999,2020,Solar,Capacity,8.2
 Bennington Township,M100000US390890549499999,2024,Solar,Capacity,17.6
+Bennington Township,M100000US390890549499999,2025,Solar,Capacity,6.0
 Bowling Green Township,M100000US390890794499999,2019,Solar,Capacity,10.0
 Bowling Green Township,M100000US390890794499999,2023,Solar,Capacity,15.2
 Burlington Township,M100000US390891036699999,2011,Solar,Capacity,16.1
 Burlington Township,M100000US390891036699999,2015,Solar,Capacity,9.9
 Burlington Township,M100000US390891036699999,2018,Solar,Capacity,5.0
 Burlington Township,M100000US390891036699999,2022,Solar,Capacity,6.96
+Burlington Township,M100000US390891036699999,2025,Solar,Capacity,25.46
 Etna Township,M100000US390892569099999,2010,Solar,Capacity,2.6
 Etna Township,M100000US390892569099999,2014,Solar,Capacity,12.0
 Etna Township,M100000US390892569099999,2018,Solar,Capacity,31.1
@@ -2418,6 +2705,7 @@ Etna Township,M100000US390892569099999,2022,Solar,Capacity,49.34
 Etna Township,M100000US390892569099999,2023,Energy Storage,Capacity,22.240000000000002
 Etna Township,M100000US390892569099999,2023,Solar,Capacity,180.44
 Etna Township,M100000US390892569099999,2024,Solar,Capacity,108.31
+Etna Township,M100000US390892569099999,2025,Solar,Capacity,93.105
 Franklin Township,M100000US390892833699999,2019,Solar,Capacity,12.6
 Franklin Township,M100000US390892833699999,2020,Solar,Capacity,4.2
 Franklin Township,M100000US390892833699999,2021,Solar,Capacity,19.0
@@ -2435,9 +2723,11 @@ Granville Township,M100000US390893141699999,2021,Solar,Capacity,39.61
 Granville Township,M100000US390893141699999,2022,Solar,Capacity,43.28
 Granville Township,M100000US390893141699999,2023,Solar,Capacity,79.65
 Granville Township,M100000US390893141699999,2024,Solar,Capacity,25.038
+Granville Township,M100000US390893141699999,2025,Solar,Capacity,5.7
 Hanover Township,M100000US390893329999999,2019,Solar,Capacity,3.8
 Hanover Township,M100000US390893329999999,2022,Solar,Capacity,22.86
 Hanover Township,M100000US390893329999999,2023,Solar,Capacity,2.61
+Hanover Township,M100000US390893329999999,2025,Solar,Capacity,15.76
 Harrison Township,M100000US390893389499999,2018,Solar,Capacity,5.0
 Harrison Township,M100000US390893389499999,2019,Solar,Capacity,21.2
 Harrison Township,M100000US390893389499999,2020,Solar,Capacity,22.2
@@ -2445,9 +2735,11 @@ Harrison Township,M100000US390893389499999,2021,Solar,Capacity,54.91
 Harrison Township,M100000US390893389499999,2022,Solar,Capacity,88.89
 Harrison Township,M100000US390893389499999,2023,Solar,Capacity,78.035
 Harrison Township,M100000US390893389499999,2024,Solar,Capacity,17.11
+Harrison Township,M100000US390893389499999,2025,Solar,Capacity,30.009999999999998
 Hartford Township,M100000US390893418899999,2017,Solar,Capacity,7.6
 Hartford Township,M100000US390893418899999,2019,Solar,Capacity,9.9
 Hopewell Township,M100000US390893631699999,2021,Solar,Capacity,7.6
+Hopewell Township,M100000US390893631699999,2025,Solar,Capacity,10.0
 Jersey Township,M100000US390893910299999,2012,Solar,Capacity,18.7
 Jersey Township,M100000US390893910299999,2015,Solar,Capacity,9.6
 Jersey Township,M100000US390893910299999,2017,Solar,Capacity,12.4
@@ -2456,6 +2748,7 @@ Jersey Township,M100000US390893910299999,2020,Solar,Capacity,15.0
 Jersey Township,M100000US390893910299999,2021,Solar,Capacity,49.04
 Jersey Township,M100000US390893910299999,2023,Solar,Capacity,26.389999999999997
 Jersey Township,M100000US390893910299999,2024,Solar,Capacity,7.8
+Jersey Township,M100000US390893910299999,2025,Solar,Capacity,33.269999999999996
 Liberty Township,M100000US390894323299999,2018,Solar,Capacity,19.0
 Liberty Township,M100000US390894323299999,2022,Solar,Capacity,10.976
 Licking Township,M100000US390894345699999,2006,Solar,Capacity,2.5
@@ -2466,6 +2759,7 @@ Licking Township,M100000US390894345699999,2020,Solar,Capacity,3.8
 Licking Township,M100000US390894345699999,2022,Solar,Capacity,21.46
 Licking Township,M100000US390894345699999,2023,Solar,Capacity,63.19
 Licking Township,M100000US390894345699999,2024,Solar,Capacity,14.399999999999999
+Licking Township,M100000US390894345699999,2025,Solar,Capacity,15.440000000000001
 McKean Township,M100000US390894611699999,2012,Solar,Capacity,6.25
 McKean Township,M100000US390894611699999,2016,Solar,Capacity,5.5
 McKean Township,M100000US390894611699999,2019,Solar,Capacity,7.4
@@ -2480,12 +2774,14 @@ Madison Township,M100000US390894650899999,2020,Solar,Capacity,14.5
 Madison Township,M100000US390894650899999,2021,Solar,Capacity,18.7
 Madison Township,M100000US390894650899999,2024,Energy Storage,Capacity,7.68
 Madison Township,M100000US390894650899999,2024,Solar,Capacity,28.386000000000003
+Madison Township,M100000US390894650899999,2025,Solar,Capacity,50.3
 Mary Ann Township,M100000US390894813299999,2018,Solar,Capacity,6.5
 Mary Ann Township,M100000US390894813299999,2019,Solar,Capacity,4.8
 Mary Ann Township,M100000US390894813299999,2020,Solar,Capacity,15.4
 Mary Ann Township,M100000US390894813299999,2023,Solar,Capacity,10.44
 Monroe Township,M100000US390895145099999,2021,Solar,Capacity,44.58
 Monroe Township,M100000US390895145099999,2023,Solar,Capacity,11.6
+Monroe Township,M100000US390895145099999,2025,Solar,Capacity,40.0
 Newark Township,M100000US390895405499999,2018,Solar,Capacity,6.0
 Newark Township,M100000US390895405499999,2019,Solar,Capacity,11.899999999999999
 Newark Township,M100000US390895405499999,2020,Solar,Capacity,20.3
@@ -2493,12 +2789,14 @@ Newark Township,M100000US390895405499999,2021,Solar,Capacity,25.92
 Newark Township,M100000US390895405499999,2022,Solar,Capacity,11.34
 Newark Township,M100000US390895405499999,2023,Solar,Capacity,6.0
 Newark Township,M100000US390895405499999,2024,Solar,Capacity,15.2
+Newark Township,M100000US390895405499999,2025,Solar,Capacity,38.29
 Newton Township,M100000US390895558099999,2012,Solar,Capacity,17.2
 Newton Township,M100000US390895558099999,2019,Solar,Capacity,8.0
 Newton Township,M100000US390895558099999,2021,Solar,Capacity,30.4
 Newton Township,M100000US390895558099999,2022,Solar,Capacity,25.98
 Newton Township,M100000US390895558099999,2023,Solar,Capacity,11.904
 Newton Township,M100000US390895558099999,2024,Solar,Capacity,86.39
+Newton Township,M100000US390895558099999,2025,Solar,Capacity,125.385
 Perry Township,M100000US390896192499999,2024,Solar,Capacity,7.6
 St. Albans Township,M100000US390896945699999,2010,Wind,Capacity,2.4
 St. Albans Township,M100000US390896945699999,2014,Solar,Capacity,12.0
@@ -2511,6 +2809,8 @@ St. Albans Township,M100000US390896945699999,2021,Solar,Capacity,9.6
 St. Albans Township,M100000US390896945699999,2022,Solar,Capacity,39.9
 St. Albans Township,M100000US390896945699999,2023,Solar,Capacity,37.88
 St. Albans Township,M100000US390896945699999,2024,Solar,Capacity,6.67
+St. Albans Township,M100000US390896945699999,2025,Energy Storage,Capacity,0.0
+St. Albans Township,M100000US390896945699999,2025,Solar,Capacity,20.0
 Union Township,M100000US390897840099999,2013,Solar,Capacity,10.2
 Union Township,M100000US390897840099999,2015,Solar,Capacity,7.6
 Union Township,M100000US390897840099999,2019,Solar,Capacity,19.8
@@ -2519,12 +2819,16 @@ Union Township,M100000US390897840099999,2021,Solar,Capacity,50.305
 Union Township,M100000US390897840099999,2022,Solar,Capacity,44.75
 Union Township,M100000US390897840099999,2023,Solar,Capacity,49.22
 Union Township,M100000US390897840099999,2024,Solar,Capacity,36.214
+Union Township,M100000US390897840099999,2025,Energy Storage,Capacity,17.68
+Union Township,M100000US390897840099999,2025,Solar,Capacity,56.56
 Washington Township,M100000US390898141099999,2022,Solar,Capacity,18.33
 Bloomfield Township,M100000US390910711899999,2023,Solar,Capacity,9.125
 Harrison Township,M100000US390913390899999,2010,Wind,Capacity,12.0
 Harrison Township,M100000US390913390899999,2021,Solar,Capacity,10.0
 Harrison Township,M100000US390913390899999,2022,Solar,Capacity,13.86
 Harrison Township,M100000US390913390899999,2024,Solar,Capacity,9.36
+Harrison Township,M100000US390913390899999,2025,Energy Storage,Capacity,7.26
+Harrison Township,M100000US390913390899999,2025,Solar,Capacity,4.886
 Jefferson Township,M100000US390913868299999,2019,Solar,Capacity,9.74
 Jefferson Township,M100000US390913868299999,2020,Solar,Capacity,14.59
 Jefferson Township,M100000US390913868299999,2022,Solar,Capacity,38.6
@@ -2532,6 +2836,7 @@ Jefferson Township,M100000US390913868299999,2023,Solar,Capacity,12.18
 Jefferson Township,M100000US390913868299999,2024,Solar,Capacity,3.19
 Liberty Township,M100000US390914324699999,2022,Solar,Capacity,4.64
 Liberty Township,M100000US390914324699999,2024,Solar,Capacity,6.09
+Liberty Township,M100000US390914324699999,2025,Solar,Capacity,14.6
 Monroe Township,M100000US390915146499999,2020,Solar,Capacity,7.6
 Monroe Township,M100000US390915146499999,2021,Solar,Capacity,11.399999999999999
 Perry Township,M100000US390916193899999,2021,Solar,Capacity,5.55
@@ -2547,6 +2852,7 @@ Rushcreek Township,M100000US390916913499999,2021,Solar,Capacity,6.72
 Rushcreek Township,M100000US390916913499999,2023,Solar,Capacity,5.1
 Stokes Township,M100000US390917478099999,2010,Wind,Capacity,4.0
 Stokes Township,M100000US390917478099999,2024,Solar,Capacity,4.1
+Stokes Township,M100000US390917478099999,2025,Solar,Capacity,12.08
 Washington Township,M100000US390918142499999,2015,Solar,Capacity,8.0
 Washington Township,M100000US390918142499999,2024,Solar,Capacity,15.5
 Zane Township,M100000US390918804299999,2013,Solar,Capacity,9.46
@@ -2566,9 +2872,11 @@ Canaan Township,M100000US390971123499999,2022,Solar,Capacity,31.4
 Canaan Township,M100000US390971123499999,2023,Energy Storage,Capacity,7.6
 Canaan Township,M100000US390971123499999,2023,Solar,Capacity,39.99
 Canaan Township,M100000US390971123499999,2024,Solar,Capacity,9.57
+Canaan Township,M100000US390971123499999,2025,Solar,Capacity,30.72
 Darby Township,M100000US390972014299999,2010,Wind,Capacity,12.0
 Darby Township,M100000US390972014299999,2021,Solar,Capacity,10.0
 Darby Township,M100000US390972014299999,2022,Solar,Capacity,4.93
+Darby Township,M100000US390972014299999,2025,Solar,Capacity,6.28
 Deer Creek Township,M100000US390972115499999,2010,Solar,Capacity,4.0
 Deer Creek Township,M100000US390972115499999,2011,Solar,Capacity,21.4
 Deer Creek Township,M100000US390972115499999,2015,Solar,Capacity,24.0
@@ -2584,6 +2892,7 @@ Fairfield Township,M100000US390972606899999,2020,Solar,Capacity,3.2
 Fairfield Township,M100000US390972606899999,2021,Solar,Capacity,9.57
 Fairfield Township,M100000US390972606899999,2022,Solar,Capacity,6.96
 Fairfield Township,M100000US390972606899999,2023,Solar,Capacity,25.0
+Fairfield Township,M100000US390972606899999,2025,Solar,Capacity,17.45
 Jefferson Township,M100000US390973869699999,2011,Solar,Capacity,8.3
 Jefferson Township,M100000US390973869699999,2013,Solar,Capacity,7.4
 Jefferson Township,M100000US390973869699999,2016,Solar,Capacity,15.2
@@ -2602,11 +2911,12 @@ Oak Run Township,M100000US390975770899999,2010,Wind,Capacity,10.0
 Oak Run Township,M100000US390975770899999,2020,Solar,Capacity,11.4
 Oak Run Township,M100000US390975770899999,2021,Solar,Capacity,8.7
 Oak Run Township,M100000US390975770899999,2024,Solar,Capacity,57.38
+Oak Run Township,M100000US390975770899999,2025,Solar,Capacity,15.2
 Paint Township,M100000US390975952899999,2017,Solar,Capacity,7.2
-Paint Township,M100000US390975952899999,2021,Solar,Capacity,11.4
 Paint Township,M100000US390975952899999,2023,Energy Storage,Capacity,0.0
 Paint Township,M100000US390975952899999,2023,Solar,Capacity,11.4
 Paint Township,M100000US390975952899999,2024,Solar,Capacity,7.83
+Paint Township,M100000US390975952899999,2025,Solar,Capacity,19.85
 Pike Township,M100000US390976266699999,2023,Solar,Capacity,45.01
 Pleasant Township,M100000US390976333899999,2013,Solar,Capacity,14.5
 Pleasant Township,M100000US390976333899999,2016,Solar,Capacity,7.6
@@ -2630,6 +2940,7 @@ Somerford Township,M100000US390977296099999,2020,Solar,Capacity,13.11
 Somerford Township,M100000US390977296099999,2021,Solar,Capacity,11.4
 Somerford Township,M100000US390977296099999,2022,Solar,Capacity,38.56
 Somerford Township,M100000US390977296099999,2024,Solar,Capacity,19.04
+Somerford Township,M100000US390977296099999,2025,Solar,Capacity,23.92
 Stokes Township,M100000US390977478499999,2019,Solar,Capacity,3.8
 Stokes Township,M100000US390977478499999,2022,Solar,Capacity,10.0
 Union Township,M100000US390977842899999,2010,Solar,Capacity,73.04
@@ -2641,6 +2952,7 @@ Union Township,M100000US390977842899999,2023,Solar,Capacity,16.53
 Buckeye Lake Village,M100000US3909890,2020,Solar,Capacity,5.0
 Buckeye Lake Village,M100000US3909890,2023,Solar,Capacity,3.77
 Buckeye Lake Village,M100000US3909890,2024,Solar,Capacity,20.15
+Buckeye Lake Village,M100000US3909890,2025,Solar,Capacity,5.7
 Big Island Township,M100000US391010634899999,2017,Solar,Capacity,3.6
 Big Island Township,M100000US391010634899999,2023,Solar,Capacity,9.18
 Bowling Green Township,M100000US391010795899999,2014,Solar,Capacity,14.0
@@ -2649,6 +2961,7 @@ Claridon Township,M100000US391011519699999,2019,Solar,Capacity,11.0
 Claridon Township,M100000US391011519699999,2022,Solar,Capacity,4.06
 Claridon Township,M100000US391011519699999,2023,Solar,Capacity,16.240000000000002
 Claridon Township,M100000US391011519699999,2024,Solar,Capacity,5.0
+Claridon Township,M100000US391011519699999,2025,Solar,Capacity,14.82
 Grand Prairie Township,M100000US391013119299999,2016,Solar,Capacity,8.2
 Grand Prairie Township,M100000US391013119299999,2019,Solar,Capacity,10.0
 Grand Prairie Township,M100000US391013119299999,2022,Solar,Capacity,7.6
@@ -2658,7 +2971,6 @@ Green Camp Township,M100000US391013196299999,2019,Solar,Capacity,6.0
 Green Camp Township,M100000US391013196299999,2020,Solar,Capacity,3.8
 Green Camp Township,M100000US391013196299999,2023,Solar,Capacity,15.2
 Marion Township,M100000US391014776899999,2011,Solar,Capacity,45.0
-Marion Township,M100000US391014776899999,2013,Solar,Capacity,40.0
 Marion Township,M100000US391014776899999,2017,Solar,Capacity,20.0
 Marion Township,M100000US391014776899999,2017,Waste Gas,Capacity,3500.0
 Marion Township,M100000US391014776899999,2018,Solar,Capacity,7.6
@@ -2668,6 +2980,7 @@ Marion Township,M100000US391014776899999,2021,Solar,Capacity,30.240000000000002
 Marion Township,M100000US391014776899999,2022,Solar,Capacity,25.8
 Marion Township,M100000US391014776899999,2023,Solar,Capacity,8.48
 Marion Township,M100000US391014776899999,2024,Solar,Capacity,18.09
+Marion Township,M100000US391014776899999,2025,Solar,Capacity,57.575
 Montgomery Township,M100000US391015173099999,2015,Solar,Capacity,9.9
 Montgomery Township,M100000US391015173099999,2023,Solar,Capacity,7.68
 Montgomery Township,M100000US391015173099999,2024,Solar,Capacity,34.64
@@ -2682,6 +2995,7 @@ Pleasant Township,M100000US391016335299999,2020,Solar,Capacity,12.0
 Pleasant Township,M100000US391016335299999,2021,Solar,Capacity,19.57
 Pleasant Township,M100000US391016335299999,2022,Solar,Capacity,52.669999999999995
 Pleasant Township,M100000US391016335299999,2024,Solar,Capacity,25.84
+Pleasant Township,M100000US391016335299999,2025,Solar,Capacity,17.9
 Prospect Township,M100000US391016479499999,2016,Solar,Capacity,10.0
 Prospect Township,M100000US391016479499999,2023,Solar,Capacity,7.0
 Richland Township,M100000US391016675499999,2015,Solar,Capacity,4.0
@@ -2689,6 +3003,7 @@ Richland Township,M100000US391016675499999,2017,Solar,Capacity,11.0
 Richland Township,M100000US391016675499999,2021,Solar,Capacity,16.98
 Richland Township,M100000US391016675499999,2022,Solar,Capacity,7.6
 Richland Township,M100000US391016675499999,2023,Solar,Capacity,11.6
+Richland Township,M100000US391016675499999,2025,Solar,Capacity,11.83
 Scott Township,M100000US391017107399999,2019,Solar,Capacity,7.6
 Tully Township,M100000US391017774299999,2015,Solar,Capacity,18.0
 Waldo Township,M100000US391018051499999,2016,Solar,Capacity,16.2
@@ -2697,18 +3012,19 @@ Waldo Township,M100000US391018051499999,2020,Solar,Capacity,3.6
 Waldo Township,M100000US391018051499999,2021,Solar,Capacity,10.0
 Waldo Township,M100000US391018051499999,2022,Solar,Capacity,21.4
 Waldo Township,M100000US391018051499999,2023,Solar,Capacity,5.76
+Waldo Township,M100000US391018051499999,2025,Solar,Capacity,7.83
 Bennington Township,M100000US391170550899999,2020,Solar,Capacity,10.0
 Bennington Township,M100000US391170550899999,2023,Energy Storage,Capacity,5.0
 Bennington Township,M100000US391170550899999,2023,Solar,Capacity,7.6
 Bennington Township,M100000US391170550899999,2024,Solar,Capacity,11.31
 Canaan Township,M100000US391171124899999,2016,Solar,Capacity,7.0
 Canaan Township,M100000US391171124899999,2022,Solar,Capacity,5.51
+Canaan Township,M100000US391171124899999,2025,Solar,Capacity,7.83
 Cardington Township,M100000US391171209899999,2020,Solar,Capacity,7.6
 Cardington Township,M100000US391171209899999,2023,Solar,Capacity,11.02
 Cardington Township,M100000US391171209899999,2024,Solar,Capacity,13.19
 Chester Township,M100000US391171403099999,2019,Solar,Capacity,18.7
 Chester Township,M100000US391171403099999,2021,Solar,Capacity,24.48
-Congress Township,M100000US391171829499999,2018,Solar,Capacity,5.0
 Congress Township,M100000US391171829499999,2019,Solar,Capacity,17.6
 Congress Township,M100000US391171829499999,2020,Solar,Capacity,3.2
 Congress Township,M100000US391171829499999,2021,Solar,Capacity,6.38
@@ -2722,6 +3038,7 @@ Gilead Township,M100000US391173012899999,2019,Solar,Capacity,26.0
 Gilead Township,M100000US391173012899999,2020,Solar,Capacity,26.16
 Gilead Township,M100000US391173012899999,2021,Solar,Capacity,11.89
 Gilead Township,M100000US391173012899999,2022,Solar,Capacity,7.6
+Gilead Township,M100000US391173012899999,2025,Solar,Capacity,9.88
 Harmony Township,M100000US391173360099999,2015,Solar,Capacity,8.0
 Harmony Township,M100000US391173360099999,2018,Solar,Capacity,10.975
 Harmony Township,M100000US391173360099999,2020,Solar,Capacity,7.6
@@ -2732,6 +3049,7 @@ Lincoln Township,M100000US391174368099999,2018,Solar,Capacity,20.0
 Lincoln Township,M100000US391174368099999,2019,Solar,Capacity,8.8
 Lincoln Township,M100000US391174368099999,2021,Solar,Capacity,7.04
 Lincoln Township,M100000US391174368099999,2022,Solar,Capacity,11.4
+Lincoln Township,M100000US391174368099999,2025,Solar,Capacity,10.0
 North Bloomfield Township,M100000US391175622499999,2019,Solar,Capacity,3.2
 North Bloomfield Township,M100000US391175622499999,2021,Solar,Capacity,7.6
 Perry Township,M100000US391176198099999,2015,Solar,Capacity,5.0
@@ -2746,15 +3064,18 @@ Washington Township,M100000US391178150899999,2019,Solar,Capacity,7.4
 Washington Township,M100000US391178150899999,2022,Solar,Capacity,7.25
 Washington Township,M100000US391178150899999,2023,Solar,Capacity,12.68
 Washington Township,M100000US391178150899999,2024,Solar,Capacity,9.559999999999999
+Washington Township,M100000US391178150899999,2025,Solar,Capacity,10.44
 Westfield Township,M100000US391178345499999,2019,Solar,Capacity,7.4
 Westfield Township,M100000US391178345499999,2020,Solar,Capacity,5.4
 Westfield Township,M100000US391178345499999,2021,Solar,Capacity,14.8
 Cardington Village,M100000US3912084,2020,Solar,Capacity,3.84
 Cardington Village,M100000US3912084,2022,Solar,Capacity,21.55
 Cardington Village,M100000US3912084,2023,Solar,Capacity,7.6
+Cardington Village,M100000US3912084,2025,Solar,Capacity,11.6
 Bearfield Township,M100000US391270458499999,2019,Solar,Capacity,8.7
 Bearfield Township,M100000US391270458499999,2022,Solar,Capacity,18.990000000000002
 Bearfield Township,M100000US391270458499999,2023,Solar,Capacity,7.6
+Bearfield Township,M100000US391270458499999,2025,Solar,Capacity,4.9
 Clayton Township,M100000US391271565899999,2015,Solar,Capacity,15.0
 Clayton Township,M100000US391271565899999,2019,Solar,Capacity,10.0
 Clayton Township,M100000US391271565899999,2020,Solar,Capacity,5.8
@@ -2762,11 +3083,13 @@ Clayton Township,M100000US391271565899999,2021,Solar,Capacity,7.6
 Clayton Township,M100000US391271565899999,2022,Solar,Capacity,15.66
 Clayton Township,M100000US391271565899999,2023,Solar,Capacity,14.559999999999999
 Clayton Township,M100000US391271565899999,2024,Solar,Capacity,7.2
+Clayton Township,M100000US391271565899999,2025,Solar,Capacity,22.799999999999997
 Coal Township,M100000US391271635099999,2024,Solar,Capacity,8.125
 Harrison Township,M100000US391273396499999,2015,Solar,Capacity,4.0
 Harrison Township,M100000US391273396499999,2019,Solar,Capacity,19.6
 Harrison Township,M100000US391273396499999,2021,Solar,Capacity,7.6
 Harrison Township,M100000US391273396499999,2024,Solar,Capacity,13.262
+Harrison Township,M100000US391273396499999,2025,Solar,Capacity,6.84
 Hopewell Township,M100000US391273638699999,2019,Solar,Capacity,6.0
 Hopewell Township,M100000US391273638699999,2021,Solar,Capacity,7.6
 Hopewell Township,M100000US391273638699999,2022,Solar,Capacity,11.6
@@ -2781,9 +3104,11 @@ Pike Township,M100000US391276268099999,2019,Solar,Capacity,10.0
 Pike Township,M100000US391276268099999,2020,Solar,Capacity,6.0
 Pike Township,M100000US391276268099999,2022,Solar,Capacity,15.8
 Pike Township,M100000US391276268099999,2024,Solar,Capacity,29.47
+Pike Township,M100000US391276268099999,2025,Solar,Capacity,55.28
 Pleasant Township,M100000US391276336699999,2018,Solar,Capacity,5.0
 Pleasant Township,M100000US391276336699999,2020,Solar,Capacity,6.4
 Pleasant Township,M100000US391276336699999,2021,Solar,Capacity,7.6
+Pleasant Township,M100000US391276336699999,2025,Solar,Capacity,18.59
 Reading Township,M100000US391276576099999,2021,Solar,Capacity,20.36
 Salt Lick Township,M100000US391277022699999,2021,Solar,Capacity,15.14
 Thorn Township,M100000US391277665999999,2015,Solar,Capacity,12.0
@@ -2795,6 +3120,7 @@ Thorn Township,M100000US391277665999999,2024,Solar,Capacity,9.75
 Darby Township,M100000US391292015699999,2019,Solar,Capacity,15.2
 Darby Township,M100000US391292015699999,2020,Solar,Capacity,6.0
 Darby Township,M100000US391292015699999,2022,Solar,Capacity,20.16
+Darby Township,M100000US391292015699999,2025,Solar,Capacity,10.0
 Monroe Township,M100000US391295153499999,2020,Solar,Capacity,3.84
 Monroe Township,M100000US391295153499999,2023,Solar,Capacity,9.2
 Perry Township,M100000US391296200899999,2022,Solar,Capacity,4.64
@@ -2812,10 +3138,12 @@ Scioto Township,M100000US391297087099999,2022,Solar,Capacity,25.200000000000003
 Scioto Township,M100000US391297087099999,2023,Energy Storage,Capacity,4.8
 Scioto Township,M100000US391297087099999,2023,Solar,Capacity,56.28
 Scioto Township,M100000US391297087099999,2024,Solar,Capacity,18.05
+Scioto Township,M100000US391297087099999,2025,Solar,Capacity,19.78
 Centerburg Village,M100000US3913036,2012,Solar,Capacity,1400.0
 Centerburg Village,M100000US3913036,2019,Solar,Capacity,7.6
 Centerburg Village,M100000US3913036,2020,Solar,Capacity,6.2
 Centerburg Village,M100000US3913036,2023,Solar,Capacity,10.309999999999999
+Centerburg Village,M100000US3913036,2025,Solar,Capacity,13.92
 Concord Township,M100000US391411823899999,2018,Solar,Capacity,21.0
 Franklin Township,M100000US391412842099999,2018,Solar,Capacity,11.4
 Franklin Township,M100000US391412842099999,2019,Solar,Capacity,3.0
@@ -2823,19 +3151,24 @@ Franklin Township,M100000US391412842099999,2020,Solar,Capacity,5.0
 Franklin Township,M100000US391412842099999,2021,Solar,Capacity,7.6
 Franklin Township,M100000US391412842099999,2022,Solar,Capacity,19.2
 Franklin Township,M100000US391412842099999,2024,Solar,Capacity,8.41
+Franklin Township,M100000US391412842099999,2025,Solar,Capacity,28.880000000000003
 Green Township,M100000US391413182299999,2007,Solar,Capacity,3.0
 Green Township,M100000US391413182299999,2015,Solar,Capacity,5.0
 Green Township,M100000US391413182299999,2020,Solar,Capacity,10.0
+Green Township,M100000US391413182299999,2025,Solar,Capacity,18.38
 Harrison Township,M100000US391413400699999,2019,Solar,Capacity,11.4
 Harrison Township,M100000US391413400699999,2021,Solar,Capacity,10.44
+Harrison Township,M100000US391413400699999,2025,Solar,Capacity,27.12
 Huntington Township,M100000US391413689099999,2019,Solar,Capacity,14.1
 Huntington Township,M100000US391413689099999,2020,Solar,Capacity,7.6
 Huntington Township,M100000US391413689099999,2022,Solar,Capacity,6.38
 Huntington Township,M100000US391413689099999,2023,Solar,Capacity,33.769999999999996
+Huntington Township,M100000US391413689099999,2025,Solar,Capacity,9.86
 Jefferson Township,M100000US391413880899999,2015,Solar,Capacity,17.4
 Jefferson Township,M100000US391413880899999,2020,Solar,Capacity,7.6
 Jefferson Township,M100000US391413880899999,2022,Solar,Capacity,20.3
 Jefferson Township,M100000US391413880899999,2023,Solar,Capacity,16.439999999999998
+Jefferson Township,M100000US391413880899999,2025,Solar,Capacity,11.4
 Liberty Township,M100000US391414330299999,2015,Solar,Capacity,6.0
 Liberty Township,M100000US391414330299999,2018,Solar,Capacity,11.1
 Liberty Township,M100000US391414330299999,2019,Solar,Capacity,14.16
@@ -2844,10 +3177,12 @@ Liberty Township,M100000US391414330299999,2021,Solar,Capacity,75.22
 Liberty Township,M100000US391414330299999,2022,Solar,Capacity,11.08
 Liberty Township,M100000US391414330299999,2023,Solar,Capacity,30.880000000000003
 Liberty Township,M100000US391414330299999,2024,Solar,Capacity,6.96
+Liberty Township,M100000US391414330299999,2025,Solar,Capacity,12.18
 Scioto Township,M100000US391417089899999,2018,Solar,Capacity,10.0
 Scioto Township,M100000US391417089899999,2020,Solar,Capacity,4.3
 Scioto Township,M100000US391417089899999,2021,Solar,Capacity,14.6
 Scioto Township,M100000US391417089899999,2024,Solar,Capacity,13.129999999999999
+Scioto Township,M100000US391417089899999,2025,Solar,Capacity,21.509999999999998
 Springfield Township,M100000US391417412999999,2021,Solar,Capacity,14.8
 Springfield Township,M100000US391417412999999,2023,Solar,Capacity,3.06
 Springfield Township,M100000US391417412999999,2024,Solar,Capacity,8.12
@@ -2858,23 +3193,26 @@ Twin Township,M100000US391417800899999,2022,Energy Storage,Capacity,3.84
 Twin Township,M100000US391417800899999,2022,Solar,Capacity,31.22
 Twin Township,M100000US391417800899999,2023,Solar,Capacity,14.32
 Twin Township,M100000US391417800899999,2024,Solar,Capacity,43.78
+Twin Township,M100000US391417800899999,2025,Solar,Capacity,88.84
 Union Township,M100000US391417854099999,2013,Biofuel,Capacity,400.0
-Union Township,M100000US391417854099999,2019,Solar,Capacity,8.6
+Union Township,M100000US391417854099999,2019,Solar,Capacity,16.6
 Union Township,M100000US391417854099999,2020,Solar,Capacity,19.0
 Union Township,M100000US391417854099999,2021,Solar,Capacity,7.6
 Union Township,M100000US391417854099999,2022,Solar,Capacity,6.0
 Union Township,M100000US391417854099999,2023,Solar,Capacity,16.52
 Union Township,M100000US391417854099999,2024,Solar,Capacity,38.3
+Union Township,M100000US391417854099999,2025,Solar,Capacity,45.18
 Chillicothe City,M100000US3914184,2011,Solar,Capacity,30.0
 Chillicothe City,M100000US3914184,2013,Solar,Capacity,7.3
 Chillicothe City,M100000US3914184,2015,Solar,Capacity,13.0
-Chillicothe City,M100000US3914184,2019,Solar,Capacity,10.4
+Chillicothe City,M100000US3914184,2019,Solar,Capacity,13.6
 Chillicothe City,M100000US3914184,2020,Solar,Capacity,7.6
 Chillicothe City,M100000US3914184,2021,Solar,Capacity,30.5
 Chillicothe City,M100000US3914184,2022,Energy Storage,Capacity,7.68
 Chillicothe City,M100000US3914184,2022,Solar,Capacity,93.08
 Chillicothe City,M100000US3914184,2023,Solar,Capacity,20.16
 Chillicothe City,M100000US3914184,2024,Solar,Capacity,56.98
+Chillicothe City,M100000US3914184,2025,Solar,Capacity,329.495
 Circleville City,M100000US3915070,2018,Solar,Capacity,7.6
 Circleville City,M100000US3915070,2019,Solar,Capacity,14.399999999999999
 Circleville City,M100000US3915070,2020,Solar,Capacity,3.8
@@ -2883,15 +3221,18 @@ Circleville City,M100000US3915070,2021,Solar,Capacity,27.2
 Circleville City,M100000US3915070,2022,Solar,Capacity,27.25
 Circleville City,M100000US3915070,2023,Solar,Capacity,43.739999999999995
 Circleville City,M100000US3915070,2024,Solar,Capacity,72.196
+Circleville City,M100000US3915070,2025,Solar,Capacity,104.85000000000001
 Claibourne Township,M100000US391591511299999,2011,Solar,Capacity,6.0
 Claibourne Township,M100000US391591511299999,2018,Solar,Capacity,3.0
 Claibourne Township,M100000US391591511299999,2019,Solar,Capacity,10.0
 Claibourne Township,M100000US391591511299999,2020,Solar,Capacity,6.0
 Claibourne Township,M100000US391591511299999,2024,Solar,Capacity,18.34
+Claibourne Township,M100000US391591511299999,2025,Solar,Capacity,11.4
 Darby Township,M100000US391592017099999,2020,Solar,Capacity,22.0
 Darby Township,M100000US391592017099999,2021,Solar,Capacity,10.44
 Darby Township,M100000US391592017099999,2022,Solar,Capacity,14.674
 Darby Township,M100000US391592017099999,2023,Solar,Capacity,17.64
+Darby Township,M100000US391592017099999,2025,Solar,Capacity,6.3
 Jackson Township,M100000US391593810899999,2019,Solar,Capacity,7.6
 Jackson Township,M100000US391593810899999,2021,Solar,Capacity,12.8
 Jackson Township,M100000US391593810899999,2022,Energy Storage,Capacity,0.0
@@ -2900,10 +3241,14 @@ Jerome Township,M100000US391593904699999,2015,Solar,Capacity,9.01
 Jerome Township,M100000US391593904699999,2018,Solar,Capacity,12.0
 Jerome Township,M100000US391593904699999,2021,Solar,Capacity,14.010000000000002
 Jerome Township,M100000US391593904699999,2022,Solar,Capacity,22.36
-Jerome Township,M100000US391593904699999,2023,Solar,Capacity,71.46
+Jerome Township,M100000US391593904699999,2023,Solar,Capacity,61.46
 Jerome Township,M100000US391593904699999,2024,Solar,Capacity,55.42
+Jerome Township,M100000US391593904699999,2025,Energy Storage,Capacity,19.18
+Jerome Township,M100000US391593904699999,2025,Solar,Capacity,77.89
 Leesburg Township,M100000US391594249099999,2021,Solar,Capacity,7.26
+Leesburg Township,M100000US391594249099999,2025,Solar,Capacity,3.8
 Liberty Township,M100000US391594335899999,2022,Solar,Capacity,17.4
+Liberty Township,M100000US391594335899999,2025,Solar,Capacity,2.9
 Millcreek Township,M100000US391595028899999,2016,Solar,Capacity,5.44
 Millcreek Township,M100000US391595028899999,2018,Solar,Capacity,12.0
 Millcreek Township,M100000US391595028899999,2020,Solar,Capacity,9.6
@@ -2917,6 +3262,7 @@ Union Township,M100000US391597858299999,2017,Solar,Capacity,14.0
 Union Township,M100000US391597858299999,2020,Solar,Capacity,14.4
 Union Township,M100000US391597858299999,2022,Solar,Capacity,12.0
 Union Township,M100000US391597858299999,2023,Solar,Capacity,8.17
+Union Township,M100000US391597858299999,2025,Solar,Capacity,11.78
 Washington Township,M100000US391598166299999,2020,Solar,Capacity,6.0
 Washington Township,M100000US391598166299999,2022,Solar,Capacity,2.32
 York Township,M100000US391598712299999,2019,Solar,Capacity,7.6
@@ -2944,18 +3290,23 @@ Columbus City,M100000US3918000,2021,Solar,Capacity,3052.73
 Columbus City,M100000US3918000,2022,Energy Storage,Capacity,18.84
 Columbus City,M100000US3918000,2022,Solar,Capacity,3869.83
 Columbus City,M100000US3918000,2023,Energy Storage,Capacity,156.46
-Columbus City,M100000US3918000,2023,Solar,Capacity,11046.717999999999
+Columbus City,M100000US3918000,2023,Solar,Capacity,11056.717999999999
 Columbus City,M100000US3918000,2024,Energy Storage,Capacity,43.4
-Columbus City,M100000US3918000,2024,Solar,Capacity,7882.137
+Columbus City,M100000US3918000,2024,Solar,Capacity,7887.057
+Columbus City,M100000US3918000,2025,Energy Storage,Capacity,151.07999999999998
+Columbus City,M100000US3918000,2025,Solar,Capacity,4913.177
 Commercial Point Village,M100000US3918070,2022,Solar,Capacity,5.0
 Commercial Point Village,M100000US3918070,2023,Solar,Capacity,27.549999999999997
 Commercial Point Village,M100000US3918070,2024,Solar,Capacity,6.0
+Commercial Point Village,M100000US3918070,2025,Solar,Capacity,7.8
 Corning Village,M100000US3918770,2022,Solar,Capacity,6.08
 Crooksville Village,M100000US3919456,2024,Solar,Capacity,2.32
+Crooksville Village,M100000US3919456,2025,Solar,Capacity,11.4
 Danville Village,M100000US3920114,2011,Solar,Capacity,1.7
 Danville Village,M100000US3920114,2019,Solar,Capacity,2.4
 Danville Village,M100000US3920114,2020,Solar,Capacity,11.5
 Danville Village,M100000US3920114,2023,Solar,Capacity,9.92
+Danville Village,M100000US3920114,2025,Solar,Capacity,5.53
 De Graff Village,M100000US3921378,2023,Solar,Capacity,7.25
 De Graff Village,M100000US3921378,2024,Solar,Capacity,0.29
 Delaware City,M100000US3921434,2006,Solar,Capacity,4.62
@@ -2973,6 +3324,8 @@ Delaware City,M100000US3921434,2023,Energy Storage,Capacity,12.68
 Delaware City,M100000US3921434,2023,Solar,Capacity,612.105
 Delaware City,M100000US3921434,2024,Energy Storage,Capacity,1006.0
 Delaware City,M100000US3921434,2024,Solar,Capacity,1685.127
+Delaware City,M100000US3921434,2025,Energy Storage,Capacity,7.68
+Delaware City,M100000US3921434,2025,Solar,Capacity,566.043
 Dublin City,M100000US3922694,2007,Solar,Capacity,5.0
 Dublin City,M100000US3922694,2010,Solar,Capacity,4.0
 Dublin City,M100000US3922694,2012,Solar,Capacity,6.5
@@ -2991,9 +3344,12 @@ Dublin City,M100000US3922694,2023,Energy Storage,Capacity,3.84
 Dublin City,M100000US3922694,2023,Solar,Capacity,256.14
 Dublin City,M100000US3922694,2024,Energy Storage,Capacity,19.2
 Dublin City,M100000US3922694,2024,Solar,Capacity,355.652
+Dublin City,M100000US3922694,2025,Energy Storage,Capacity,7.08
+Dublin City,M100000US3922694,2025,Solar,Capacity,500.03
 Edison Village,M100000US3924598,2020,Solar,Capacity,2.36
 Edison Village,M100000US3924598,2023,Solar,Capacity,8.25
 Edison Village,M100000US3924598,2024,Solar,Capacity,14.95
+Edison Village,M100000US3924598,2025,Solar,Capacity,11.1
 Fredericktown Village,M100000US3928658,2014,Solar,Capacity,27.0
 Fredericktown Village,M100000US3928658,2016,Solar,Capacity,12.0
 Fredericktown Village,M100000US3928658,2020,Solar,Capacity,12.6
@@ -3014,11 +3370,14 @@ Gahanna City,M100000US3929106,2021,Solar,Capacity,180.16
 Gahanna City,M100000US3929106,2022,Energy Storage,Capacity,13.84
 Gahanna City,M100000US3929106,2022,Solar,Capacity,272.13
 Gahanna City,M100000US3929106,2023,Energy Storage,Capacity,4.8
-Gahanna City,M100000US3929106,2023,Solar,Capacity,363.34999999999997
-Gahanna City,M100000US3929106,2024,Solar,Capacity,554.794
+Gahanna City,M100000US3929106,2023,Solar,Capacity,373.34999999999997
+Gahanna City,M100000US3929106,2024,Solar,Capacity,564.794
+Gahanna City,M100000US3929106,2025,Energy Storage,Capacity,7.68
+Gahanna City,M100000US3929106,2025,Solar,Capacity,355.037
 Galena Village,M100000US3929148,2020,Solar,Capacity,8.8
 Galena Village,M100000US3929148,2021,Solar,Capacity,15.2
 Galena Village,M100000US3929148,2024,Solar,Capacity,4.324
+Galena Village,M100000US3929148,2025,Solar,Capacity,22.8
 Gambier Village,M100000US3929246,2015,Solar,Capacity,1.9
 Gambier Village,M100000US3929246,2017,Solar,Capacity,47.6
 Gambier Village,M100000US3929246,2018,Solar,Capacity,5.0
@@ -3026,6 +3385,7 @@ Gambier Village,M100000US3929246,2019,Solar,Capacity,8.0
 Gambier Village,M100000US3929246,2020,Solar,Capacity,3.8
 Gambier Village,M100000US3929246,2022,Solar,Capacity,11.18
 Gambier Village,M100000US3929246,2023,Solar,Capacity,5.76
+Gambier Village,M100000US3929246,2025,Solar,Capacity,80.78
 Gann (Brinkhaven) Village,M100000US3929288,2021,Solar,Capacity,7.6
 Gann (Brinkhaven) Village,M100000US3929288,2023,Solar,Capacity,8.64
 Glenford Village,M100000US3930436,2021,Solar,Capacity,11.09
@@ -3039,6 +3399,7 @@ Grandview Heights City,M100000US3931304,2021,Solar,Capacity,48.06
 Grandview Heights City,M100000US3931304,2022,Solar,Capacity,62.33
 Grandview Heights City,M100000US3931304,2023,Solar,Capacity,40.58
 Grandview Heights City,M100000US3931304,2024,Solar,Capacity,37.983999999999995
+Grandview Heights City,M100000US3931304,2025,Solar,Capacity,156.91
 Granville Village,M100000US3931402,2009,Solar,Capacity,3.6
 Granville Village,M100000US3931402,2010,Solar,Capacity,6.4
 Granville Village,M100000US3931402,2012,Solar,Capacity,10.370000000000001
@@ -3046,7 +3407,7 @@ Granville Village,M100000US3931402,2013,Solar,Capacity,10.2
 Granville Village,M100000US3931402,2014,Solar,Capacity,16.0
 Granville Village,M100000US3931402,2015,Solar,Capacity,17.9
 Granville Village,M100000US3931402,2016,Solar,Capacity,3.8
-Granville Village,M100000US3931402,2017,Solar,Capacity,1887.3
+Granville Village,M100000US3931402,2017,Solar,Capacity,1998.4
 Granville Village,M100000US3931402,2018,Solar,Capacity,24.1
 Granville Village,M100000US3931402,2019,Solar,Capacity,22.5
 Granville Village,M100000US3931402,2020,Solar,Capacity,87.4
@@ -3055,6 +3416,7 @@ Granville Village,M100000US3931402,2022,Solar,Capacity,13.399999999999999
 Granville Village,M100000US3931402,2023,Solar,Capacity,28.33
 Granville Village,M100000US3931402,2024,Energy Storage,Capacity,10.0
 Granville Village,M100000US3931402,2024,Solar,Capacity,16.304
+Granville Village,M100000US3931402,2025,Solar,Capacity,17.35
 Green Camp Village,M100000US3931948,2021,Solar,Capacity,5.61
 Grove City City,M100000US3932592,2010,Solar,Capacity,0.4
 Grove City City,M100000US3932592,2011,Solar,Capacity,45.0
@@ -3069,8 +3431,10 @@ Grove City City,M100000US3932592,2021,Solar,Capacity,209.37
 Grove City City,M100000US3932592,2022,Solar,Capacity,220.66
 Grove City City,M100000US3932592,2023,Energy Storage,Capacity,8.84
 Grove City City,M100000US3932592,2023,Natural Gas/Propane,Capacity,3624.0
-Grove City City,M100000US3932592,2023,Solar,Capacity,440.135
+Grove City City,M100000US3932592,2023,Solar,Capacity,470.135
 Grove City City,M100000US3932592,2024,Solar,Capacity,532.209
+Grove City City,M100000US3932592,2025,Energy Storage,Capacity,3.84
+Grove City City,M100000US3932592,2025,Solar,Capacity,433.815
 Groveport City,M100000US3932606,2000,Wind,Capacity,10.0
 Groveport City,M100000US3932606,2008,Solar,Capacity,1.3
 Groveport City,M100000US3932606,2014,Solar,Capacity,5.8
@@ -3080,10 +3444,12 @@ Groveport City,M100000US3932606,2021,Solar,Capacity,10.32
 Groveport City,M100000US3932606,2022,Solar,Capacity,39.64
 Groveport City,M100000US3932606,2023,Solar,Capacity,44.75
 Groveport City,M100000US3932606,2024,Solar,Capacity,76.685
+Groveport City,M100000US3932606,2025,Solar,Capacity,27.23
 Hanover Village,M100000US3933292,2018,Solar,Capacity,5.0
 Hanover Village,M100000US3933292,2022,Solar,Capacity,7.6
 Hanover Village,M100000US3933292,2023,Solar,Capacity,5.22
 Hanover Village,M100000US3933292,2024,Solar,Capacity,10.559999999999999
+Hanover Village,M100000US3933292,2025,Solar,Capacity,25.27
 Harrisburg Village,M100000US3933740,2023,Solar,Capacity,12.76
 Heath City,M100000US3934748,2008,Solar,Capacity,61.0
 Heath City,M100000US3934748,2016,Solar,Capacity,9.0
@@ -3094,11 +3460,13 @@ Heath City,M100000US3934748,2021,Solar,Capacity,29.2
 Heath City,M100000US3934748,2022,Solar,Capacity,8.88
 Heath City,M100000US3934748,2023,Solar,Capacity,52.99
 Heath City,M100000US3934748,2024,Solar,Capacity,106.96
+Heath City,M100000US3934748,2025,Solar,Capacity,84.76
 Hebron Village,M100000US3934790,2018,Solar,Capacity,3.0
 Hebron Village,M100000US3934790,2019,Solar,Capacity,6.0
 Hebron Village,M100000US3934790,2022,Solar,Capacity,7.6
 Hebron Village,M100000US3934790,2023,Solar,Capacity,11.6
 Hebron Village,M100000US3934790,2024,Solar,Capacity,7.83
+Hebron Village,M100000US3934790,2025,Solar,Capacity,27.065
 Hilliard City,M100000US3935476,2011,Solar,Capacity,59.4
 Hilliard City,M100000US3935476,2012,Solar,Capacity,1.9
 Hilliard City,M100000US3935476,2015,Solar,Capacity,6.5
@@ -3114,6 +3482,8 @@ Hilliard City,M100000US3935476,2023,Energy Storage,Capacity,11.52
 Hilliard City,M100000US3935476,2023,Solar,Capacity,409.87399999999997
 Hilliard City,M100000US3935476,2024,Energy Storage,Capacity,5.0
 Hilliard City,M100000US3935476,2024,Solar,Capacity,330.385
+Hilliard City,M100000US3935476,2025,Energy Storage,Capacity,10.0
+Hilliard City,M100000US3935476,2025,Solar,Capacity,397.925
 Jeffersonville Village,M100000US3938920,2023,Solar,Capacity,13.9
 Jeffersonville Village,M100000US3938920,2024,Solar,Capacity,4.92
 Johnstown City,M100000US3939340,2019,Solar,Capacity,2.4
@@ -3121,6 +3491,8 @@ Johnstown City,M100000US3939340,2021,Solar,Capacity,8.12
 Johnstown City,M100000US3939340,2022,Solar,Capacity,36.61
 Johnstown City,M100000US3939340,2023,Solar,Capacity,4.06
 Johnstown City,M100000US3939340,2024,Solar,Capacity,23.732
+Johnstown City,M100000US3939340,2025,Energy Storage,Capacity,23.0
+Johnstown City,M100000US3939340,2025,Solar,Capacity,23.48
 Kirkersville Village,M100000US3940572,2024,Solar,Capacity,2.9
 Lancaster City,M100000US3941720,2010,Solar,Capacity,10.0
 Lancaster City,M100000US3941720,2011,Solar,Capacity,30.0
@@ -3136,6 +3508,7 @@ Lancaster City,M100000US3941720,2022,Solar,Capacity,126.25
 Lancaster City,M100000US3941720,2023,Energy Storage,Capacity,7.24
 Lancaster City,M100000US3941720,2023,Solar,Capacity,108.36
 Lancaster City,M100000US3941720,2024,Solar,Capacity,124.77499999999999
+Lancaster City,M100000US3941720,2025,Solar,Capacity,159.2
 La Rue Village,M100000US3941902,2023,Solar,Capacity,4.48
 Logan City,M100000US3944632,2010,Solar,Capacity,23.0
 Logan City,M100000US3944632,2010,Wind,Capacity,2.4
@@ -3146,6 +3519,7 @@ Logan City,M100000US3944632,2020,Solar,Capacity,12.0
 Logan City,M100000US3944632,2021,Solar,Capacity,141.5
 Logan City,M100000US3944632,2023,Solar,Capacity,8.7
 Logan City,M100000US3944632,2024,Solar,Capacity,4.35
+Logan City,M100000US3944632,2025,Solar,Capacity,44.79
 London City,M100000US3944674,2011,Solar,Capacity,62.93
 London City,M100000US3944674,2012,Solar,Capacity,2044.4
 London City,M100000US3944674,2013,Solar,Capacity,60.0
@@ -3158,43 +3532,54 @@ London City,M100000US3944674,2022,Energy Storage,Capacity,0.0
 London City,M100000US3944674,2022,Solar,Capacity,40.33
 London City,M100000US3944674,2023,Solar,Capacity,14.48
 London City,M100000US3944674,2024,Solar,Capacity,79.56
+London City,M100000US3944674,2025,Energy Storage,Capacity,0.0
+London City,M100000US3944674,2025,Solar,Capacity,118.62
 Marble Cliff Village,M100000US3947474,2018,Solar,Capacity,5.6
 Marble Cliff Village,M100000US3947474,2020,Solar,Capacity,24.5
 Marble Cliff Village,M100000US3947474,2022,Solar,Capacity,5.22
 Marble Cliff Village,M100000US3947474,2023,Solar,Capacity,3.48
 Marble Cliff Village,M100000US3947474,2024,Solar,Capacity,13.92
+Marble Cliff Village,M100000US3947474,2025,Solar,Capacity,31.73
 Marion City,M100000US3947754,2016,Solar,Capacity,6.0
 Marion City,M100000US3947754,2019,Solar,Capacity,13.8
-Marion City,M100000US3947754,2020,Solar,Capacity,32.16
+Marion City,M100000US3947754,2020,Solar,Capacity,22.24
 Marion City,M100000US3947754,2021,Solar,Capacity,17.5
 Marion City,M100000US3947754,2022,Energy Storage,Capacity,0.0
 Marion City,M100000US3947754,2022,Solar,Capacity,67.86
-Marion City,M100000US3947754,2023,Solar,Capacity,23.36
+Marion City,M100000US3947754,2023,Solar,Capacity,19.3
 Marion City,M100000US3947754,2024,Solar,Capacity,57.7
+Marion City,M100000US3947754,2025,Solar,Capacity,63.64
 Marysville City,M100000US3948160,2019,Solar,Capacity,13.375
 Marysville City,M100000US3948160,2020,Solar,Capacity,46.5
 Marysville City,M100000US3948160,2021,Solar,Capacity,26.48
 Marysville City,M100000US3948160,2022,Solar,Capacity,100.92999999999999
 Marysville City,M100000US3948160,2023,Solar,Capacity,154.3
 Marysville City,M100000US3948160,2024,Solar,Capacity,82.97
+Marysville City,M100000US3948160,2025,Solar,Capacity,86.92999999999999
 Milford Center Village,M100000US3950218,2022,Solar,Capacity,13.14
+Milledgeville Village,M100000US3950316,2025,Energy Storage,Capacity,0.0
+Milledgeville Village,M100000US3950316,2025,Solar,Capacity,23.9
 Millersport Village,M100000US3950400,2022,Solar,Capacity,11.95
 Millersport Village,M100000US3950400,2023,Solar,Capacity,14.64
+Millersport Village,M100000US3950400,2025,Solar,Capacity,27.75
 Minerva Park Village,M100000US3950862,2019,Solar,Capacity,13.8
 Minerva Park Village,M100000US3950862,2020,Solar,Capacity,18.8
 Minerva Park Village,M100000US3950862,2021,Solar,Capacity,25.1
 Minerva Park Village,M100000US3950862,2022,Solar,Capacity,50.81
 Minerva Park Village,M100000US3950862,2023,Solar,Capacity,79.38
 Minerva Park Village,M100000US3950862,2024,Solar,Capacity,52.14
+Minerva Park Village,M100000US3950862,2025,Solar,Capacity,7.8
 Mount Gilead Village,M100000US3952738,2014,Solar,Capacity,500.0
 Mount Gilead Village,M100000US3952738,2018,Solar,Capacity,7.6
 Mount Gilead Village,M100000US3952738,2019,Solar,Capacity,6.72
 Mount Gilead Village,M100000US3952738,2021,Solar,Capacity,5.92
 Mount Gilead Village,M100000US3952738,2022,Solar,Capacity,8.44
+Mount Gilead Village,M100000US3952738,2025,Solar,Capacity,6.66
 Mount Sterling Village,M100000US3953046,2020,Solar,Capacity,3.6
 Mount Sterling Village,M100000US3953046,2022,Solar,Capacity,7.6
 Mount Sterling Village,M100000US3953046,2023,Solar,Capacity,4.35
 Mount Sterling Village,M100000US3953046,2024,Solar,Capacity,58.9
+Mount Sterling Village,M100000US3953046,2025,Solar,Capacity,15.68
 Mount Vernon City,M100000US3953102,2018,Solar,Capacity,7.6
 Mount Vernon City,M100000US3953102,2019,Solar,Capacity,13.4
 Mount Vernon City,M100000US3953102,2020,Solar,Capacity,25.7
@@ -3203,10 +3588,11 @@ Mount Vernon City,M100000US3953102,2022,Solar,Capacity,61.92
 Mount Vernon City,M100000US3953102,2023,Energy Storage,Capacity,15.36
 Mount Vernon City,M100000US3953102,2023,Solar,Capacity,88.652
 Mount Vernon City,M100000US3953102,2024,Solar,Capacity,45.85
+Mount Vernon City,M100000US3953102,2025,Solar,Capacity,528.3100000000001
 New Albany City,M100000US3953970,2007,Solar,Capacity,18.65
 New Albany City,M100000US3953970,2012,Solar,Capacity,4.5
 New Albany City,M100000US3953970,2013,Solar,Capacity,100.0
-New Albany City,M100000US3953970,2015,Solar,Capacity,8.0
+New Albany City,M100000US3953970,2015,Solar,Capacity,32.19
 New Albany City,M100000US3953970,2016,Solar,Capacity,7.6
 New Albany City,M100000US3953970,2018,Solar,Capacity,16.8
 New Albany City,M100000US3953970,2019,Solar,Capacity,17.6
@@ -3217,6 +3603,8 @@ New Albany City,M100000US3953970,2022,Solar,Capacity,36.019999999999996
 New Albany City,M100000US3953970,2023,Energy Storage,Capacity,16.0
 New Albany City,M100000US3953970,2023,Solar,Capacity,96.32
 New Albany City,M100000US3953970,2024,Solar,Capacity,1275.664
+New Albany City,M100000US3953970,2025,Energy Storage,Capacity,35.36
+New Albany City,M100000US3953970,2025,Solar,Capacity,110.01
 Newark City,M100000US3954040,2013,Solar,Capacity,8.4
 Newark City,M100000US3954040,2015,Solar,Capacity,56.7
 Newark City,M100000US3954040,2016,Solar,Capacity,8.1
@@ -3229,6 +3617,8 @@ Newark City,M100000US3954040,2022,Solar,Capacity,106.94
 Newark City,M100000US3954040,2023,Natural Gas/Propane,Capacity,1180.0
 Newark City,M100000US3954040,2023,Solar,Capacity,214.488
 Newark City,M100000US3954040,2024,Solar,Capacity,231.863
+Newark City,M100000US3954040,2025,Energy Storage,Capacity,0.0
+Newark City,M100000US3954040,2025,Solar,Capacity,338.238
 New Holland Village,M100000US3954726,2020,Solar,Capacity,11.4
 New Holland Village,M100000US3954726,2022,Solar,Capacity,12.399999999999999
 New Lexington Village,M100000US3954866,2018,Solar,Capacity,27.6
@@ -3236,13 +3626,16 @@ New Lexington Village,M100000US3954866,2019,Solar,Capacity,5.0
 New Lexington Village,M100000US3954866,2020,Solar,Capacity,5.0
 New Lexington Village,M100000US3954866,2021,Solar,Capacity,7.6
 New Lexington Village,M100000US3954866,2022,Solar,Capacity,3.48
+New Lexington Village,M100000US3954866,2025,Solar,Capacity,15.58
 New Straitsville Village,M100000US3955552,2020,Solar,Capacity,4.8
+New Straitsville Village,M100000US3955552,2025,Solar,Capacity,10.26
 Obetz City,M100000US3957862,2018,Solar,Capacity,14.5
 Obetz City,M100000US3957862,2020,Solar,Capacity,21.77
 Obetz City,M100000US3957862,2022,Solar,Capacity,35.089999999999996
 Obetz City,M100000US3957862,2023,Energy Storage,Capacity,19.8
 Obetz City,M100000US3957862,2023,Solar,Capacity,120.02
 Obetz City,M100000US3957862,2024,Solar,Capacity,273.29
+Obetz City,M100000US3957862,2025,Solar,Capacity,95.7
 Ostrander Village,M100000US3958940,2017,Solar,Capacity,3.5
 Ostrander Village,M100000US3958940,2020,Solar,Capacity,7.6
 Ostrander Village,M100000US3958940,2021,Solar,Capacity,5.28
@@ -3258,6 +3651,8 @@ Pataskala City,M100000US3961112,2022,Solar,Capacity,96.65
 Pataskala City,M100000US3961112,2023,Energy Storage,Capacity,3.85
 Pataskala City,M100000US3961112,2023,Solar,Capacity,197.34099999999998
 Pataskala City,M100000US3961112,2024,Solar,Capacity,200.94
+Pataskala City,M100000US3961112,2025,Energy Storage,Capacity,0.0
+Pataskala City,M100000US3961112,2025,Solar,Capacity,124.72
 Pickerington City,M100000US3962498,2024,Energy Storage,Capacity,442.0
 Pickerington City,M100000US3962498,2024,Solar,Capacity,95.8
 Plain City Village,M100000US3963030,2012,Solar,Capacity,7.0
@@ -3265,11 +3660,13 @@ Plain City Village,M100000US3963030,2016,Solar,Capacity,13.8
 Plain City Village,M100000US3963030,2017,Solar,Capacity,7.15
 Plain City Village,M100000US3963030,2019,Solar,Capacity,23.4
 Plain City Village,M100000US3963030,2020,Solar,Capacity,7.6
-Plain City Village,M100000US3963030,2021,Solar,Capacity,19.52
+Plain City Village,M100000US3963030,2021,Solar,Capacity,23.869999999999997
 Plain City Village,M100000US3963030,2022,Energy Storage,Capacity,0.0
 Plain City Village,M100000US3963030,2022,Solar,Capacity,22.78
 Plain City Village,M100000US3963030,2023,Solar,Capacity,38.91
 Plain City Village,M100000US3963030,2024,Solar,Capacity,47.16
+Plain City Village,M100000US3963030,2025,Energy Storage,Capacity,0.0
+Plain City Village,M100000US3963030,2025,Solar,Capacity,156.76000000000002
 Pleasantville Village,M100000US3963716,2018,Solar,Capacity,3.5
 Pleasantville Village,M100000US3963716,2023,Solar,Capacity,8.12
 Powell City,M100000US3964486,2012,Solar,Capacity,70.0
@@ -3282,10 +3679,11 @@ Powell City,M100000US3964486,2022,Solar,Capacity,138.0
 Powell City,M100000US3964486,2023,Energy Storage,Capacity,21.0
 Powell City,M100000US3964486,2023,Solar,Capacity,149.35
 Powell City,M100000US3964486,2024,Solar,Capacity,81.048
+Powell City,M100000US3964486,2025,Solar,Capacity,50.695
 Quincy Village,M100000US3965200,2020,Solar,Capacity,5.76
 Quincy Village,M100000US3965200,2022,Solar,Capacity,13.46
 Quincy Village,M100000US3965200,2023,Solar,Capacity,13.3
-Reynoldsburg City,M100000US3966390,2010,Solar,Capacity,3.54
+Reynoldsburg City,M100000US3966390,2010,Solar,Capacity,6.62
 Reynoldsburg City,M100000US3966390,2011,Solar,Capacity,24.0
 Reynoldsburg City,M100000US3966390,2014,Solar,Capacity,14.3
 Reynoldsburg City,M100000US3966390,2015,Solar,Capacity,3.0
@@ -3300,6 +3698,8 @@ Reynoldsburg City,M100000US3966390,2022,Solar,Capacity,214.48
 Reynoldsburg City,M100000US3966390,2023,Energy Storage,Capacity,5.0
 Reynoldsburg City,M100000US3966390,2023,Solar,Capacity,253.535
 Reynoldsburg City,M100000US3966390,2024,Solar,Capacity,443.665
+Reynoldsburg City,M100000US3966390,2025,Energy Storage,Capacity,0.0
+Reynoldsburg City,M100000US3966390,2025,Solar,Capacity,391.663
 Richwood Village,M100000US3966936,2019,Solar,Capacity,6.359999999999999
 Richwood Village,M100000US3966936,2021,Solar,Capacity,7.25
 Richwood Village,M100000US3966936,2022,Energy Storage,Capacity,0.0
@@ -3311,12 +3711,17 @@ Roseville Village,M100000US3968560,2019,Solar,Capacity,3.8
 Roseville Village,M100000US3968560,2024,Solar,Capacity,4.48
 Rushsylvania Village,M100000US3969176,2023,Solar,Capacity,5.76
 Rushville Village,M100000US3969204,2021,Solar,Capacity,7.6
+Rushville Village,M100000US3969204,2025,Solar,Capacity,5.32
+Russells Point Village,M100000US3969302,2025,Solar,Capacity,6.175
+St. Louisville Village,M100000US3969652,2025,Solar,Capacity,24.88
+Shawnee Village,M100000US3971962,2025,Solar,Capacity,5.8
 Shawnee Hills Village,M100000US3971976,2015,Solar,Capacity,5.0
 Shawnee Hills Village,M100000US3971976,2024,Solar,Capacity,8.99
 Somerset Village,M100000US3972977,2020,Solar,Capacity,3.8
 Somerset Village,M100000US3972977,2022,Solar,Capacity,9.149999999999999
 South Solon Village,M100000US3973768,2022,Solar,Capacity,5.32
 Sugar Grove Village,M100000US3975252,2020,Solar,Capacity,6.0
+Sugar Grove Village,M100000US3975252,2025,Solar,Capacity,10.73
 Sunbury City,M100000US3975602,2018,Solar,Capacity,6.0
 Sunbury City,M100000US3975602,2019,Solar,Capacity,5.0
 Sunbury City,M100000US3975602,2020,Solar,Capacity,3.1
@@ -3324,6 +3729,7 @@ Sunbury City,M100000US3975602,2021,Solar,Capacity,30.02
 Sunbury City,M100000US3975602,2022,Solar,Capacity,9.24
 Sunbury City,M100000US3975602,2023,Solar,Capacity,59.605
 Sunbury City,M100000US3975602,2024,Solar,Capacity,44.22
+Sunbury City,M100000US3975602,2025,Solar,Capacity,19.799999999999997
 Thornville Village,M100000US3976680,2020,Solar,Capacity,17.2
 Thornville Village,M100000US3976680,2021,Solar,Capacity,11.37
 Thornville Village,M100000US3976680,2022,Solar,Capacity,7.68
@@ -3345,11 +3751,14 @@ Upper Arlington City,M100000US3979002,2023,Energy Storage,Capacity,30.36
 Upper Arlington City,M100000US3979002,2023,Solar,Capacity,374.865
 Upper Arlington City,M100000US3979002,2024,Energy Storage,Capacity,24.2
 Upper Arlington City,M100000US3979002,2024,Solar,Capacity,667.21
+Upper Arlington City,M100000US3979002,2025,Energy Storage,Capacity,43.08
+Upper Arlington City,M100000US3979002,2025,Solar,Capacity,563.871
 Urbancrest Village,M100000US3979100,2010,Solar,Capacity,5.0
 Urbancrest Village,M100000US3979100,2019,Solar,Capacity,7.6
 Urbancrest Village,M100000US3979100,2020,Solar,Capacity,5.0
 Urbancrest Village,M100000US3979100,2022,Solar,Capacity,2.61
 Urbancrest Village,M100000US3979100,2024,Solar,Capacity,22.0
+Urbancrest Village,M100000US3979100,2025,Solar,Capacity,7.6
 Utica Village,M100000US3979114,2018,Solar,Capacity,3.0
 Utica Village,M100000US3979114,2021,Solar,Capacity,8.41
 Utica Village,M100000US3979114,2022,Solar,Capacity,6.8
@@ -3370,6 +3779,9 @@ Washington Court House City,M100000US3981718,2021,Solar,Capacity,33.34
 Washington Court House City,M100000US3981718,2022,Solar,Capacity,26.61
 Washington Court House City,M100000US3981718,2023,Solar,Capacity,32.41
 Washington Court House City,M100000US3981718,2024,Solar,Capacity,60.02
+Washington Court House City,M100000US3981718,2025,Energy Storage,Capacity,18.7
+Washington Court House City,M100000US3981718,2025,Solar,Capacity,48.81
+Westerville City,M100000US3983342,2025,Solar,Capacity,7.15
 West Jefferson Village,M100000US3983580,2012,Solar,Capacity,1050.0
 West Jefferson Village,M100000US3983580,2013,Solar,Capacity,25.9
 West Jefferson Village,M100000US3983580,2015,Solar,Capacity,7.6
@@ -3378,12 +3790,16 @@ West Jefferson Village,M100000US3983580,2021,Solar,Capacity,6.38
 West Jefferson Village,M100000US3983580,2022,Solar,Capacity,14.64
 West Jefferson Village,M100000US3983580,2023,Solar,Capacity,3975.0
 West Jefferson Village,M100000US3983580,2024,Solar,Capacity,24.85
+West Jefferson Village,M100000US3983580,2025,Solar,Capacity,66.47999999999999
 West Liberty Village,M100000US3983734,2019,Solar,Capacity,11.4
 West Liberty Village,M100000US3983734,2021,Solar,Capacity,3.8
 West Liberty Village,M100000US3983734,2023,Solar,Capacity,4.4
+West Liberty Village,M100000US3983734,2025,Solar,Capacity,21.48
 West Mansfield Village,M100000US3983818,2019,Solar,Capacity,5.0
 West Mansfield Village,M100000US3983818,2021,Solar,Capacity,6.93
 West Mansfield Village,M100000US3983818,2023,Solar,Capacity,15.600000000000001
+West Mansfield Village,M100000US3983818,2025,Solar,Capacity,5.0
+West Rushville Village,M100000US3984182,2025,Solar,Capacity,17.86
 Whitehall City,M100000US3984742,2011,Solar,Capacity,40.0
 Whitehall City,M100000US3984742,2014,Solar,Capacity,4.8
 Whitehall City,M100000US3984742,2016,Solar,Capacity,7.0
@@ -3394,6 +3810,7 @@ Whitehall City,M100000US3984742,2022,Solar,Capacity,85.85
 Whitehall City,M100000US3984742,2023,Energy Storage,Capacity,5.0
 Whitehall City,M100000US3984742,2023,Solar,Capacity,71.39999999999999
 Whitehall City,M100000US3984742,2024,Solar,Capacity,260.59
+Whitehall City,M100000US3984742,2025,Solar,Capacity,104.8
 Worthington City,M100000US3986604,2010,Solar,Capacity,75.30000000000001
 Worthington City,M100000US3986604,2012,Solar,Capacity,5.58
 Worthington City,M100000US3986604,2013,Solar,Capacity,5.8
@@ -3409,6 +3826,8 @@ Worthington City,M100000US3986604,2022,Solar,Capacity,310.33
 Worthington City,M100000US3986604,2023,Energy Storage,Capacity,3.84
 Worthington City,M100000US3986604,2023,Solar,Capacity,333.34000000000003
 Worthington City,M100000US3986604,2024,Solar,Capacity,61.982
+Worthington City,M100000US3986604,2025,Energy Storage,Capacity,7.68
+Worthington City,M100000US3986604,2025,Solar,Capacity,116.064
 Delaware,0500000US39041,2004,Wind,Capacity,1.0
 Delaware,0500000US39041,2006,Solar,Capacity,6.720000000000001
 Delaware,0500000US39041,2009,Solar,Capacity,14.850000000000001
@@ -3421,7 +3840,7 @@ Delaware,0500000US39041,2013,Solar,Capacity,72.895
 Delaware,0500000US39041,2014,Solar,Capacity,561.8
 Delaware,0500000US39041,2015,Solar,Capacity,135.1
 Delaware,0500000US39041,2016,Solar,Capacity,232.1
-Delaware,0500000US39041,2017,Solar,Capacity,1228.5
+Delaware,0500000US39041,2017,Solar,Capacity,1238.5
 Delaware,0500000US39041,2018,Solar,Capacity,275.6
 Delaware,0500000US39041,2019,Solar,Capacity,11823.810000000001
 Delaware,0500000US39041,2020,Energy Storage,Capacity,565.0
@@ -3434,6 +3853,8 @@ Delaware,0500000US39041,2023,Energy Storage,Capacity,75.68
 Delaware,0500000US39041,2023,Solar,Capacity,1884.959
 Delaware,0500000US39041,2024,Energy Storage,Capacity,1049.6799999999998
 Delaware,0500000US39041,2024,Solar,Capacity,2559.572
+Delaware,0500000US39041,2025,Energy Storage,Capacity,70.48
+Delaware,0500000US39041,2025,Solar,Capacity,1757.344
 Fairfield,0500000US39045,2010,Solar,Capacity,18.4
 Fairfield,0500000US39045,2011,Solar,Capacity,38.7
 Fairfield,0500000US39045,2012,Solar,Capacity,21.0
@@ -3452,6 +3873,8 @@ Fairfield,0500000US39045,2023,Energy Storage,Capacity,7.24
 Fairfield,0500000US39045,2023,Solar,Capacity,337.45
 Fairfield,0500000US39045,2024,Energy Storage,Capacity,442.0
 Fairfield,0500000US39045,2024,Solar,Capacity,538.73
+Fairfield,0500000US39045,2025,Energy Storage,Capacity,0.0
+Fairfield,0500000US39045,2025,Solar,Capacity,480.51
 Fayette,0500000US39047,2009,Solar,Capacity,7.05
 Fayette,0500000US39047,2010,Solar,Capacity,7.0
 Fayette,0500000US39047,2011,Solar,Capacity,332.0
@@ -3466,13 +3889,15 @@ Fayette,0500000US39047,2021,Solar,Capacity,108.54
 Fayette,0500000US39047,2022,Solar,Capacity,117.89999999999999
 Fayette,0500000US39047,2023,Solar,Capacity,70.91
 Fayette,0500000US39047,2024,Solar,Capacity,101.668
+Fayette,0500000US39047,2025,Energy Storage,Capacity,18.7
+Fayette,0500000US39047,2025,Solar,Capacity,125.09
 Franklin,0500000US39049,2000,Wind,Capacity,10.0
 Franklin,0500000US39049,2001,Wind,Capacity,18.0
 Franklin,0500000US39049,2006,Solar,Capacity,4.640000000000001
 Franklin,0500000US39049,2007,Solar,Capacity,23.65
 Franklin,0500000US39049,2008,Solar,Capacity,1.3
 Franklin,0500000US39049,2009,Solar,Capacity,51.9
-Franklin,0500000US39049,2010,Solar,Capacity,362.39
+Franklin,0500000US39049,2010,Solar,Capacity,365.47
 Franklin,0500000US39049,2010,Wind,Capacity,100.0
 Franklin,0500000US39049,2011,Solar,Capacity,1159.102
 Franklin,0500000US39049,2012,Solar,Capacity,2098.18
@@ -3480,7 +3905,7 @@ Franklin,0500000US39049,2013,Solar,Capacity,1292.1
 Franklin,0500000US39049,2013,Wind,Capacity,30.0
 Franklin,0500000US39049,2014,Solar,Capacity,161.517
 Franklin,0500000US39049,2015,Natural Gas/Propane,Capacity,248.0
-Franklin,0500000US39049,2015,Solar,Capacity,912.92
+Franklin,0500000US39049,2015,Solar,Capacity,937.11
 Franklin,0500000US39049,2016,Solar,Capacity,1045.765
 Franklin,0500000US39049,2017,Energy Storage,Capacity,100.0
 Franklin,0500000US39049,2017,Solar,Capacity,694.03
@@ -3495,9 +3920,11 @@ Franklin,0500000US39049,2022,Energy Storage,Capacity,93.2
 Franklin,0500000US39049,2022,Solar,Capacity,6331.55
 Franklin,0500000US39049,2023,Energy Storage,Capacity,274.54
 Franklin,0500000US39049,2023,Natural Gas/Propane,Capacity,3624.0
-Franklin,0500000US39049,2023,Solar,Capacity,14616.724
+Franklin,0500000US39049,2023,Solar,Capacity,14666.724
 Franklin,0500000US39049,2024,Energy Storage,Capacity,126.36
-Franklin,0500000US39049,2024,Solar,Capacity,12480.448
+Franklin,0500000US39049,2024,Solar,Capacity,12695.368
+Franklin,0500000US39049,2025,Energy Storage,Capacity,323.15999999999997
+Franklin,0500000US39049,2025,Solar,Capacity,9276.948
 Hocking,0500000US39073,2005,Solar,Capacity,1.65
 Hocking,0500000US39073,2005,Wind,Capacity,8.0
 Hocking,0500000US39073,2010,Solar,Capacity,31.4
@@ -3517,6 +3944,8 @@ Hocking,0500000US39073,2022,Solar,Capacity,47.1
 Hocking,0500000US39073,2023,Energy Storage,Capacity,7.0
 Hocking,0500000US39073,2023,Solar,Capacity,68.634
 Hocking,0500000US39073,2024,Solar,Capacity,78.548
+Hocking,0500000US39073,2025,Energy Storage,Capacity,10.0
+Hocking,0500000US39073,2025,Solar,Capacity,101.26
 Knox,0500000US39083,2007,Solar,Capacity,6.0
 Knox,0500000US39083,2011,Solar,Capacity,1.7
 Knox,0500000US39083,2012,Solar,Capacity,1400.0
@@ -3533,8 +3962,9 @@ Knox,0500000US39083,2022,Energy Storage,Capacity,3.84
 Knox,0500000US39083,2022,Solar,Capacity,279.46
 Knox,0500000US39083,2023,Energy Storage,Capacity,19.2
 Knox,0500000US39083,2023,Solar,Capacity,394.772
-Knox,0500000US39083,2024,Energy Storage,Capacity,3.84
-Knox,0500000US39083,2024,Solar,Capacity,353.51
+Knox,0500000US39083,2024,Energy Storage,Capacity,15.34
+Knox,0500000US39083,2024,Solar,Capacity,357.90999999999997
+Knox,0500000US39083,2025,Solar,Capacity,734.72
 Licking,0500000US39089,2006,Solar,Capacity,2.5
 Licking,0500000US39089,2008,Solar,Capacity,61.0
 Licking,0500000US39089,2009,Solar,Capacity,3.6
@@ -3546,7 +3976,7 @@ Licking,0500000US39089,2013,Solar,Capacity,42.5
 Licking,0500000US39089,2014,Solar,Capacity,870.4
 Licking,0500000US39089,2015,Solar,Capacity,109.3
 Licking,0500000US39089,2016,Solar,Capacity,33.1
-Licking,0500000US39089,2017,Solar,Capacity,2793.1400000000003
+Licking,0500000US39089,2017,Solar,Capacity,2904.2400000000002
 Licking,0500000US39089,2018,Solar,Capacity,238.65
 Licking,0500000US39089,2019,Solar,Capacity,455.5
 Licking,0500000US39089,2020,Energy Storage,Capacity,15.0
@@ -3558,6 +3988,8 @@ Licking,0500000US39089,2023,Natural Gas/Propane,Capacity,1180.0
 Licking,0500000US39089,2023,Solar,Capacity,1222.323
 Licking,0500000US39089,2024,Energy Storage,Capacity,27.68
 Licking,0500000US39089,2024,Solar,Capacity,2373.2019999999998
+Licking,0500000US39089,2025,Energy Storage,Capacity,40.68
+Licking,0500000US39089,2025,Solar,Capacity,1354.943
 Logan,0500000US39091,2010,Wind,Capacity,16.0
 Logan,0500000US39091,2011,Solar,Capacity,30.0
 Logan,0500000US39091,2012,Solar,Capacity,1.7
@@ -3571,6 +4003,8 @@ Logan,0500000US39091,2021,Solar,Capacity,55.48
 Logan,0500000US39091,2022,Solar,Capacity,108.38
 Logan,0500000US39091,2023,Solar,Capacity,139.945
 Logan,0500000US39091,2024,Solar,Capacity,91.36
+Logan,0500000US39091,2025,Energy Storage,Capacity,7.26
+Logan,0500000US39091,2025,Solar,Capacity,64.221
 Madison,0500000US39097,2008,Solar,Capacity,7.0
 Madison,0500000US39097,2008,Wind,Capacity,1.8
 Madison,0500000US39097,2010,Solar,Capacity,77.04
@@ -3585,17 +4019,18 @@ Madison,0500000US39097,2017,Solar,Capacity,41.45
 Madison,0500000US39097,2018,Solar,Capacity,72.8
 Madison,0500000US39097,2019,Solar,Capacity,177.49
 Madison,0500000US39097,2020,Solar,Capacity,161.73
-Madison,0500000US39097,2021,Solar,Capacity,147.224
+Madison,0500000US39097,2021,Solar,Capacity,140.174
 Madison,0500000US39097,2022,Energy Storage,Capacity,5.0
 Madison,0500000US39097,2022,Solar,Capacity,226.31
 Madison,0500000US39097,2023,Energy Storage,Capacity,7.6
 Madison,0500000US39097,2023,Solar,Capacity,4271.835
 Madison,0500000US39097,2024,Solar,Capacity,1445.53
+Madison,0500000US39097,2025,Energy Storage,Capacity,0.0
+Madison,0500000US39097,2025,Solar,Capacity,435.24
 Marion,0500000US39101,2009,Wind,Capacity,2.4
 Marion,0500000US39101,2011,Solar,Capacity,51.0
 Marion,0500000US39101,2011,Wind,Capacity,2.4
 Marion,0500000US39101,2012,Solar,Capacity,5.9
-Marion,0500000US39101,2013,Solar,Capacity,40.0
 Marion,0500000US39101,2014,Solar,Capacity,19.0
 Marion,0500000US39101,2015,Solar,Capacity,31.9
 Marion,0500000US39101,2016,Solar,Capacity,40.4
@@ -3604,18 +4039,19 @@ Marion,0500000US39101,2017,Waste Gas,Capacity,3500.0
 Marion,0500000US39101,2018,Solar,Capacity,42.7
 Marion,0500000US39101,2018,Wind,Capacity,4500.0
 Marion,0500000US39101,2019,Solar,Capacity,92.0
-Marion,0500000US39101,2020,Solar,Capacity,51.56
+Marion,0500000US39101,2020,Solar,Capacity,41.64
 Marion,0500000US39101,2021,Solar,Capacity,99.9
 Marion,0500000US39101,2022,Energy Storage,Capacity,0.0
 Marion,0500000US39101,2022,Solar,Capacity,186.98999999999998
-Marion,0500000US39101,2023,Solar,Capacity,126.78
+Marion,0500000US39101,2023,Solar,Capacity,122.72
 Marion,0500000US39101,2024,Solar,Capacity,141.27
+Marion,0500000US39101,2025,Solar,Capacity,173.595
 Morrow,0500000US39117,2009,Wind,Capacity,35.4
 Morrow,0500000US39117,2014,Solar,Capacity,511.4
 Morrow,0500000US39117,2015,Solar,Capacity,22.6
 Morrow,0500000US39117,2016,Solar,Capacity,29.6
 Morrow,0500000US39117,2017,Solar,Capacity,7.6
-Morrow,0500000US39117,2018,Solar,Capacity,47.375
+Morrow,0500000US39117,2018,Solar,Capacity,42.375
 Morrow,0500000US39117,2019,Solar,Capacity,95.82
 Morrow,0500000US39117,2020,Solar,Capacity,66.16
 Morrow,0500000US39117,2021,Solar,Capacity,85.71
@@ -3624,6 +4060,7 @@ Morrow,0500000US39117,2022,Solar,Capacity,76.53999999999999
 Morrow,0500000US39117,2023,Energy Storage,Capacity,12.68
 Morrow,0500000US39117,2023,Solar,Capacity,75.38
 Morrow,0500000US39117,2024,Solar,Capacity,71.42999999999999
+Morrow,0500000US39117,2025,Solar,Capacity,67.51
 Perry,0500000US39127,2013,Solar,Capacity,4.1
 Perry,0500000US39127,2014,Solar,Capacity,9.0
 Perry,0500000US39127,2015,Solar,Capacity,31.0
@@ -3636,6 +4073,7 @@ Perry,0500000US39127,2022,Solar,Capacity,150.03
 Perry,0500000US39127,2023,Solar,Capacity,27.96
 Perry,0500000US39127,2024,Energy Storage,Capacity,7.68
 Perry,0500000US39127,2024,Solar,Capacity,74.607
+Perry,0500000US39127,2025,Solar,Capacity,151.45
 Pickaway,0500000US39129,2012,Solar,Capacity,4.8
 Pickaway,0500000US39129,2013,Solar,Capacity,14.0
 Pickaway,0500000US39129,2016,Solar,Capacity,6.0
@@ -3650,19 +4088,21 @@ Pickaway,0500000US39129,2022,Solar,Capacity,94.65
 Pickaway,0500000US39129,2023,Energy Storage,Capacity,4.8
 Pickaway,0500000US39129,2023,Solar,Capacity,136.77
 Pickaway,0500000US39129,2024,Solar,Capacity,96.24600000000001
+Pickaway,0500000US39129,2025,Solar,Capacity,142.43
 Ross,0500000US39141,2007,Solar,Capacity,3.0
 Ross,0500000US39141,2011,Solar,Capacity,30.0
 Ross,0500000US39141,2013,Biofuel,Capacity,400.0
 Ross,0500000US39141,2013,Solar,Capacity,7.3
 Ross,0500000US39141,2015,Solar,Capacity,62.199999999999996
 Ross,0500000US39141,2018,Solar,Capacity,53.5
-Ross,0500000US39141,2019,Solar,Capacity,61.66
+Ross,0500000US39141,2019,Solar,Capacity,72.86
 Ross,0500000US39141,2020,Solar,Capacity,95.1
 Ross,0500000US39141,2021,Solar,Capacity,179.76
 Ross,0500000US39141,2022,Energy Storage,Capacity,11.52
 Ross,0500000US39141,2022,Solar,Capacity,187.26
 Ross,0500000US39141,2023,Solar,Capacity,147.91
 Ross,0500000US39141,2024,Solar,Capacity,175.68
+Ross,0500000US39141,2025,Solar,Capacity,592.845
 Union,0500000US39159,2011,Solar,Capacity,10.254999999999999
 Union,0500000US39159,2015,Solar,Capacity,9.01
 Union,0500000US39159,2016,Solar,Capacity,5.44
@@ -3673,8 +4113,10 @@ Union,0500000US39159,2020,Solar,Capacity,112.1
 Union,0500000US39159,2021,Solar,Capacity,119.59
 Union,0500000US39159,2022,Energy Storage,Capacity,0.0
 Union,0500000US39159,2022,Solar,Capacity,245.164
-Union,0500000US39159,2023,Solar,Capacity,293.22
+Union,0500000US39159,2023,Solar,Capacity,283.22
 Union,0500000US39159,2024,Solar,Capacity,216.70499999999998
+Union,0500000US39159,2025,Energy Storage,Capacity,19.18
+Union,0500000US39159,2025,Solar,Capacity,276.3
 15-County Region,M010000US001,2000,Wind,Capacity,10.0
 15-County Region,M010000US001,2001,Wind,Capacity,18.0
 15-County Region,M010000US001,2004,Wind,Capacity,1.0
@@ -3686,7 +4128,7 @@ Union,0500000US39159,2024,Solar,Capacity,216.70499999999998
 15-County Region,M010000US001,2008,Wind,Capacity,1.8
 15-County Region,M010000US001,2009,Solar,Capacity,77.4
 15-County Region,M010000US001,2009,Wind,Capacity,47.8
-15-County Region,M010000US001,2010,Solar,Capacity,515.23
+15-County Region,M010000US001,2010,Solar,Capacity,518.3100000000001
 15-County Region,M010000US001,2010,Wind,Capacity,161.8
 15-County Region,M010000US001,2011,Solar,Capacity,1817.347
 15-County Region,M010000US001,2011,Wind,Capacity,2.4
@@ -3694,28 +4136,30 @@ Union,0500000US39159,2024,Solar,Capacity,216.70499999999998
 15-County Region,M010000US001,2012,Wind,Capacity,1.5
 15-County Region,M010000US001,2013,Biofuel,Capacity,400.0
 15-County Region,M010000US001,2013,Energy Storage,Capacity,4000.0
-15-County Region,M010000US001,2013,Solar,Capacity,1690.355
+15-County Region,M010000US001,2013,Solar,Capacity,1650.355
 15-County Region,M010000US001,2013,Wind,Capacity,30.0
 15-County Region,M010000US001,2014,Solar,Capacity,2255.857
 15-County Region,M010000US001,2015,Natural Gas/Propane,Capacity,248.0
-15-County Region,M010000US001,2015,Solar,Capacity,1443.925
+15-County Region,M010000US001,2015,Solar,Capacity,1468.115
 15-County Region,M010000US001,2016,Solar,Capacity,1664.465
 15-County Region,M010000US001,2017,Energy Storage,Capacity,100.0
-15-County Region,M010000US001,2017,Solar,Capacity,4970.52
+15-County Region,M010000US001,2017,Solar,Capacity,5091.62
 15-County Region,M010000US001,2017,Waste Gas,Capacity,3500.0
 15-County Region,M010000US001,2018,Natural Gas/Propane,Capacity,15036.0
-15-County Region,M010000US001,2018,Solar,Capacity,2583.925
+15-County Region,M010000US001,2018,Solar,Capacity,2578.925
 15-County Region,M010000US001,2018,Wind,Capacity,4500.0
 15-County Region,M010000US001,2019,Energy Storage,Capacity,250.0
-15-County Region,M010000US001,2019,Solar,Capacity,15187.31
+15-County Region,M010000US001,2019,Solar,Capacity,15198.51
 15-County Region,M010000US001,2020,Energy Storage,Capacity,600.0
-15-County Region,M010000US001,2020,Solar,Capacity,5012.295
+15-County Region,M010000US001,2020,Solar,Capacity,5002.375
 15-County Region,M010000US001,2021,Energy Storage,Capacity,78.28
-15-County Region,M010000US001,2021,Solar,Capacity,8628.021999999999
+15-County Region,M010000US001,2021,Solar,Capacity,8620.972
 15-County Region,M010000US001,2022,Energy Storage,Capacity,142.76
 15-County Region,M010000US001,2022,Solar,Capacity,10548.826
 15-County Region,M010000US001,2023,Energy Storage,Capacity,438.67
 15-County Region,M010000US001,2023,Natural Gas/Propane,Capacity,4804.0
-15-County Region,M010000US001,2023,Solar,Capacity,23815.572
-15-County Region,M010000US001,2024,Energy Storage,Capacity,1657.24
-15-County Region,M010000US001,2024,Solar,Capacity,20798.506
+15-County Region,M010000US001,2023,Solar,Capacity,23851.512
+15-County Region,M010000US001,2024,Energy Storage,Capacity,1668.74
+15-County Region,M010000US001,2024,Solar,Capacity,21017.826
+15-County Region,M010000US001,2025,Energy Storage,Capacity,489.46
+15-County Region,M010000US001,2025,Solar,Capacity,15734.405999999999
